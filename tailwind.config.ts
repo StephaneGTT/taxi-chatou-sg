@@ -8,25 +8,26 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Univers « Signature marine » (Taxi Stéphane Géatti) — tokens CSS dans src/app/globals.css
+        // Univers « Premium marine & beige » (Taxi Stéphane Géatti) — tokens CSS dans src/app/globals.css
         ink: {
-          900: '#001138', // marine profond (logo)
-          800: '#0A1C44', // marine
-          700: '#16294F',
-          600: '#22315A',
+          900: '#0B1D3A', // bleu marine profond
+          800: '#07152C', // bleu nuit
+          700: '#13294A',
+          600: '#2A3E63',
         },
-        // Accent de marque = champagne / or clair du logo.
+        // Accent de marque = beige élégant.
         // (Nom de token « champagne » conservé pour éviter un renommage global.)
         champagne: {
-          DEFAULT: '#DBC3A5', // champagne : accent sur marine + fond de bouton
-          light: '#ECDCC0', // survol
-          dark: '#8A6A2E', // or foncé : texte/liens sur fond clair (AA ≥ 4.5)
+          DEFAULT: '#D8C3A5', // beige : accent sur marine + fond de bouton
+          light: '#E7D7BE', // survol
+          dark: '#8A6E42', // beige foncé : texte/liens sur fond clair (AA ≥ 4.5)
         },
-        cream: '#F6F1E7',
-        mist: '#A9ADB0',
+        cream: '#FAF9F6', // blanc cassé : fond principal
+        sand: '#F3EBDD', // beige clair : fonds secondaires
+        mist: '#9AA6BD',
       },
       fontFamily: {
-        serif: ['var(--font-serif)', 'Fraunces', 'Georgia', 'serif'],
+        serif: ['var(--font-serif)', 'Outfit', 'system-ui', 'sans-serif'],
         sans: ['var(--font-sans)', 'Inter', 'system-ui', 'sans-serif'],
       },
       fontSize: {
@@ -45,8 +46,8 @@ const config: Config = {
         gutter: 'clamp(1.25rem, 4vw, 3rem)',
       },
       boxShadow: {
-        card: '0 24px 60px -30px rgba(0, 17, 56, 0.45)',
-        'card-hover': '0 34px 80px -34px rgba(0, 17, 56, 0.55)',
+        card: '0 24px 60px -30px rgba(11, 29, 58, 0.35)',
+        'card-hover': '0 34px 80px -34px rgba(11, 29, 58, 0.45)',
       },
       transitionTimingFunction: {
         premium: 'cubic-bezier(0.22, 1, 0.36, 1)',
