@@ -1,16 +1,13 @@
 import type { Metadata } from 'next';
 import { Hero } from '@/components/home/Hero';
 import { BookingSection } from '@/components/home/BookingSection';
-import { HowToBookSection } from '@/components/home/HowToBookSection';
 import { ServicesSection } from '@/components/home/ServicesSection';
 import { VehicleShowcase } from '@/components/home/VehicleShowcase';
 import { PassengerExperience } from '@/components/home/PassengerExperience';
 import { WhyChoose } from '@/components/home/WhyChoose';
-import { ClientsSection } from '@/components/home/ClientsSection';
 import { DestinationsSection } from '@/components/home/DestinationsSection';
 import { PricingSection } from '@/components/home/PricingSection';
 import { AboutSection } from '@/components/home/AboutSection';
-import { EngagementsSection } from '@/components/home/EngagementsSection';
 import { ReviewsSection } from '@/components/home/ReviewsSection';
 import { BlogPreview } from '@/components/home/BlogPreview';
 import { FaqSection } from '@/components/home/FaqSection';
@@ -48,18 +45,15 @@ export default function HomePage() {
     <>
       <JsonLd data={homePageGraph(homeFaq)} />
       <Hero />
-      <ClientsSection />
       <BookingSection />
-      <HowToBookSection />
       <ServicesSection />
       <VehicleShowcase />
       <PassengerExperience />
       <WhyChoose />
       <DestinationsSection />
       <PricingSection />
-      <AboutSection />
-      <EngagementsSection />
       <ReviewsSection />
+      <AboutSection />
       <BlogPreview posts={homePosts} />
       <FaqSection items={homeFaq} />
       <CTASection />
