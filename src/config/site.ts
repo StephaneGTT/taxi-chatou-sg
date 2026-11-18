@@ -18,7 +18,7 @@ export const siteConfig = {
   /** Nom commercial affiché */
   name: 'Taxi Stéphane Géatti',
   description:
-    'Taxi à Chatou (78) et dans l’Ouest parisien : transferts aéroports, trajets professionnels, transport médical conventionné CPAM et longue distance. Véhicule 100 % électrique, 7j/7 sur réservation.',
+    'Taxi à Chatou (78) et dans l’Ouest parisien : transferts aéroports, trajets professionnels, transport médical conventionné CPAM et longue distance. Véhicule 100 % électrique, 24h/24 et 7j/7 sur réservation.',
 
   url: siteUrl,
   locale: 'fr-FR',
@@ -53,7 +53,7 @@ export const siteConfig = {
 
   /** Horaires — service sur réservation. */
   hours: {
-    label: 'Service sur réservation, 7j/7',
+    label: 'Service sur réservation, 24h/24 et 7j/7',
     note: 'Réservation par appel, SMS, e-mail ou WhatsApp.',
   },
 

@@ -13,7 +13,7 @@ const types = [
 export function BookingSection({ city = 'Chatou' }: { city?: string }) {
   const description =
     city === 'Chatou'
-      ? 'Réserver un taxi à Chatou (78) ne prend que quelques minutes. Choisissez une course immédiate ou un départ programmé : nous venons vous chercher à l’adresse de votre choix, que ce soit votre domicile, votre bureau, un hôtel, une clinique ou un lieu de rendez-vous. Notre service couvre Chatou et les communes voisines : Croissy-sur-Seine, Le Vésinet, Montesson, Rueil-Malmaison, Carrières-sur-Seine et Houilles.'
+      ? 'Réserver un taxi à Chatou (78) ne prend que quelques minutes. Choisissez une course immédiate ou un départ programmé, de jour comme de nuit, 24h/24 et 7j/7 : nous venons vous chercher à l’adresse de votre choix, que ce soit votre domicile, votre bureau, un hôtel, une clinique, la gare de Chatou–Croissy (RER A) ou un lieu de rendez-vous. Notre service couvre Chatou et les communes voisines : Croissy-sur-Seine, Le Vésinet, Montesson, Rueil-Malmaison, Carrières-sur-Seine et Houilles.'
       : `Réserver un taxi à ${city} (78) ne prend que quelques minutes. Choisissez une course immédiate ou un départ programmé : nous venons vous chercher à l’adresse de votre choix, que ce soit votre domicile, votre bureau, un hôtel, une clinique ou un lieu de rendez-vous. Notre service couvre ${city} et les communes voisines de l’Ouest parisien.`;
 
   return (

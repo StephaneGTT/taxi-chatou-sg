@@ -16,13 +16,13 @@ const pillars = [
   },
   {
     icon: Clock,
-    title: 'Organisation soignée',
-    description: 'Réservez à l’avance : votre chauffeur vous attend à l’heure, bagages compris.',
+    title: 'Disponible 24h/24',
+    description: 'Course immédiate ou réservée à l’avance, 24h/24 et 7j/7 : votre chauffeur vous attend à l’heure, bagages compris.',
   },
   {
     icon: MapPin,
-    title: 'Connaissance locale',
-    description: 'Chatou, l’Ouest parisien et l’ensemble de l’Île-de-France.',
+    title: 'Chauffeur local',
+    description: 'Gare RER A Chatou–Croissy, Ouest parisien et Île-de-France : un chauffeur qui connaît les accès, sans frais de plateforme.',
   },
 ];
 

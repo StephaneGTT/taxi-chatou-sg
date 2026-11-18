@@ -24,7 +24,7 @@ export function Hero() {
             <Reveal>
               <div className="flex items-center gap-3">
                 <span className="h-px w-10 bg-champagne" aria-hidden />
-                <span className="eyebrow text-champagne">Taxi à Chatou · 7j/7</span>
+                <span className="eyebrow text-champagne">Taxi à Chatou · 24h/24 · 7j/7</span>
               </div>
               <h1
                 className="mt-6 font-serif font-semibold leading-[1.02] tracking-[-0.03em]"
@@ -34,8 +34,9 @@ export function Hero() {
                 <span className="block text-champagne">confort &amp; sérénité.</span>
               </h1>
               <p className="mt-6 max-w-xl text-base leading-relaxed text-cream/80 sm:text-lg">
-                Aéroports, trajets médicaux conventionnés, déplacements professionnels et privés. Un
-                service soigné à bord d’un Škoda Enyaq 100 % électrique.
+                Gare RER A, aéroports, trajets médicaux conventionnés, déplacements professionnels et
+                privés : un chauffeur professionnel à l’heure, 24h/24 et 7j/7, à bord d’un Škoda Enyaq
+                100 % électrique.
               </p>
             </Reveal>
 

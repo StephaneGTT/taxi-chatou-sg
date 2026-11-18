@@ -28,7 +28,7 @@ export function SiteFooter() {
             </Link>
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-mist">
               Taxi à Chatou et dans l’Ouest parisien. Transferts aéroports, transport médical
-              conventionné, trajets professionnels et privés. Véhicule 100 % électrique, 7j/7.
+              conventionné, trajets professionnels et privés. Véhicule 100 % électrique, 24h/24 et 7j/7.
             </p>
 
             <ul className="mt-6 space-y-3 text-sm">

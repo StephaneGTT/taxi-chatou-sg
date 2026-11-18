@@ -11,6 +11,7 @@ import { PricingSection } from '@/components/home/PricingSection';
 import { AboutSection } from '@/components/home/AboutSection';
 import { ReviewsSection } from '@/components/home/ReviewsSection';
 import { BlogPreview } from '@/components/home/BlogPreview';
+import { HomeGuide } from '@/components/home/HomeGuide';
 import { FaqSection } from '@/components/home/FaqSection';
 import { CTASection } from '@/components/home/CTASection';
 import { JsonLd } from '@/components/seo/JsonLd';
@@ -21,9 +22,9 @@ import { buildMetadata, homePageGraph } from '@/lib/seo';
 // Title + meta description propres à l'accueil (mot-clé « taxi à Chatou » en début).
 // buildMetadata aligne automatiquement Open Graph et Twitter sur ce titre/description.
 export const metadata: Metadata = buildMetadata({
-  title: 'Taxi Chatou (78) - Réservation 7j/7 | Taxi Stéphane Géatti',
+  title: 'Taxi Chatou (78) - Réservation 24h/24 7j/7 | Taxi Géatti',
   description:
-    'Taxi à Chatou (78) : réservation 7j/7, transferts gares et aéroports, transport médical conventionné (CPAM), tarifs réglementés. Réservez à l’avance ou pour une course immédiate.',
+    'Taxi à Chatou (78), 24h/24 et 7j/7 : gares, aéroports (Orly, Roissy CDG), transport médical conventionné CPAM, tarifs réglementés. Course immédiate ou réservée à l’avance.',
   path: '/',
   absoluteTitle: true,
 });
@@ -57,6 +58,7 @@ export default function HomePage() {
       <ReviewsSection />
       <AboutSection />
       <BlogPreview posts={homePosts} />
+      <HomeGuide />
       <FaqSection items={homeFaq} />
       <CTASection />
     </>

@@ -33,6 +33,16 @@ export const homeFaq: FaqItem[] = [
       'Oui, surtout pour une gare, un aéroport ou un rendez-vous à heure fixe : vous avez ainsi un chauffeur à l’heure convenue, bagages compris. Pour un départ tôt le matin ou tard le soir, anticipez davantage. Une course de dernière minute reste possible, selon les disponibilités.',
   },
   {
+    question: 'Comment réserver un taxi à Chatou pour un départ immédiat ?',
+    answer:
+      'Appelez-nous directement au 06 12 29 51 54. Précisez votre adresse à Chatou (78400) et votre destination : nous vous indiquons le délai d’arrivée du chauffeur, en fonction de sa disponibilité. Pour un horaire précis (train, vol, rendez-vous), la réservation à l’avance reste préférable.',
+  },
+  {
+    question: 'Proposez-vous un taxi 24h/24, y compris la nuit ?',
+    answer:
+      'Oui, notre service fonctionne 24h/24 et 7j/7 : départ à l’aube pour un vol matinal, retour de soirée, course de nuit après le dernier RER. Un tarif de nuit réglementé s’applique en général entre 19h et 7h, ainsi que les dimanches et jours fériés ; le taximètre fait foi.',
+  },
+  {
     question: 'Peut-on réserver un taxi pour Orly ou Roissy depuis Chatou ?',
     answer:
       'Oui. Nous assurons les transferts vers Paris-Charles-de-Gaulle, Orly et Le Bourget. Réservez à l’avance : précisez votre heure de départ ou votre numéro de vol, ainsi que vos passagers et bagages. Vous pouvez demander un forfait aéroport à prix fixe, convenu à l’avance, ou laisser le taximètre calculer le prix selon le tarif des Yvelines.',
@@ -46,6 +56,11 @@ export const homeFaq: FaqItem[] = [
     question: 'Quelles zones desservez-vous ?',
     answer:
       'Depuis Chatou, notre service rayonne sur l’Ouest parisien et l’Île-de-France. Nous desservons notamment Croissy-sur-Seine, Le Vésinet, Montesson, Rueil-Malmaison, Carrières-sur-Seine et Houilles, ainsi que les communes voisines. Votre commune n’y figure pas ? Contactez-nous pour confirmation.',
+  },
+  {
+    question: 'Quels transports en commun desservent Chatou ?',
+    answer:
+      'Chatou est desservie par le RER A (gare de Chatou–Croissy) et plusieurs lignes de bus vers Croissy-sur-Seine, Le Vésinet, Rueil-Malmaison et Montesson. Le taxi reste la solution la plus pratique en soirée après les derniers passages, tôt le matin, avec des bagages ou pour rejoindre un aéroport sans correspondance.',
   },
   {
     question: 'Quels moyens de paiement acceptez-vous ?',
