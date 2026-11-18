@@ -104,12 +104,12 @@ export const siteConfig = {
     mairieChambourcyUrl: '',
   },
 
-  /** Éditeur du site. */
+  /** Éditeur du site (agence web) — distinct de l'exploitant du service de taxi. */
   publisher: {
-    name: 'Taxi Stéphane Géatti',
+    name: 'SEO Acquisition',
     parentEntity: '',
     publicationDirector: 'Stéphane Géatti',
-    url: siteUrl,
+    url: 'https://seo-acquisition.com',
   },
 
   /** Image Open Graph par défaut (aperçu lors du partage de liens). */
