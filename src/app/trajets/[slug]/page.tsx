@@ -10,6 +10,7 @@ import { Button } from '@/components/ui/Button';
 import { Breadcrumb } from '@/components/ui/Breadcrumb';
 import { CTASection } from '@/components/home/CTASection';
 import { BookingSection } from '@/components/home/BookingSection';
+import { ReassuranceBar } from '@/components/home/ReassuranceBar';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { routes, getRoute, getRouteSlugs, estimatePriceRange } from '@/data/routes';
 import { siteConfig, hasRealContact } from '@/config/site';
@@ -103,6 +104,8 @@ export default async function RoutePage({ params }: Params) {
           </div>
         </Container>
       </section>
+
+      <ReassuranceBar />
 
       {/* L'essentiel : faits + estimation + conseils */}
       <section className="bg-cream py-20 sm:py-24">

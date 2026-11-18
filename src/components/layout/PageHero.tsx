@@ -1,5 +1,6 @@
 import { Container } from '@/components/ui/Container';
 import { Breadcrumb, type Crumb } from '@/components/ui/Breadcrumb';
+import { ReassuranceBar } from '@/components/home/ReassuranceBar';
 
 type PageHeroProps = {
   eyebrow?: string;
@@ -11,6 +12,7 @@ type PageHeroProps = {
 /** En-tête des pages internes : bannière marine sobre, filet beige signature. */
 export function PageHero({ eyebrow, title, description, crumbs }: PageHeroProps) {
   return (
+    <>
     <section className="relative overflow-hidden bg-ink-900 pb-16 pt-[120px] text-white sm:pt-[136px]">
       <div
         className="pointer-events-none absolute -right-32 -top-24 h-96 w-96 rounded-full"
@@ -36,5 +38,7 @@ export function PageHero({ eyebrow, title, description, crumbs }: PageHeroProps)
         )}
       </Container>
     </section>
+    <ReassuranceBar />
+    </>
   );
 }

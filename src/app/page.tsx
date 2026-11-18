@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Hero } from '@/components/home/Hero';
+import { ReassuranceBar } from '@/components/home/ReassuranceBar';
 import { BookingSection } from '@/components/home/BookingSection';
 import { ServicesSection } from '@/components/home/ServicesSection';
 import { VehicleShowcase } from '@/components/home/VehicleShowcase';
@@ -45,6 +46,7 @@ export default function HomePage() {
     <>
       <JsonLd data={homePageGraph(homeFaq)} />
       <Hero />
+      <ReassuranceBar />
       <BookingSection />
       <ServicesSection />
       <VehicleShowcase />

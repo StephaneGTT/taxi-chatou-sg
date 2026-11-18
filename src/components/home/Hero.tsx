@@ -1,15 +1,9 @@
 import Image from 'next/image';
-import { ArrowRight, CalendarCheck, Car, Clock, Leaf, Star, Stethoscope } from 'lucide-react';
+import { ArrowRight, CalendarCheck, Car, Star } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Container } from '@/components/ui/Container';
 import { Reveal } from '@/components/ui/Reveal';
 import { googleBusiness } from '@/data/reviews';
-
-const facts = [
-  { icon: Leaf, label: '100 % électrique' },
-  { icon: Stethoscope, label: 'Conventionné CPAM' },
-  { icon: Clock, label: 'Disponible 7j/7' },
-];
 
 export function Hero() {
   const rating = googleBusiness.rating.toFixed(1).replace('.', ',');
@@ -113,23 +107,6 @@ export function Hero() {
           </Reveal>
         </div>
       </Container>
-
-      {/* Bande de repères (séparateurs) */}
-      <div className="relative border-t border-white/10 bg-ink-800/60">
-        <Container>
-          <ul className="flex flex-col divide-y divide-white/10 sm:flex-row sm:divide-x sm:divide-y-0">
-            {facts.map(({ icon: FactIcon, label }) => (
-              <li
-                key={label}
-                className="flex flex-1 items-center justify-center gap-2.5 py-4 text-sm font-medium text-cream/85"
-              >
-                <FactIcon className="h-5 w-5 shrink-0 text-champagne" aria-hidden strokeWidth={1.5} />
-                {label}
-              </li>
-            ))}
-          </ul>
-        </Container>
-      </div>
     </section>
   );
 }
