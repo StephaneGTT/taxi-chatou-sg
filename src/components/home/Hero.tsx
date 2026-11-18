@@ -78,7 +78,7 @@ export function Hero() {
           {/* Véhicule encadré */}
           <Reveal delay={120}>
             <div className="relative">
-              <div className="relative aspect-[4/3] overflow-hidden rounded-[28px] shadow-[0_40px_90px_-45px_rgba(0,0,0,0.75)] ring-1 ring-champagne/25">
+              <div className="relative aspect-[16/9] overflow-hidden rounded-[28px] shadow-[0_40px_90px_-45px_rgba(0,0,0,0.75)] ring-1 ring-champagne/25">
                 <Image
                   src="/images/vehicule/taxi-chatou-skoda-enyaq-exterieur.webp"
                   alt="Taxi Škoda Enyaq 100 % électrique à Chatou"
