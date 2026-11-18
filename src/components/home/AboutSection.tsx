@@ -36,7 +36,7 @@ export function AboutSection() {
           <Reveal delay={120}>
             <div className="relative aspect-video overflow-hidden rounded-[var(--radius-lg)] shadow-card">
               <Image
-                src="/images/vehicule/taxi-chatou-skoda-enyaq.webp"
+                src="/images/vehicule/taxi-chatou-skoda-enyaq-exterieur.webp"
                 alt="Taxi à Chatou : Škoda Enyaq noire 100 % électrique"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"

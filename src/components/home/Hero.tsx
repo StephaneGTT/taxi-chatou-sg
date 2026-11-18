@@ -34,7 +34,7 @@ export function Hero() {
           {/* Fond : photo réelle du véhicule (Škoda Enyaq 100 % électrique) */}
           <div className="absolute inset-0" aria-hidden>
             <Image
-              src="/images/vehicule/taxi-chatou-skoda-enyaq.webp"
+              src="/images/vehicule/taxi-chatou-skoda-enyaq-exterieur.webp"
               alt="Taxi à Chatou : Škoda Enyaq noire 100 % électrique avec panneau taxi"
               fill
               priority

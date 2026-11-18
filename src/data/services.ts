@@ -70,7 +70,7 @@ export const services: Service[] = [
     cardDescription:
       'Taxi conventionné CPAM : consultations, hôpital, dialyse, cures. Sur prescription médicale, avec tiers payant.',
     icon: 'Stethoscope',
-    image: '/images/vehicule/taxi-chatou-skoda-enyaq.webp',
+    image: '/images/vehicule/taxi-chatou-skoda-enyaq-exterieur.webp',
     imageAlt: 'Taxi conventionné à Chatou : Škoda Enyaq noire électrique, confortable pour le transport médical',
     intro: [
       'En tant que taxi conventionné par l’Assurance Maladie, nous assurons vos trajets de soins sur prescription médicale : consultations, examens, hospitalisations, séances de dialyse, de chimiothérapie ou cures. La prise en charge se fait à votre domicile, en douceur.',

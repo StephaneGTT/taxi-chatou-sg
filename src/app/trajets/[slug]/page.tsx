@@ -71,7 +71,7 @@ export default async function RoutePage({ params }: Params) {
       <section className="relative overflow-hidden bg-ink-900 pb-16 pt-[136px] text-white sm:pb-20 lg:min-h-[66vh] lg:pb-24">
         <div className="absolute inset-0" aria-hidden>
           <Image
-            src="/images/vehicule/taxi-chatou-skoda-enyaq.webp"
+            src="/images/vehicule/taxi-chatou-skoda-enyaq-exterieur.webp"
             alt={`Taxi de Chatou à ${route.destination}, Škoda Enyaq noire 100 % électrique`}
             fill
             priority

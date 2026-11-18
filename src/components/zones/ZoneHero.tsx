@@ -20,7 +20,7 @@ export function ZoneHero({ city, title, crumbs, lede }: ZoneHeroProps) {
       {/* Image de fond */}
       <div className="absolute inset-0" aria-hidden>
         <Image
-          src="/images/vehicule/taxi-chatou-skoda-enyaq.webp"
+          src="/images/vehicule/taxi-chatou-skoda-enyaq-exterieur.webp"
           alt={`Taxi à ${city}, Škoda Enyaq noire 100 % électrique`}
           fill
           priority
