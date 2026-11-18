@@ -1,5 +1,4 @@
-import Image from 'next/image';
-import { ArrowRight, Phone } from 'lucide-react';
+import { ArrowRight, MapPin, Phone } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Button } from '@/components/ui/Button';
 import { Breadcrumb, type Crumb } from '@/components/ui/Breadcrumb';
@@ -13,49 +12,36 @@ type ZoneHeroProps = {
   lede?: string;
 };
 
-/** Hero d'une page zone : photo de fond, requête cible « Taxi à {ville} » et CTA. */
+/** Hero d'une page zone : bannière marine éditoriale, filet signature, requête cible. */
 export function ZoneHero({ city, title, crumbs, lede }: ZoneHeroProps) {
   return (
-    <section className="relative overflow-hidden bg-ink-900 pb-16 pt-[136px] text-white sm:pb-20 lg:min-h-[72vh] lg:pb-24">
-      {/* Image de fond */}
-      <div className="absolute inset-0" aria-hidden>
-        <Image
-          src="/images/vehicule/taxi-chatou-skoda-enyaq-exterieur.webp"
-          alt={`Taxi à ${city}, Škoda Enyaq noire 100 % électrique`}
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-[60%_center]"
-        />
-        <div
-          className="absolute inset-0"
-          style={{
-            background:
-              'linear-gradient(90deg, #001138 0%, rgba(0,17,56,0.93) 30%, rgba(0,17,56,0.58) 62%, rgba(0,17,56,0.12) 100%)',
-          }}
-        />
-        <div
-          className="absolute inset-x-0 bottom-0 h-32"
-          style={{ background: 'linear-gradient(transparent, rgba(0,17,56,0.9))' }}
-        />
-      </div>
-
-      <Container className="relative z-10 flex h-full flex-col lg:min-h-[calc(72vh-136px)] lg:justify-center">
-        <Breadcrumb items={crumbs} tone="light" className="mb-7" />
-        <p className="eyebrow text-champagne">Zone desservie · Ouest parisien</p>
+    <section className="relative overflow-hidden bg-ink-900 pb-16 pt-[120px] text-white sm:pb-20 sm:pt-[136px]">
+      <div
+        className="pointer-events-none absolute -right-32 -top-24 h-[30rem] w-[30rem] rounded-full"
+        aria-hidden
+        style={{ background: 'radial-gradient(circle, rgba(216,195,165,0.10), transparent 70%)' }}
+      />
+      <Container className="relative z-10">
+        <Breadcrumb items={crumbs} tone="light" className="mb-8" />
+        <div className="flex items-center gap-3">
+          <span className="h-px w-10 shrink-0 bg-champagne" aria-hidden />
+          <span className="eyebrow inline-flex items-center gap-1.5 text-champagne">
+            <MapPin className="h-3.5 w-3.5" aria-hidden strokeWidth={2} />
+            Zone desservie · Ouest parisien
+          </span>
+        </div>
         <h1
-          className="mt-4 max-w-3xl text-display text-balance"
-          style={{ fontSize: 'clamp(2.25rem, 4vw, 3.5rem)' }}
+          className="mt-5 max-w-3xl text-balance font-serif font-semibold leading-[1.05] tracking-[-0.02em]"
+          style={{ fontSize: 'clamp(2.1rem, 4vw, 3.4rem)' }}
         >
           {title}
         </h1>
-        <p className="mt-6 max-w-2xl text-base leading-relaxed text-cream/85">
+        <p className="mt-5 max-w-2xl text-base leading-relaxed text-cream/80">
           {lede ?? (
             <>
               Besoin d’un taxi à {city} ? Nous assurons vos transferts vers les gares et les
-              aéroports, mais aussi vos déplacements professionnels et vos trajets privés. Le tout
-              au départ de {city} et des communes voisines, 7j/7, à l’avance comme en course
-              immédiate.
+              aéroports, mais aussi vos déplacements professionnels, médicaux et vos trajets privés,
+              au départ de {city} et des communes voisines, 7j/7.
             </>
           )}
         </p>

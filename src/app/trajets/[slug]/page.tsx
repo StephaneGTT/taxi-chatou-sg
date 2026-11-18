@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import Image from 'next/image';
 import { ArrowRight, ArrowUpRight, Phone, Clock, MapPin, Euro, Check } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Reveal } from '@/components/ui/Reveal';
@@ -68,39 +67,28 @@ export default async function RoutePage({ params }: Params) {
       />
 
       {/* Hero */}
-      <section className="relative overflow-hidden bg-ink-900 pb-16 pt-[136px] text-white sm:pb-20 lg:min-h-[66vh] lg:pb-24">
-        <div className="absolute inset-0" aria-hidden>
-          <Image
-            src="/images/vehicule/taxi-chatou-skoda-enyaq-exterieur.webp"
-            alt={`Taxi de Chatou à ${route.destination}, Škoda Enyaq noire 100 % électrique`}
-            fill
-            priority
-            sizes="100vw"
-            className="object-cover object-[60%_center]"
-          />
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                'linear-gradient(90deg, #001138 0%, rgba(0,17,56,0.93) 30%, rgba(0,17,56,0.58) 62%, rgba(0,17,56,0.12) 100%)',
-            }}
-          />
-          <div
-            className="absolute inset-x-0 bottom-0 h-32"
-            style={{ background: 'linear-gradient(transparent, rgba(0,17,56,0.9))' }}
-          />
-        </div>
+      <section className="relative overflow-hidden bg-ink-900 pb-16 pt-[120px] text-white sm:pb-20 sm:pt-[136px]">
+        <div
+          className="pointer-events-none absolute -right-32 -top-24 h-[30rem] w-[30rem] rounded-full"
+          aria-hidden
+          style={{ background: 'radial-gradient(circle, rgba(216,195,165,0.10), transparent 70%)' }}
+        />
 
-        <Container className="relative z-10 flex flex-col lg:min-h-[calc(66vh-136px)] lg:justify-center">
-          <Breadcrumb items={crumbs} tone="light" className="mb-7" />
-          <p className="eyebrow text-champagne">Trajet · {route.category} · au départ de Chatou</p>
+        <Container className="relative z-10">
+          <Breadcrumb items={crumbs} tone="light" className="mb-8" />
+          <div className="flex items-center gap-3">
+            <span className="h-px w-10 shrink-0 bg-champagne" aria-hidden />
+            <span className="eyebrow text-champagne">
+              Trajet · {route.category} · au départ de Chatou
+            </span>
+          </div>
           <h1
-            className="mt-4 max-w-3xl text-display text-balance"
+            className="mt-5 max-w-3xl text-balance font-serif font-semibold leading-[1.05] tracking-[-0.02em]"
             style={{ fontSize: 'clamp(2.1rem, 3.8vw, 3.4rem)' }}
           >
             Taxi Chatou <span className="text-champagne">→</span> {route.shortName}
           </h1>
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-cream/85">{route.intro[0]}</p>
+          <p className="mt-5 max-w-2xl text-base leading-relaxed text-cream/80">{route.intro[0]}</p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button href="#reservation" size="lg">
               Réserver ce trajet
