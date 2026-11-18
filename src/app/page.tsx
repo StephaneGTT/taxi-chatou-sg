@@ -18,12 +18,12 @@ import { getAllPosts } from '@/lib/blog';
 import { homeFaq } from '@/data/faq';
 import { buildMetadata, homePageGraph } from '@/lib/seo';
 
-// Title + meta description propres à l'accueil (mot-clé « taxi à Chambourcy » en début).
+// Title + meta description propres à l'accueil (mot-clé « taxi à Chatou » en début).
 // buildMetadata aligne automatiquement Open Graph et Twitter sur ce titre/description.
 export const metadata: Metadata = buildMetadata({
-  title: 'Taxi Chambourcy - Réservation 24h/24 | Allo Chambourcy Taxi',
+  title: 'Taxi Chatou (78) - Réservation 7j/7 | Taxi Stéphane Géatti',
   description:
-    'Taxi à Chambourcy (78) : réservation 7j/7, transferts gares et aéroports, tarifs réglementés 2026. Réservez à l’avance ou pour une course immédiate.',
+    'Taxi à Chatou (78) : réservation 7j/7, transferts gares et aéroports, transport médical conventionné (CPAM), tarifs réglementés. Réservez à l’avance ou pour une course immédiate.',
   path: '/',
   absoluteTitle: true,
 });
@@ -31,15 +31,15 @@ export const metadata: Metadata = buildMetadata({
 export default function HomePage() {
   const posts = getAllPosts();
 
-  // Sur l'accueil, on met en avant les guides liés à Chambourcy (titre, description
+  // Sur l'accueil, on met en avant les guides liés à Chatou (titre, description
   // ou slug), puis on complète avec les articles les plus récents si besoin.
-  const isChambourcyPost = (post: (typeof posts)[number]) =>
-    /chambourcy/i.test(post.slug) ||
-    /chambourcy/i.test(post.frontmatter.title) ||
-    /chambourcy/i.test(post.frontmatter.description ?? '');
+  const isChatouPost = (post: (typeof posts)[number]) =>
+    /chatou/i.test(post.slug) ||
+    /chatou/i.test(post.frontmatter.title) ||
+    /chatou/i.test(post.frontmatter.description ?? '');
   const homePosts = [
-    ...posts.filter(isChambourcyPost),
-    ...posts.filter((post) => !isChambourcyPost(post)),
+    ...posts.filter(isChatouPost),
+    ...posts.filter((post) => !isChatouPost(post)),
   ].slice(0, 3);
 
   return (

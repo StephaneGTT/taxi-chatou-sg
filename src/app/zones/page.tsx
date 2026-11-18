@@ -11,7 +11,7 @@ import { buildMetadata, breadcrumbSchema } from '@/lib/seo';
 export const metadata: Metadata = buildMetadata({
   title: 'Zones desservies',
   description:
-    'Taxi premium à Chambourcy, Saint-Germain-en-Laye, Poissy, Orgeval et dans tout l’Ouest parisien. Découvrez nos zones desservies.',
+    'Taxi à Chatou, Croissy-sur-Seine, Le Vésinet, Montesson, Rueil-Malmaison et dans tout l’Ouest parisien. Découvrez nos zones desservies.',
   path: '/zones',
 });
 
@@ -27,7 +27,7 @@ export default function ZonesIndexPage() {
       <PageHero
         eyebrow="Zones desservies"
         title="Un service de proximité sur tout l’Ouest parisien"
-        description="Au départ de Chambourcy, nous desservons les communes voisines et l’ensemble de l’Île-de-France."
+        description="Au départ de Chatou, nous desservons les communes voisines et l’ensemble de l’Île-de-France."
         crumbs={[
           { name: 'Accueil', path: '/' },
           { name: 'Zones desservies', path: '/zones' },

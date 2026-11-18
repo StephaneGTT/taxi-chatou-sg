@@ -14,7 +14,7 @@ import { buildMetadata, breadcrumbSchema } from '@/lib/seo';
 export const metadata: Metadata = buildMetadata({
   title: 'Blog : conseils et actualités',
   description:
-    'Conseils pratiques pour vos trajets en taxi à Chambourcy : transferts aéroports, déplacements professionnels, préparation de vos déplacements.',
+    'Conseils pratiques pour vos trajets en taxi à Chatou : transferts aéroports, déplacements professionnels, transport médical, préparation de vos déplacements.',
   path: '/blog',
 });
 
@@ -34,7 +34,7 @@ export default function BlogIndexPage() {
       <PageHero
         eyebrow="Le journal"
         title="Conseils et actualités"
-        description="Nos articles pour préparer vos trajets et mieux connaître nos services, à Chambourcy et en Île-de-France."
+        description="Nos articles pour préparer vos trajets et mieux connaître nos services, à Chatou et en Île-de-France."
         crumbs={[
           { name: 'Accueil', path: '/' },
           { name: 'Blog', path: '/blog' },

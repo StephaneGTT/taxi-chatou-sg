@@ -113,7 +113,7 @@ export const siteConfig = {
   },
 
   /** Image Open Graph par défaut (aperçu lors du partage de liens). */
-  ogImage: '/images/branding/og-default.webp',
+  ogImage: '/images/vehicule/taxi-chatou-skoda-enyaq.webp',
 } as const;
 
 /** Raccourci : le site est-il prêt à annoncer des coordonnées réelles ? */

@@ -8,9 +8,9 @@ import { services } from '@/data/services';
 import { buildMetadata, breadcrumbSchema } from '@/lib/seo';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Nos services de taxi premium',
+  title: 'Nos services de taxi',
   description:
-    'Transferts aéroports, taxi professionnel, trajets privés et mise à disposition à Chambourcy et en Île-de-France.',
+    'Transferts aéroports, transport médical conventionné (CPAM), taxi professionnel, trajets privés et mise à disposition à Chatou et en Île-de-France.',
   path: '/services',
 });
 
@@ -26,7 +26,7 @@ export default function ServicesIndexPage() {
       <PageHero
         eyebrow="Nos services"
         title="Des solutions de transport pour tous vos déplacements"
-        description="Un service premium pensé pour vos transferts aéroports, vos déplacements professionnels, vos trajets privés et vos mises à disposition."
+        description="Un service pensé pour vos transferts aéroports, votre transport médical conventionné, vos déplacements professionnels, vos trajets privés et vos mises à disposition."
         crumbs={[
           { name: 'Accueil', path: '/' },
           { name: 'Services', path: '/services' },

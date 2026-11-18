@@ -51,8 +51,8 @@ export default function LegalPage() {
                   <a href={publisher.url} target="_blank" rel="nofollow noopener noreferrer">
                     {publisher.name}
                   </a>
-                </strong>{' '}
-                (marque de {publisher.parentEntity}).
+                </strong>
+                {publisher.parentEntity ? ` (marque de ${publisher.parentEntity})` : ''}.
               </p>
               <p>Responsable de la publication : {publisher.publicationDirector}.</p>
 
@@ -62,7 +62,8 @@ export default function LegalPage() {
                 <br />
                 <strong>{legal.legalName}</strong>
                 <br />
-                {legal.legalForm} au capital de {legal.capital}
+                {legal.legalForm}
+                {legal.capital ? ` au capital de ${legal.capital}` : ''}
                 <br />
                 Siège social : {legal.headquarters}
                 <br />
@@ -79,13 +80,19 @@ export default function LegalPage() {
 
               <h2>Informations professionnelles</h2>
               <ul>
-                <li>Immatriculation : {legal.rcs}</li>
+                {legal.rcs ? (
+                  <li>Immatriculation : {legal.rcs}</li>
+                ) : (
+                  <li>Immatriculé au Registre National des Entreprises (RNE)</li>
+                )}
                 <li>SIREN : {legal.siren}</li>
                 <li>
                   SIRET : <Value value={legal.siret} placeholder="SIRET complet (14 chiffres)" />
                 </li>
-                <li>Identifiant européen (EUID) : {legal.euid}</li>
-                <li>Date d’immatriculation : {legal.registrationDate}</li>
+                {legal.euid ? <li>Identifiant européen (EUID) : {legal.euid}</li> : null}
+                {legal.registrationDate ? (
+                  <li>Date d’immatriculation : {legal.registrationDate}</li>
+                ) : null}
                 <li>
                   N° de TVA intracommunautaire :{' '}
                   <Value value={legal.vatNumber} placeholder="à compléter si assujetti" />

@@ -228,7 +228,7 @@ export default async function ZonePage({ params }: Params) {
           <SectionHeading
             eyebrow="Autres zones desservies"
             title="Nous intervenons aussi à proximité"
-            description="Au départ de Chambourcy, nous rayonnons sur tout l’Ouest parisien et l’Île-de-France."
+            description="Au départ de Chatou, nous rayonnons sur tout l’Ouest parisien et l’Île-de-France."
           />
           <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {others.map((l, i) => (

@@ -12,7 +12,7 @@ import { getAllPosts } from '@/lib/blog';
 export const metadata: Metadata = buildMetadata({
   title: 'Plan du site',
   description:
-    'Toutes les pages d’Allo Chambourcy Taxi : services, zones desservies, articles du blog et informations pratiques.',
+    'Toutes les pages de Taxi Stéphane Géatti : services, zones desservies, articles du blog et informations pratiques.',
   path: '/plan-du-site',
 });
 
@@ -48,7 +48,7 @@ export default function SitemapPage() {
       title: 'Trajets',
       links: [
         { label: 'Tous les trajets', href: '/trajets' },
-        ...routes.map((r) => ({ label: `Chambourcy → ${r.shortName}`, href: `/trajets/${r.slug}` })),
+        ...routes.map((r) => ({ label: `Chatou → ${r.shortName}`, href: `/trajets/${r.slug}` })),
       ],
     },
     ...(posts.length > 0

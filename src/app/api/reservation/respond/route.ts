@@ -65,7 +65,7 @@ function confirmEmail(d: ResponderPayload) {
     `Je vous prends en charge à l'heure convenue. Pour toute modification, appelez le ${siteConfig.contact.phone}.`,
     '',
     'À bientôt,',
-    `Anes, ${siteConfig.name}`,
+    `Stéphane,${siteConfig.name}`,
     siteConfig.contact.phone,
   ].join('\n');
   const html = `<div style="font-family:Arial,Helvetica,sans-serif;max-width:560px;margin:auto;color:#121719">
@@ -75,7 +75,7 @@ function confirmEmail(d: ResponderPayload) {
       ${row('Départ', d.depart)}${row('Destination', d.arrivee)}${row('Date', `${d.date} à ${d.heure}`)}${row('Passagers', String(d.passagers))}
     </table>
     <p style="margin:18px 0 0">Je vous prends en charge à l'heure convenue. Pour toute modification, appelez le <a href="${siteConfig.contact.phoneHref}">${escapeHtml(siteConfig.contact.phone)}</a>.</p>
-    <p style="margin:16px 0 0;color:#626768">Anes, ${escapeHtml(siteConfig.name)}</p>
+    <p style="margin:16px 0 0;color:#626768">Stéphane,${escapeHtml(siteConfig.name)}</p>
   </div>`;
   return { subject, text, html };
 }
@@ -90,7 +90,7 @@ function declineEmail(d: ResponderPayload) {
     `Je suis malheureusement indisponible pour ce trajet. Je vous invite à me rappeler au ${siteConfig.contact.phone} afin d'envisager un autre horaire ou une solution adaptée.`,
     '',
     'Avec toutes mes excuses pour la gêne occasionnée,',
-    `Anes, ${siteConfig.name}`,
+    `Stéphane,${siteConfig.name}`,
     siteConfig.contact.phone,
   ].join('\n');
   const html = `<div style="font-family:Arial,Helvetica,sans-serif;max-width:560px;margin:auto;color:#121719">
@@ -99,7 +99,7 @@ function declineEmail(d: ResponderPayload) {
     <p style="margin:0 0 12px">Merci pour votre demande de taxi (${escapeHtml(d.depart)} → ${escapeHtml(d.arrivee)}, le ${escapeHtml(d.date)} à ${escapeHtml(d.heure)}).</p>
     <p style="margin:0 0 12px">Je suis malheureusement indisponible pour ce trajet. Je vous invite à me rappeler au <a href="${siteConfig.contact.phoneHref}">${escapeHtml(siteConfig.contact.phone)}</a> afin d'envisager un autre horaire ou une solution adaptée.</p>
     <p style="margin:0 0 12px">Avec toutes mes excuses pour la gêne occasionnée,</p>
-    <p style="margin:0;color:#626768">Anes, ${escapeHtml(siteConfig.name)}</p>
+    <p style="margin:0;color:#626768">Stéphane,${escapeHtml(siteConfig.name)}</p>
   </div>`;
   return { subject, text, html };
 }
@@ -202,7 +202,7 @@ export async function POST(request: Request): Promise<NextResponse> {
       });
     }
 
-    // Confirmation : ajout au calendrier (boutons) + invitation agenda à Anes (.ics).
+    // Confirmation : ajout au calendrier (boutons) + invitation agenda au chauffeur (.ics).
     const okMsg = `La confirmation a été envoyée à ${escapeHtml(payload.nom)} (${escapeHtml(payload.to)}).`;
     const event = buildCalendarEvent(payload);
     let calendarHtml = '';
@@ -212,7 +212,7 @@ export async function POST(request: Request): Promise<NextResponse> {
       calendarHtml = `<p style="margin:20px 0 8px;color:#55595b;font-size:14px">Ajouter la course à votre agenda :</p>
 <div><a href="${googleCalendarUrl(event)}" target="_blank" rel="noopener noreferrer" style="display:inline-block;margin:0 8px 8px 0;text-decoration:none;padding:10px 18px;border-radius:8px;font-weight:600;font-size:14px;background:#355e04;color:#ffffff">Google Agenda</a><a href="${icsHref}" download="course.ics" style="display:inline-block;margin:0 8px 8px 0;text-decoration:none;padding:10px 18px;border-radius:8px;font-weight:600;font-size:14px;background:#ffffff;color:#121719;border:1px solid #d5d7d8">Télécharger .ics</a></div>`;
 
-      // Invitation agenda envoyée à Anes (best-effort : n'échoue pas la confirmation).
+      // Invitation agenda envoyée au chauffeur (best-effort : n'échoue pas la confirmation).
       if (ownerTo) {
         try {
           await resend.emails.send({

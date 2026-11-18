@@ -82,8 +82,8 @@ export default async function ServicePage({ params }: Params) {
             <Reveal delay={100}>
               <div className="relative aspect-video overflow-hidden rounded-[var(--radius-lg)] shadow-card">
                 <Image
-                  src="/images/bmw-break-vues.webp"
-                  alt="Le véhicule du service, break BMW noir : extérieur, habitacle, poste de conduite et coffre"
+                  src="/images/vehicule/taxi-chatou-skoda-enyaq.webp"
+                  alt="Le véhicule du service : Škoda Enyaq noire 100 % électrique, taxi à Chatou"
                   fill
                   sizes="(max-width: 1024px) 100vw, 48vw"
                   className="object-cover"

@@ -61,7 +61,7 @@ export default function ContactPage() {
                       <a
                         href={whatsappUrl(
                           siteConfig.contact.whatsapp,
-                          'Bonjour, je souhaite obtenir des informations pour un trajet en taxi à Chambourcy.',
+                          'Bonjour, je souhaite obtenir des informations pour un trajet en taxi à Chatou.',
                         )}
                         target="_blank"
                         rel="noopener noreferrer"
@@ -90,7 +90,7 @@ export default function ContactPage() {
                   <div>
                     <p className="font-semibold text-ink-900">Zone de service</p>
                     <p className="text-ink-800/75">
-                      {siteConfig.address.city} ({siteConfig.address.postalCode}) · {siteConfig.serviceArea}
+                      Chatou (78400) · {siteConfig.serviceArea}
                     </p>
                   </div>
                 </li>

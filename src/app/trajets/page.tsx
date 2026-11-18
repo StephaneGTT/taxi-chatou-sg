@@ -11,9 +11,9 @@ import { buildMetadata, breadcrumbSchema } from '@/lib/seo';
 import { routes, estimatePriceRange, type RouteCategory } from '@/data/routes';
 
 export const metadata: Metadata = buildMetadata({
-  title: 'Trajets en taxi au départ de Chambourcy',
+  title: 'Trajets en taxi au départ de Chatou',
   description:
-    'Taxi de Chambourcy vers les aéroports (CDG, Orly, Le Bourget, Beauvais), les gares parisiennes, La Défense et Disneyland : prix estimés, durées et réservation 7j/7.',
+    'Taxi de Chatou vers les aéroports (CDG, Orly, Le Bourget, Beauvais), les gares parisiennes, La Défense et Disneyland : prix estimés, durées et réservation 7j/7.',
   path: '/trajets',
 });
 
@@ -35,7 +35,7 @@ export default function TrajetsPage() {
       />
       <PageHero
         eyebrow="Trajets"
-        title="Trajets en taxi au départ de Chambourcy"
+        title="Trajets en taxi au départ de Chatou"
         description="Aéroports, gares parisiennes, La Défense, Disneyland : retrouvez nos itinéraires les plus demandés, avec une estimation de prix et de durée."
         crumbs={[
           { name: 'Accueil', path: '/' },

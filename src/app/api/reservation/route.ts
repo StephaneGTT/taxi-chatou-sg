@@ -13,7 +13,7 @@ import { getClientIp, createRateLimiter } from '@/lib/rate-limit';
  *   - RESEND_API_KEY        : clé d'API Resend (secret, jamais exposée au client)
  *   - RESERVATION_TO_EMAIL  : adresse de réception des demandes (ex. votre Gmail)
  *   - RESERVATION_FROM_EMAIL: expéditeur sur un domaine vérifié dans Resend
- *                             (ex. "Chambourcy Executive Taxi <reservation@mon-domaine.fr>")
+ *                             (ex. "Taxi Stéphane Géatti <reservation@mon-domaine.fr>")
  *
  * Tant que ces variables ne sont pas configurées, la route répond 501 et le
  * formulaire bascule automatiquement sur le lien « mailto: » (repli).
@@ -79,7 +79,7 @@ function confirmMailtoHref(d: BookingServerInput): string {
     `Je vous prends en charge à l'heure convenue. Pour toute modification, répondez à cet e-mail ou appelez le ${siteConfig.contact.phone}.`,
     '',
     'À bientôt,',
-    `Anes, ${siteConfig.name}`,
+    `Stéphane, ${siteConfig.name}`,
     siteConfig.contact.phone,
   ].join('\n');
   return `mailto:${d.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;

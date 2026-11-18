@@ -27,8 +27,8 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const route = getRoute(slug);
   if (!route) return {};
   return buildMetadata({
-    title: `Taxi Chambourcy – ${route.shortName} : prix et réservation`,
-    description: `Taxi de Chambourcy vers ${route.destination} : distance, durée, prix estimé et réservation 7j/7.${route.forfait ? ' Forfait à prix fixe possible.' : ''}`,
+    title: `Taxi Chatou – ${route.shortName} : prix et réservation`,
+    description: `Taxi de Chatou vers ${route.destination} : distance, durée, prix estimé et réservation 7j/7.${route.forfait ? ' Forfait à prix fixe possible.' : ''}`,
     path: `/trajets/${route.slug}`,
   });
 }
@@ -58,8 +58,8 @@ export default async function RoutePage({ params }: Params) {
       <JsonLd
         data={[
           serviceSchema({
-            name: `Taxi Chambourcy – ${route.shortName}`,
-            description: `Trajet en taxi de Chambourcy vers ${route.destination}.`,
+            name: `Taxi Chatou – ${route.shortName}`,
+            description: `Trajet en taxi de Chatou vers ${route.destination}.`,
             url: absoluteUrl(path),
           }),
           breadcrumbSchema(crumbs),
@@ -71,34 +71,34 @@ export default async function RoutePage({ params }: Params) {
       <section className="relative overflow-hidden bg-ink-900 pb-16 pt-[136px] text-white sm:pb-20 lg:min-h-[66vh] lg:pb-24">
         <div className="absolute inset-0" aria-hidden>
           <Image
-            src="/images/hero/hero.webp"
-            alt={`Taxi de Chambourcy à ${route.destination}, break BMW noir`}
+            src="/images/vehicule/taxi-chatou-skoda-enyaq.webp"
+            alt={`Taxi de Chatou à ${route.destination}, Škoda Enyaq noire 100 % électrique`}
             fill
             priority
             sizes="100vw"
-            className="object-cover object-[65%_center]"
+            className="object-cover object-[60%_center]"
           />
           <div
             className="absolute inset-0"
             style={{
               background:
-                'linear-gradient(90deg, #080d10 0%, rgba(8,13,16,0.93) 30%, rgba(8,13,16,0.58) 62%, rgba(8,13,16,0.12) 100%)',
+                'linear-gradient(90deg, #001138 0%, rgba(0,17,56,0.93) 30%, rgba(0,17,56,0.58) 62%, rgba(0,17,56,0.12) 100%)',
             }}
           />
           <div
             className="absolute inset-x-0 bottom-0 h-32"
-            style={{ background: 'linear-gradient(transparent, rgba(8,13,16,0.9))' }}
+            style={{ background: 'linear-gradient(transparent, rgba(0,17,56,0.9))' }}
           />
         </div>
 
         <Container className="relative z-10 flex flex-col lg:min-h-[calc(66vh-136px)] lg:justify-center">
           <Breadcrumb items={crumbs} tone="light" className="mb-7" />
-          <p className="eyebrow text-champagne">Trajet · {route.category} · au départ de Chambourcy</p>
+          <p className="eyebrow text-champagne">Trajet · {route.category} · au départ de Chatou</p>
           <h1
             className="mt-4 max-w-3xl text-display text-balance"
             style={{ fontSize: 'clamp(2.1rem, 3.8vw, 3.4rem)' }}
           >
-            Taxi Chambourcy <span className="text-champagne">→</span> {route.shortName}
+            Taxi Chatou <span className="text-champagne">→</span> {route.shortName}
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-cream/85">{route.intro[0]}</p>
           <div className="mt-8 flex flex-wrap gap-3">
@@ -124,7 +124,7 @@ export default async function RoutePage({ params }: Params) {
               <Reveal>
                 <p className="eyebrow text-champagne-dark">L’essentiel du trajet</p>
                 <h2 className="mt-4 text-h2 text-ink-900">
-                  Chambourcy → {route.shortName}, en bref
+                  Chatou →{route.shortName}, en bref
                 </h2>
                 <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-800/75">
                   <p>{route.intro[1]}</p>
@@ -190,7 +190,7 @@ export default async function RoutePage({ params }: Params) {
             <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
               <SectionHeading
                 eyebrow="Questions fréquentes"
-                title={`Chambourcy → ${route.shortName}`}
+                title={`Chatou →${route.shortName}`}
                 description={`Les réponses aux questions courantes sur ce trajet.`}
               />
               <FAQAccordion items={route.faq} />
@@ -203,7 +203,7 @@ export default async function RoutePage({ params }: Params) {
       <section className="bg-cream py-20 sm:py-24">
         <Container>
           <SectionHeading
-            eyebrow="Autres trajets au départ de Chambourcy"
+            eyebrow="Autres trajets au départ de Chatou"
             title="Nos itinéraires les plus demandés"
             description="Aéroports, gares parisiennes, La Défense ou Disneyland : réservez votre trajet, 7j/7."
           />
