@@ -3,17 +3,19 @@
 @tailwind utilities;
 
 /* ===========================================================================
-   Tokens du design system — Univers « Executive Chauffeur »
+   Tokens du design system — Univers « Signature marine » (Taxi Stéphane Géatti)
+   Marine + champagne/or du logo. Noms de tokens conservés (ink/champagne) pour
+   éviter un renommage global ; seules les valeurs changent.
    =========================================================================== */
 :root {
-  --ink-900: #080d10;
-  --ink-800: #101b24;
-  --ink-700: #16242e;
-  /* Accent de marque = vert du logo « Allo Chambourcy Taxi ». */
-  --champagne: #6aa520;
-  --champagne-light: #84c030;
-  --champagne-dark: #355e04;
-  --cream: #f4f0e9;
+  --ink-900: #001138; /* marine profond (logo) : texte, header, hero */
+  --ink-800: #0a1c44;
+  --ink-700: #16294f;
+  /* Accent de marque = champagne / or clair du logo. */
+  --champagne: #dbc3a5; /* accent sur marine + fond de bouton */
+  --champagne-light: #ecdcc0; /* survol */
+  --champagne-dark: #8a6a2e; /* or foncé : texte/liens sur fond clair (AA ≥ 4.5) */
+  --cream: #f6f1e7;
   --mist: #a9adb0;
   --white: #ffffff;
 
@@ -46,14 +48,14 @@
   h2,
   h3,
   h4 {
-    font-family: var(--font-serif), 'Playfair Display', Georgia, serif;
+    font-family: var(--font-serif), 'Fraunces', Georgia, serif;
     font-weight: 500;
     letter-spacing: -0.02em;
   }
 
   /* Focus visible accessible et cohérent */
   :focus-visible {
-    outline: 2px solid var(--champagne);
+    outline: 2px solid var(--champagne-dark);
     outline-offset: 3px;
     border-radius: 2px;
   }
@@ -125,7 +127,7 @@
     top: 0.75em;
     width: 7px;
     height: 7px;
-    background: var(--champagne);
+    background: var(--champagne-dark);
     transform: rotate(45deg);
   }
   .prose-content ol {
@@ -135,7 +137,7 @@
     margin-top: 0.6em;
   }
   .prose-content blockquote {
-    border-left: 3px solid var(--champagne);
+    border-left: 3px solid var(--champagne-dark);
     padding-left: 1.2em;
     font-style: italic;
     color: #55595b;

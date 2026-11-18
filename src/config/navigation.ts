@@ -19,6 +19,7 @@ export const footerNav: { title: string; items: NavItem[] }[] = [
     title: 'Services',
     items: [
       { label: 'Transferts aéroports', href: '/services/transfert-aeroport' },
+      { label: 'Transport médical (CPAM)', href: '/services/transport-medical' },
       { label: 'Taxi professionnel', href: '/services/taxi-professionnel' },
       { label: 'Trajets privés', href: '/services/trajets-prives' },
       { label: 'Mise à disposition', href: '/services/mise-a-disposition' },
@@ -27,10 +28,10 @@ export const footerNav: { title: string; items: NavItem[] }[] = [
   {
     title: 'Zones desservies',
     items: [
-      { label: 'Taxi Saint-Germain-en-Laye', href: '/zones/taxi-saint-germain-en-laye' },
-      { label: 'Taxi Poissy', href: '/zones/taxi-poissy' },
-      { label: 'Taxi Orgeval', href: '/zones/taxi-orgeval' },
-      { label: 'Taxi Maisons-Laffitte', href: '/zones/taxi-maisons-laffitte' },
+      { label: 'Taxi Croissy-sur-Seine', href: '/zones/taxi-croissy-sur-seine' },
+      { label: 'Taxi Le Vésinet', href: '/zones/taxi-le-vesinet' },
+      { label: 'Taxi Montesson', href: '/zones/taxi-montesson' },
+      { label: 'Taxi Rueil-Malmaison', href: '/zones/taxi-rueil-malmaison' },
       { label: 'Toutes les zones', href: '/zones' },
       { label: 'Nos trajets (aéroports, gares…)', href: '/trajets' },
     ],

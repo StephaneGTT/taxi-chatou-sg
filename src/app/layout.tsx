@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Playfair_Display, Inter } from 'next/font/google';
+import { Fraunces, Inter } from 'next/font/google';
 import './globals.css';
 import { SiteHeader } from '@/components/layout/SiteHeader';
 import { SiteFooter } from '@/components/layout/SiteFooter';
@@ -9,11 +9,11 @@ import { JsonLd } from '@/components/seo/JsonLd';
 import { siteGraph } from '@/lib/seo';
 import { siteConfig } from '@/config/site';
 
-const serif = Playfair_Display({
+const serif = Fraunces({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-serif',
-  weight: ['400', '500'],
+  weight: ['400', '500', '600'],
 });
 
 const sans = Inter({
@@ -25,19 +25,19 @@ const sans = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
   title: {
-    default: `${siteConfig.name} · Taxi à Chambourcy (78), 7j/7`,
+    default: `${siteConfig.name} · Taxi à Chatou (78), 7j/7`,
     template: `%s · ${siteConfig.name}`,
   },
   description: siteConfig.description,
   applicationName: siteConfig.name,
   authors: [{ name: siteConfig.name }],
   keywords: [
-    'taxi Chambourcy',
-    'taxi premium Chambourcy',
-    'transfert aéroport Chambourcy',
-    'taxi Saint-Germain-en-Laye',
+    'taxi Chatou',
+    'taxi Chatou 78',
+    'transfert aéroport Chatou',
+    'taxi Croissy-sur-Seine',
+    'taxi Rueil-Malmaison',
     'taxi Yvelines',
-    'taxi Paris Ouest',
   ],
   alternates: {
     canonical: '/',
@@ -48,13 +48,13 @@ export const metadata: Metadata = {
     locale: siteConfig.locale,
     url: siteConfig.url,
     siteName: siteConfig.name,
-    title: `${siteConfig.name} · Taxi à Chambourcy (78), 7j/7`,
+    title: `${siteConfig.name} · Taxi à Chatou (78), 7j/7`,
     description: siteConfig.description,
-    images: [{ url: siteConfig.ogImage, width: 1672, height: 941, alt: siteConfig.name }],
+    images: [{ url: siteConfig.ogImage, width: 1200, height: 630, alt: siteConfig.name }],
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${siteConfig.name} · Taxi à Chambourcy (78), 7j/7`,
+    title: `${siteConfig.name} · Taxi à Chatou (78), 7j/7`,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
   },

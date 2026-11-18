@@ -8,25 +8,25 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        // Univers Executive Chauffeur — voir src/app/globals.css pour les tokens CSS
+        // Univers « Signature marine » (Taxi Stéphane Géatti) — tokens CSS dans src/app/globals.css
         ink: {
-          900: '#080D10', // noir profond
-          800: '#101B24', // bleu nuit
-          700: '#16242E',
-          600: '#1E2E38',
+          900: '#001138', // marine profond (logo)
+          800: '#0A1C44', // marine
+          700: '#16294F',
+          600: '#22315A',
         },
-        // Accent de marque = vert du logo « Allo Chambourcy Taxi ».
-        // (Nom de token conservé pour éviter un renommage global ; les valeurs sont vertes.)
+        // Accent de marque = champagne / or clair du logo.
+        // (Nom de token « champagne » conservé pour éviter un renommage global.)
         champagne: {
-          DEFAULT: '#6AA520', // vert vif : accent sur fond sombre + fond de bouton
-          light: '#84C030', // survol
-          dark: '#355E04', // vert foncé du logo : texte/liens sur fond clair (AA)
+          DEFAULT: '#DBC3A5', // champagne : accent sur marine + fond de bouton
+          light: '#ECDCC0', // survol
+          dark: '#8A6A2E', // or foncé : texte/liens sur fond clair (AA ≥ 4.5)
         },
-        cream: '#F4F0E9',
+        cream: '#F6F1E7',
         mist: '#A9ADB0',
       },
       fontFamily: {
-        serif: ['var(--font-serif)', 'Playfair Display', 'Georgia', 'serif'],
+        serif: ['var(--font-serif)', 'Fraunces', 'Georgia', 'serif'],
         sans: ['var(--font-sans)', 'Inter', 'system-ui', 'sans-serif'],
       },
       fontSize: {
@@ -45,8 +45,8 @@ const config: Config = {
         gutter: 'clamp(1.25rem, 4vw, 3rem)',
       },
       boxShadow: {
-        card: '0 24px 60px -30px rgba(8, 13, 16, 0.45)',
-        'card-hover': '0 34px 80px -34px rgba(8, 13, 16, 0.55)',
+        card: '0 24px 60px -30px rgba(0, 17, 56, 0.45)',
+        'card-hover': '0 34px 80px -34px rgba(0, 17, 56, 0.55)',
       },
       transitionTimingFunction: {
         premium: 'cubic-bezier(0.22, 1, 0.36, 1)',

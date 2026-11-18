@@ -2,10 +2,8 @@
  * Configuration centralisée du site.
  *
  * ⚠️ IMPORTANT — DONNÉES À PERSONNALISER
- * Les valeurs marquées `isPlaceholder: true` ou commentées « À COMPLÉTER »
- * sont des valeurs de démonstration. Elles NE sont PAS vérifiées et doivent être
- * remplacées par les informations réelles de l'entreprise avant toute publication.
- * Ne jamais présenter ces valeurs comme réelles tant qu'elles n'ont pas été confirmées.
+ * Les valeurs commentées « À COMPLÉTER » sont en attente (ex. n° ADS taxi).
+ * Ne jamais présenter une valeur manquante comme réelle tant qu'elle n'a pas été confirmée.
  */
 
 /** Normalise une URL : ajoute https:// si le protocole manque et retire le slash final. */
@@ -14,57 +12,49 @@ function normalizeUrl(value: string): string {
   return withProtocol.replace(/\/$/, '');
 }
 
-const siteUrl = normalizeUrl(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://taxi-chambourcy.com');
+const siteUrl = normalizeUrl(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://taxi-chatou-geatti.fr');
 
 export const siteConfig = {
   /** Nom commercial affiché */
-  name: 'Allo Chambourcy Taxi',
+  name: 'Taxi Stéphane Géatti',
   description:
-    'Service de taxi premium à Chambourcy (78) : transferts aéroports, déplacements professionnels et trajets privés. Un transport soigné, ponctuel et discret.',
+    'Taxi à Chatou (78) et dans l’Ouest parisien : transferts aéroports, trajets professionnels, transport médical conventionné CPAM et longue distance. Véhicule 100 % électrique, 7j/7 sur réservation.',
 
   url: siteUrl,
   locale: 'fr-FR',
 
-  /**
-   * Coordonnées de l'entreprise.
-   * À COMPLÉTER avec les informations réelles avant publication.
-   */
+  /** Coordonnées de l'entreprise (réelles). */
   contact: {
-    // Numéro réel (fiche Google « Allo Chambourcy Taxi »).
-    phone: '06 07 29 66 67',
-    phoneHref: 'tel:+33607296667',
-    // E-mail de réservation (boîte de réception des demandes).
-    email: 'taxichambourcy78@gmail.com',
-    emailHref: 'mailto:taxichambourcy78@gmail.com',
+    phone: '06 12 29 51 54',
+    phoneHref: 'tel:+33612295154',
+    email: 'taxi.geatti@gmail.com',
+    emailHref: 'mailto:taxi.geatti@gmail.com',
     // WhatsApp : numéro au format international sans "+" (pour les liens wa.me).
-    whatsapp: '33607296667',
-    whatsappHref: 'https://wa.me/33607296667',
+    whatsapp: '33612295154',
+    whatsappHref: 'https://wa.me/33612295154',
   },
 
   /**
    * Adresse / implantation.
-   * L'entreprise opère depuis Chambourcy ; adresse précise à renseigner si elle doit être publiée.
+   * Siège administratif réel (entrepreneur individuel) à Rueil-Malmaison.
+   * Le service rayonne principalement sur Chatou et l'Ouest parisien (rattachement taxi : Chatou).
    */
   address: {
-    city: 'Chambourcy',
-    postalCode: '78240',
-    region: 'Yvelines',
-    // Adresse réelle (fiche Google).
-    street: '5 Place de la Mairie',
-    // Coordonnées géographiques (approximatives — à affiner si besoin).
-    geo: { latitude: 48.898, longitude: 2.043 },
+    city: 'Rueil-Malmaison',
+    postalCode: '92500',
+    region: 'Île-de-France',
+    street: '15 avenue Ossart',
+    // Coordonnées géographiques (Rueil-Malmaison, approximatives).
+    geo: { latitude: 48.8773, longitude: 2.181 },
   },
 
-  /** Zone principale décrite sur le site (conforme à la réalité de l'exploitation). */
-  serviceArea: 'Chambourcy, Paris Ouest et Île-de-France',
+  /** Zone principale décrite sur le site. */
+  serviceArea: 'Chatou, Croissy-sur-Seine, Montesson, Rueil-Malmaison et l’Ouest parisien',
 
-  /**
-   * Horaires réels — À CONFIRMER.
-   * Valeur de démonstration : service sur réservation.
-   */
+  /** Horaires — service sur réservation. */
   hours: {
     label: 'Service sur réservation, 7j/7',
-    note: 'Horaires précis à confirmer selon la disponibilité du chauffeur.',
+    note: 'Réservation par appel, SMS, e-mail ou WhatsApp.',
   },
 
   /**
@@ -78,49 +68,48 @@ export const siteConfig = {
   },
 
   /**
-   * Informations légales — À COMPLÉTER impérativement avant publication.
-   * Ne jamais inventer de SIRET, de licence ou de numéro professionnel.
+   * Informations légales — Entrepreneur individuel.
+   * Ne jamais inventer de n° ADS/licence tant qu'il n'est pas communiqué.
    */
   legal: {
-    legalName: 'CLUB BUSINESS TAXI PARIS',
-    legalForm: 'Société par actions simplifiée à associé unique (SASU)',
-    capital: '200,00 €',
-    rcs: '108 434 416 R.C.S. Paris',
-    siren: '108 434 416',
-    euid: 'FR7501.108434416',
-    registrationDate: '10/08/2026',
-    // Siège social (distinct de la zone d'exploitation à Chambourcy).
-    headquarters: '111 avenue Victor Hugo, 75016 Paris',
-    operatorName: 'Anes Smail', // Représentant légal
-    siret: '108 434 416 00013', // SIRET complet (14 chiffres)
-    vatNumber: 'FR 83 108 434 416', // N° de TVA intracommunautaire
-    licenseNumber: '012026', // Autorisation de stationnement (taxi) — N° ADS
-    stationZone: 'Chambourcy', // Commune de rattachement / zone de stationnement du taxi
-    adsAuthority: 'la Mairie de Chambourcy', // Autorité ayant délivré l'ADS
+    legalName: 'Stéphane Géatti',
+    legalForm: 'Entrepreneur individuel (EI)',
+    capital: '', // Sans objet (entrepreneur individuel)
+    rcs: '', // Sans objet (EI immatriculé au Registre National des Entreprises)
+    siren: '907 820 054',
+    euid: '', // Non communiqué
+    registrationDate: '', // Non communiqué
+    // Siège administratif (entrepreneur individuel).
+    headquarters: '15 avenue Ossart, 92500 Rueil-Malmaison',
+    operatorName: 'Stéphane Géatti', // Exploitant
+    siret: '907 820 054 00035', // SIRET complet (14 chiffres)
+    vatNumber: 'FR01907820054', // N° de TVA intracommunautaire
+    licenseNumber: '', // Autorisation de stationnement (taxi) — N° ADS — À COMPLÉTER
+    stationZone: 'Chatou', // Commune de rattachement / zone de stationnement du taxi
+    adsAuthority: 'la Mairie de Chatou', // Autorité ayant délivré l'ADS — À CONFIRMER
     adsDate: '', // Date de délivrance de l'ADS — À COMPLÉTER
     // Médiateur de la consommation : CM2C (coordonnées officielles — cm2c.net).
     mediatorName: 'CM2C, Centre de la Médiation de la Consommation de Conciliateurs de Justice',
     mediatorAddress: '49 rue de Ponthieu, 75008 Paris',
     mediatorPhone: '01 89 47 00 14',
     mediatorUrl: 'https://www.cm2c.net',
-    lastUpdated: '1er novembre 2026', // Dernière mise à jour des mentions légales
+    lastUpdated: '18 novembre 2026', // Dernière mise à jour des mentions légales
   },
 
   /**
    * Référencements officiels / tiers de confiance vérifiables (signaux de crédibilité).
+   * Laisser vide tant qu'aucune fiche publique n'est à référencer.
    */
   officialListing: {
-    // Fiche dans l'annuaire officiel des entreprises de la Ville de Chambourcy.
-    mairieChambourcyUrl:
-      'https://www.chambourcy.fr/35-508/solidarite-et-economie/acteurs-economiques/les-entreprises-du-territoire/ficheAnnu/allo-taxi-chambourcy.htm',
+    mairieChambourcyUrl: '',
   },
 
-  /** Éditeur du site (agence web) — distinct de l'exploitant du service de taxi. */
+  /** Éditeur du site. */
   publisher: {
-    name: 'SEO Acquisition',
-    parentEntity: 'MeedWise SASU',
-    publicationDirector: 'Anes Smail',
-    url: 'https://seo-acquisition.com',
+    name: 'Taxi Stéphane Géatti',
+    parentEntity: '',
+    publicationDirector: 'Stéphane Géatti',
+    url: siteUrl,
   },
 
   /** Image Open Graph par défaut (aperçu lors du partage de liens). */
@@ -128,4 +117,4 @@ export const siteConfig = {
 } as const;
 
 /** Raccourci : le site est-il prêt à annoncer des coordonnées réelles ? */
-export const hasRealContact = true; // Coordonnées réelles renseignées (fiche Google).
+export const hasRealContact = true; // Coordonnées réelles renseignées.
