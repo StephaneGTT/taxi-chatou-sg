@@ -95,11 +95,11 @@ export function buildIcs(e: CalendarEvent): string {
   return [
     'BEGIN:VCALENDAR',
     'VERSION:2.0',
-    'PRODID:-//Allo Chambourcy Taxi//Reservation//FR',
+    'PRODID:-//Taxi Stephane Geatti//Reservation//FR',
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
     'BEGIN:VEVENT',
-    `UID:${uid}@taxi-chambourcy.com`,
+    `UID:${uid}@taxi-chatou-geatti.fr`,
     `DTSTAMP:${stamp}`,
     `DTSTART:${e.startCompact}`,
     `DTEND:${e.endCompact}`,

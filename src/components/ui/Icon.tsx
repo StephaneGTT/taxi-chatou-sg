@@ -7,6 +7,7 @@ import {
   MapPin,
   Star,
   Car,
+  Stethoscope,
   type LucideIcon,
 } from 'lucide-react';
 
@@ -19,6 +20,7 @@ const icons: Record<string, LucideIcon> = {
   MapPin,
   Star,
   Car,
+  Stethoscope,
 };
 
 type IconProps = {

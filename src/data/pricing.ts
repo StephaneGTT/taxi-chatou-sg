@@ -2,8 +2,8 @@
  * Tarifs taxi — zone des Yvelines, année 2026.
  *
  * Tarifs réglementés (arrêté préfectoral des Yvelines), dans la limite des
- * plafonds nationaux fixés par l'arrêté du 24 décembre 2025. Anes applique ces
- * tarifs officiels. Le montant exact d'une course reste celui affiché au
+ * plafonds nationaux fixés par l'arrêté du 24 décembre 2025. Le chauffeur applique
+ * ces tarifs officiels. Le montant exact d'une course reste celui affiché au
  * taximètre. En cas de mise à jour annuelle de l'arrêté, actualiser ces valeurs.
  */
 

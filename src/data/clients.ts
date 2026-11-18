@@ -19,21 +19,7 @@ export type Client = {
   darkBg?: boolean;
 };
 
-export const clients: Client[] = [
-  { name: 'Erborian', logo: '/images/clients/erborian.png' },
-  { name: 'Shiseido', logo: '/images/clients/shiseido.png' },
-  { name: 'Kantar', logo: '/images/clients/kantar.png' },
-  { name: 'BMW', logo: '/images/clients/bmw.png' },
-  { name: 'Jetex', logo: '/images/clients/jetex.png' },
-  { name: 'Robin & Co', logo: '/images/clients/robin-co.png' },
-  { name: 'LSM (Leading Sport Management)', logo: '/images/clients/lsm.png' },
-  { name: 'A-ROSA', logo: '/images/clients/arosa.webp' },
-  { name: 'SNCF', logo: '/images/clients/sncf.png' },
-  { name: 'VINCI', logo: '/images/clients/vinci.png' },
-  { name: 'Safran', logo: '/images/clients/safran.png', darkBg: true },
-  { name: 'Société Générale', logo: '/images/clients/societe-generale.png' },
-  { name: 'TotalEnergies', logo: '/images/clients/totalenergies.png' },
-  { name: 'Framatome', logo: '/images/clients/framatome.png' },
-  { name: 'Areva', logo: '/images/clients/areva.png' },
-  { name: 'Dolce & Gabbana', logo: '/images/clients/dolce-gabbana.png' },
-];
+// ⚠️ À COMPLÉTER avec les VRAIS clients de Taxi Stéphane Géatti (avec autorisation d'afficher
+// leur nom / logo). Tant que la liste est vide, la section « Ils nous font confiance » est
+// automatiquement masquée (voir ClientsSection). Ne jamais réutiliser les logos de l'ancien client.
+export const clients: Client[] = [];

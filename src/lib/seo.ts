@@ -52,7 +52,7 @@ export function buildMetadata({
       siteName: siteConfig.name,
       locale: siteConfig.locale,
       type,
-      images: [{ url: ogImage, width: 1672, height: 941, alt: title }],
+      images: [{ url: ogImage, width: 1200, height: 630, alt: title }],
       ...(type === 'article' ? { publishedTime, modifiedTime } : {}),
     },
     twitter: {
@@ -105,7 +105,7 @@ export function localBusinessSchema() {
     description: siteConfig.description,
     url: siteConfig.url,
     image: absoluteUrl(siteConfig.ogImage),
-    logo: absoluteUrl('/images/branding/logo-green.webp'),
+    logo: absoluteUrl('/images/branding/logo-geatti.webp'),
     priceRange: '€€',
     currenciesAccepted: 'EUR',
     paymentAccepted: 'Espèces, Carte bancaire (Visa, Mastercard, American Express)',
@@ -137,9 +137,9 @@ export function localBusinessSchema() {
         closes: '23:59',
       },
     ],
-    // Zones desservies structurées : Chambourcy + les communes (pages /zones) + le département.
+    // Zones desservies structurées : Chatou + les communes (pages /zones) + le département.
     areaServed: [
-      { '@type': 'City', name: siteConfig.address.city },
+      { '@type': 'City', name: 'Chatou' },
       ...locations
         .filter((l) => l.postalCode.length === 5)
         .map((l) => ({ '@type': 'City', name: l.name })),

@@ -4,13 +4,13 @@ export const services: Service[] = [
   {
     slug: 'transfert-aeroport',
     name: 'Transferts aéroports',
-    title: 'Transferts aéroports au départ de Chambourcy',
+    title: 'Transferts aéroports au départ de Chatou',
     tagline: 'Roissy CDG, Orly et Le Bourget en toute sérénité',
     cardDescription:
       'Roissy-Charles-de-Gaulle, Orly, Le Bourget et Beauvais. Forfait aéroport à prix fixe, convenu à l’avance.',
     icon: 'Plane',
-    image: '/images/taxi_chambourcy_04_coffre.webp',
-    imageAlt: 'Taxi à Chambourcy : coffre ouvert du break BMW avec une valise, prêt pour un transfert aéroport',
+    image: '/images/services/airport.webp',
+    imageAlt: 'Taxi à Chatou prêt pour un transfert aéroport, coffre spacieux pour les bagages',
     intro: [
       'Le transfert vers l’aéroport est un moment sensible : il conditionne la sérénité de tout un voyage. Nous organisons votre prise en charge à l’avance, avec une adresse de départ précise et une heure calculée en tenant compte du trajet et des marges d’enregistrement habituelles.',
       'Au retour, le principe est le même : vous indiquez votre vol, nous convenons ensemble du point de rendez-vous, et vous retrouvez un véhicule confortable sans attente inutile à la sortie de l’avion.',
@@ -24,7 +24,7 @@ export const services: Service[] = [
       {
         title: 'Confort pour les longs trajets',
         description:
-          'Un véhicule soigné et un espace adapté pour vos bagages, idéal avant ou après un vol fatigant.',
+          'Un véhicule 100 % électrique, silencieux et soigné, avec un espace adapté pour vos bagages avant ou après un vol fatigant.',
       },
       {
         title: 'Trajet direct',
@@ -63,6 +63,62 @@ export const services: Service[] = [
     ],
   },
   {
+    slug: 'transport-medical',
+    name: 'Transport médical (CPAM)',
+    title: 'Transport médical conventionné (CPAM)',
+    tagline: 'Vos trajets de soins pris en charge, sur prescription',
+    cardDescription:
+      'Taxi conventionné CPAM : consultations, hôpital, dialyse, cures. Sur prescription médicale, avec tiers payant.',
+    icon: 'Stethoscope',
+    image: '/images/vehicule/taxi-chatou-skoda-enyaq.webp',
+    imageAlt: 'Taxi conventionné à Chatou : Škoda Enyaq noire électrique, confortable pour le transport médical',
+    intro: [
+      'En tant que taxi conventionné par l’Assurance Maladie, nous assurons vos trajets de soins sur prescription médicale : consultations, examens, hospitalisations, séances de dialyse, de chimiothérapie ou cures. La prise en charge se fait à votre domicile, en douceur.',
+      'Le transport est assuré dans le cadre du conventionnement CPAM, avec le tiers payant lorsque les conditions sont réunies : vous présentez votre prescription médicale de transport, et nous vous accompagnons avec ponctualité et attention.',
+    ],
+    benefits: [
+      {
+        title: 'Conventionné CPAM',
+        description:
+          'Transport assis professionnalisé pris en charge par l’Assurance Maladie, sur prescription médicale, avec tiers payant selon votre situation.',
+      },
+      {
+        title: 'Accompagnement attentionné',
+        description:
+          'Une aide à la montée et à la descente, un véhicule électrique silencieux et confortable, adaptés aux personnes fragilisées ou âgées.',
+      },
+      {
+        title: 'Ponctualité pour vos soins',
+        description:
+          'Une prise en charge à l’heure pour vos rendez-vous récurrents (dialyse, séances), organisée à l’avance.',
+      },
+    ],
+    practical: [
+      'Munissez-vous de votre prescription médicale de transport (bon de transport).',
+      'Précisez l’établissement, la date et l’heure du rendez-vous lors de la réservation.',
+      'Trajets récurrents (dialyse, cures) organisés à l’avance pour plus de sérénité.',
+      'Le tiers payant s’applique selon les conditions de prise en charge de l’Assurance Maladie.',
+    ],
+    destinations: [
+      'Hôpitaux et centres hospitaliers de l’Ouest parisien',
+      'Cliniques, cabinets et centres d’examens',
+      'Centres de dialyse et de radiothérapie',
+      'Établissements de soins et de cure',
+    ],
+    faq: [
+      {
+        question: 'Le transport médical est-il remboursé ?',
+        answer:
+          'Oui, lorsque votre médecin établit une prescription médicale de transport. En tant que taxi conventionné, nous appliquons le tiers payant selon votre situation : vous n’avancez pas la part prise en charge par l’Assurance Maladie.',
+      },
+      {
+        question: 'Que dois-je préparer pour un trajet conventionné ?',
+        answer:
+          'Votre prescription médicale de transport (bon de transport) et, le cas échéant, votre attestation de prise en charge. Indiquez-nous l’établissement, la date et l’heure de votre rendez-vous lors de la réservation.',
+      },
+    ],
+  },
+  {
     slug: 'taxi-professionnel',
     name: 'Taxi professionnel',
     title: 'Taxi pour vos déplacements professionnels',
@@ -70,11 +126,11 @@ export const services: Service[] = [
     cardDescription:
       'Rendez-vous, gares et déplacements d’affaires. Un service discret et soigné pour vos trajets professionnels.',
     icon: 'Briefcase',
-    image: '/images/taxi_chambourcy_03_poste_conduite.webp',
-    imageAlt: 'Poste de conduite épuré du break BMW, taxi professionnel à Chambourcy',
+    image: '/images/services/business.webp',
+    imageAlt: 'Taxi professionnel à Chatou : intérieur soigné pour vos déplacements d’affaires',
     intro: [
       'Pour vos rendez-vous et déplacements d’affaires, la régularité et la discrétion comptent autant que le confort. Nous proposons un transport pensé pour les professionnels : un cadre calme pour préparer une réunion, passer un appel ou simplement souffler entre deux étapes.',
-      'Les trajets récurrents peuvent être organisés à l’avance afin de fluidifier votre agenda, depuis Chambourcy et les communes voisines vers Paris, les quartiers d’affaires et les principales gares.',
+      'Les trajets récurrents peuvent être organisés à l’avance afin de fluidifier votre agenda, depuis Chatou et les communes voisines vers Paris, La Défense et les principales gares.',
     ],
     benefits: [
       {
@@ -125,8 +181,8 @@ export const services: Service[] = [
     cardDescription:
       'Soirées, shopping, restaurants et événements. Un trajet privé pour profiter pleinement du moment.',
     icon: 'Sparkles',
-    image: '/images/taxi_chambourcy_02_places_arriere.webp',
-    imageAlt: 'Places arrière en cuir clair du break BMW pour vos trajets privés',
+    image: '/images/services/private.webp',
+    imageAlt: 'Trajet privé à Chatou : véhicule confortable pour vos sorties',
     intro: [
       'Certaines occasions méritent un transport à la hauteur du moment. Pour une soirée, un dîner, une sortie culturelle ou un événement familial, nous assurons un trajet privé qui vous permet de profiter pleinement, sans vous soucier du stationnement ni du retour.',
       'Vous choisissez vos horaires, nous nous occupons du reste, dans un véhicule confortable et un service attentionné.',
@@ -140,7 +196,7 @@ export const services: Service[] = [
       {
         title: 'Confort',
         description:
-          'Un véhicule soigné pour une sortie agréable, de jour comme de nuit.',
+          'Un véhicule électrique soigné pour une sortie agréable, de jour comme de nuit.',
       },
       {
         title: 'Souplesse',
@@ -151,7 +207,7 @@ export const services: Service[] = [
     practical: [
       'Réservation anticipée recommandée pour les soirées et week-ends.',
       'Aller simple ou aller-retour, selon votre programme.',
-      'Trajets privés dans Chambourcy, Paris Ouest et l’ensemble de l’Île-de-France.',
+      'Trajets privés dans Chatou, l’Ouest parisien et l’ensemble de l’Île-de-France.',
     ],
     destinations: [
       'Restaurants et établissements parisiens',
@@ -180,8 +236,8 @@ export const services: Service[] = [
     cardDescription:
       'À l’heure, à la demi-journée ou sur plusieurs rendez-vous. Un véhicule et un chauffeur dédiés à votre programme.',
     icon: 'Clock',
-    image: '/images/taxi_chambourcy_01_exterieur.webp',
-    imageAlt: 'Break BMW noir à disposition à Chambourcy, portière arrière ouverte',
+    image: '/images/services/disposal.webp',
+    imageAlt: 'Taxi à disposition à Chatou, chauffeur dédié à votre programme de la journée',
     intro: [
       'Lorsque votre journée comporte plusieurs étapes, la mise à disposition est la solution la plus souple. Un véhicule et un chauffeur restent dédiés à votre programme : rendez-vous successifs, visites, événement sur une journée ou déplacement comportant des temps d’attente.',
       'Vous définissez les grandes lignes de votre journée, nous adaptons le déroulé au fil de vos besoins.',

@@ -3,37 +3,37 @@ import type { Location } from '@/types';
 /**
  * Pages locales. Le contenu décrit le service de transport proposé DEPUIS/VERS ces communes.
  * Il ne doit jamais laisser entendre que l'entreprise dispose d'un établissement physique
- * dans chaque ville : l'activité rayonne depuis Chambourcy et ses environs.
+ * dans chaque ville : l'activité rayonne depuis Chatou et l'Ouest parisien.
  */
 export const locations: Location[] = [
   {
-    slug: 'taxi-saint-germain-en-laye',
-    name: 'Saint-Germain-en-Laye',
-    title: 'Taxi à Saint-Germain-en-Laye',
-    h1: 'Taxi à Saint-Germain-en-Laye : gare, château, aéroports',
-    metaTitle: 'Taxi Saint-Germain-en-Laye | Gare RER A et Aéroports',
+    slug: 'taxi-croissy-sur-seine',
+    name: 'Croissy-sur-Seine',
+    title: 'Taxi à Croissy-sur-Seine',
+    h1: 'Taxi à Croissy-sur-Seine : gare RER A et aéroports',
+    metaTitle: 'Taxi Croissy-sur-Seine | Gare RER A et Aéroports',
     metaDescription:
-      'Taxi à Saint-Germain-en-Laye 24h/24 : gare RER A, château, aéroports Orly et Roissy. Réservez en ligne ou par téléphone, confirmation rapide.',
-    postalCode: '78100',
-    tagline: 'Transport premium depuis Saint-Germain-en-Laye',
+      'Taxi à Croissy-sur-Seine 7j/7 : gare RER A Chatou–Croissy, aéroports Orly et Roissy, trajets médicaux. Réservez en ligne ou par téléphone.',
+    postalCode: '78290',
+    tagline: 'Votre taxi de proximité à Croissy-sur-Seine',
     context: [
-      'Saint-Germain-en-Laye, ville d’art et d’histoire des Yvelines, est un pôle majeur de l’Ouest parisien, desservi par le RER A et réputé pour son château, sa forêt et son centre animé.',
-      'Voisine immédiate de Chambourcy, la commune concentre de nombreux besoins de transport, tant pour les trajets professionnels que pour les sorties et les transferts aéroports.',
+      'Croissy-sur-Seine, commune résidentielle des bords de Seine, est la voisine immédiate de Chatou, avec laquelle elle partage la gare RER A Chatou–Croissy.',
+      'Entre le centre-ville, les quais et les quartiers pavillonnaires, les besoins de transport y sont nombreux : aéroports, rendez-vous médicaux, trajets professionnels et sorties.',
     ],
     needs: [
       'Transferts aéroports au départ du centre ou des quartiers résidentiels.',
+      'Transport médical conventionné (CPAM) vers vos rendez-vous de soins.',
       'Déplacements professionnels vers Paris, La Défense et les gares.',
-      'Trajets privés vers restaurants, événements et sorties culturelles.',
       'Compléments ou alternatives au RER A pour les trajets avec bagages.',
     ],
     destinations: [
       { label: 'Roissy CDG / Orly', detail: 'Transferts aéroports organisés.' },
       { label: 'La Défense', detail: 'Déplacements d’affaires.' },
-      { label: 'Paris intra-muros', detail: 'Trajets privés et professionnels.' },
-      { label: 'Chambourcy & communes voisines', detail: 'Liaisons locales.' },
+      { label: 'Hôpitaux et cliniques', detail: 'Trajets médicaux conventionnés.' },
+      { label: 'Chatou & communes voisines', detail: 'Liaisons locales.' },
     ],
     practical: [
-      'Prise en charge à l’adresse de votre choix à Saint-Germain-en-Laye.',
+      'Prise en charge à l’adresse de votre choix à Croissy-sur-Seine.',
       'Idéal pour les trajets avec bagages ou en soirée, en complément du RER.',
       'Réservation conseillée pour les horaires de pointe.',
     ],
@@ -43,137 +43,10 @@ export const locations: Location[] = [
         answer:
           'Notre service est une solution de porte à porte, particulièrement utile avec des bagages, en soirée ou pour un trajet direct sans correspondance. Il fonctionne sur réservation.',
       },
-    ],
-  },
-  {
-    slug: 'taxi-poissy',
-    name: 'Poissy',
-    title: 'Taxi à Poissy',
-    h1: 'Taxi à Poissy : gare, hôpital et aéroports',
-    metaTitle: 'Taxi Poissy | Gare, Hôpital et Aéroports 24h/24',
-    metaDescription:
-      'Taxi à Poissy 24h/24 : gare, hôpital, aéroports Orly et Roissy. Réservez en ligne ou par téléphone, tarif annoncé à l’avance.',
-    postalCode: '78300',
-    tagline: 'Votre taxi premium à Poissy et alentours',
-    context: [
-      'Poissy, sur les bords de Seine, est une ville dynamique des Yvelines, desservie par le RER A et le réseau de bus, à proximité de Chambourcy et des grands axes routiers.',
-      'Ses besoins de transport sont variés : transferts aéroports, trajets professionnels et déplacements privés vers Paris et l’ensemble de l’Ouest francilien.',
-    ],
-    needs: [
-      'Transferts aéroports depuis Poissy et ses quartiers.',
-      'Déplacements professionnels vers Paris et les zones d’activité.',
-      'Trajets privés et sorties en Île-de-France.',
-      'Liaisons vers les gares et les communes voisines.',
-    ],
-    destinations: [
-      { label: 'Roissy CDG', detail: 'Transfert aéroport planifié.' },
-      { label: 'Orly', detail: 'Prise en charge directe.' },
-      { label: 'Paris / La Défense', detail: 'Trajets professionnels et privés.' },
-      { label: 'Chambourcy & Saint-Germain-en-Laye', detail: 'Liaisons locales.' },
-    ],
-    practical: [
-      'Prise en charge à l’adresse de votre choix à Poissy.',
-      'Réservation anticipée recommandée pour les transferts aéroports.',
-      'Durées estimées lors de la demande, selon le trafic.',
-    ],
-    faq: [
       {
-        question: 'Prenez-vous en charge les trajets depuis Poissy vers l’aéroport ?',
+        question: 'Assurez-vous les trajets médicaux depuis Croissy-sur-Seine ?',
         answer:
-          'Oui. Nous organisons les transferts aéroports au départ de Poissy, avec une heure de prise en charge définie selon votre vol et votre adresse.',
-      },
-      {
-        question: 'Assurez-vous les trajets vers l’hôpital de Poissy–Saint-Germain ?',
-        answer:
-          'Oui. Nous assurons les trajets vers le centre hospitalier intercommunal Poissy–Saint-Germain, ainsi que vers les cliniques et cabinets du secteur, sur réservation et à l’adresse de votre choix.',
-      },
-    ],
-  },
-  {
-    slug: 'taxi-orgeval',
-    name: 'Orgeval',
-    title: 'Taxi à Orgeval',
-    h1: 'Taxi à Orgeval : départ à domicile, jour et nuit',
-    metaTitle: 'Taxi Orgeval | Prise en Charge à Domicile 24h/24',
-    metaDescription:
-      'Taxi à Orgeval 24h/24 : prise en charge à domicile, gares et aéroports. Réservez en ligne ou par téléphone, réponse rapide.',
-    postalCode: '78630',
-    tagline: 'Transport soigné depuis Orgeval',
-    context: [
-      'Orgeval, commune résidentielle des Yvelines proche de l’A13, est idéalement située pour rejoindre rapidement Paris, l’Ouest parisien et les aéroports.',
-      'Son cadre verdoyant et sa proximité avec les grands axes en font un point de départ pratique pour tous vos déplacements.',
-    ],
-    needs: [
-      'Transferts aéroports au départ d’Orgeval.',
-      'Déplacements professionnels vers Paris et La Défense.',
-      'Trajets privés et sorties.',
-      'Liaisons vers les gares et communes voisines.',
-    ],
-    destinations: [
-      { label: 'Roissy CDG / Orly', detail: 'Transferts aéroports.' },
-      { label: 'Paris Ouest', detail: 'Déplacements professionnels et privés.' },
-      { label: 'La Défense', detail: 'Trajets d’affaires.' },
-      { label: 'Chambourcy & Poissy', detail: 'Liaisons locales.' },
-    ],
-    practical: [
-      'Prise en charge à l’adresse de votre choix à Orgeval.',
-      'Accès rapide à l’A13 pour les trajets vers Paris et les aéroports.',
-      'Service sur réservation.',
-    ],
-    faq: [
-      {
-        question: 'Orgeval est-elle bien desservie par votre service ?',
-        answer:
-          'Oui. Orgeval fait partie de notre zone de rayonnement autour de Chambourcy. La prise en charge se fait à l’adresse de votre choix, sur réservation.',
-      },
-      {
-        question: 'Desservez-vous la zone commerciale et le village d’Orgeval ?',
-        answer:
-          'Oui. Que vous partiez du village, des quartiers résidentiels ou de la zone commerciale d’Orgeval, nous venons vous chercher à l’adresse de votre choix, sur réservation.',
-      },
-    ],
-  },
-  {
-    slug: 'taxi-le-pecq',
-    name: 'Le Pecq',
-    title: 'Taxi au Pecq',
-    h1: 'Taxi au Pecq : gare RER A et bords de Seine',
-    metaTitle: 'Taxi Le Pecq | Gare RER A et Aéroports',
-    metaDescription:
-      'Taxi au Pecq 24h/24 : gare RER A, bords de Seine, aéroports. Réservez en ligne ou par téléphone, chauffeur ponctuel.',
-    postalCode: '78230',
-    tagline: 'Votre taxi premium au Pecq, au bord de Seine',
-    context: [
-      'Le Pecq, en bordure de Seine et au pied de Saint-Germain-en-Laye, bénéficie d’un accès direct au RER A et d’une situation centrale dans l’Ouest parisien.',
-      'La commune est un point de départ pratique pour les transferts aéroports comme pour les trajets professionnels vers Paris.',
-    ],
-    needs: [
-      'Transferts aéroports depuis Le Pecq.',
-      'Déplacements professionnels vers Paris et La Défense.',
-      'Trajets privés et sorties.',
-      'Compléments au RER A pour les trajets avec bagages.',
-    ],
-    destinations: [
-      { label: 'Roissy CDG / Orly', detail: 'Transferts aéroports organisés.' },
-      { label: 'La Défense', detail: 'Déplacements d’affaires.' },
-      { label: 'Paris intra-muros', detail: 'Trajets privés et professionnels.' },
-      { label: 'Saint-Germain-en-Laye', detail: 'Liaison immédiate.' },
-    ],
-    practical: [
-      'Prise en charge à l’adresse de votre choix au Pecq.',
-      'Solution de porte à porte utile avec bagages ou en soirée.',
-      'Réservation conseillée aux horaires de pointe.',
-    ],
-    faq: [
-      {
-        question: 'Le service est-il adapté aux trajets avec bagages ?',
-        answer:
-          'Oui. Notre service de porte à porte est particulièrement adapté aux trajets avec bagages, en complément ou en alternative aux transports en commun.',
-      },
-      {
-        question: 'Partez-vous du Pecq vers la gare du Vésinet–Le Pecq ?',
-        answer:
-          'Oui, comme vers toute autre destination. En pratique, nos clients privilégient souvent un trajet direct de porte à porte depuis Le Pecq, plus confortable avec des bagages qu’un passage par le RER A.',
+          'Oui. Nous assurons le transport médical conventionné (CPAM), sur prescription, vers vos consultations, examens et séjours hospitaliers, à l’adresse de votre choix.',
       },
     ],
   },
@@ -184,303 +57,239 @@ export const locations: Location[] = [
     h1: 'Taxi au Vésinet : gares RER A et transferts aéroports',
     metaTitle: 'Taxi Le Vésinet | Gare RER A, Orly et Roissy',
     metaDescription:
-      'Taxi au Vésinet 24h/24 : gares RER A, Orly, Roissy CDG. Réservez en ligne ou par téléphone, tarif annoncé avant le départ.',
+      'Taxi au Vésinet 7j/7 : gares RER A, Orly, Roissy CDG, transport médical. Réservez en ligne ou par téléphone, tarif annoncé avant le départ.',
     postalCode: '78110',
-    tagline: 'Transport premium au Vésinet',
+    tagline: 'Votre taxi de proximité au Vésinet',
     context: [
-      'Le Vésinet, ville-parc réputée pour ses lacs, ses rivières et son urbanisme paysager, est l’une des communes résidentielles les plus prisées de l’Ouest parisien, desservie par le RER A.',
-      'Des abords de ses lacs et de son église Sainte-Marguerite jusqu’aux gares du RER A (Le Vésinet-Centre, Le Vésinet–Le Pecq), ce cadre élégant appelle un service de transport soigné et discret, à l’image de la commune.',
+      'Le Vésinet, ville-parc réputée pour ses lacs et son urbanisme paysager, est l’une des communes résidentielles les plus prisées de l’Ouest parisien, desservie par le RER A.',
+      'Voisine de Chatou, elle appelle un service de transport soigné et ponctuel, des abords de ses lacs jusqu’aux gares du RER A (Le Vésinet-Centre, Le Vésinet–Le Pecq).',
     ],
     needs: [
       'Transferts aéroports au départ du Vésinet.',
+      'Transport médical conventionné (CPAM) vers vos rendez-vous de soins.',
       'Déplacements professionnels vers Paris et La Défense.',
       'Trajets privés pour sorties et événements.',
-      'Liaisons locales vers Saint-Germain-en-Laye et Chambourcy.',
     ],
     destinations: [
       { label: 'Roissy CDG / Orly', detail: 'Transferts aéroports.' },
       { label: 'La Défense', detail: 'Trajets d’affaires.' },
-      { label: 'Paris Ouest', detail: 'Déplacements privés et professionnels.' },
-      { label: 'Communes voisines', detail: 'Liaisons locales.' },
+      { label: 'Hôpitaux et cliniques', detail: 'Trajets médicaux conventionnés.' },
+      { label: 'Chatou & communes voisines', detail: 'Liaisons locales.' },
     ],
     practical: [
       'Prise en charge à l’adresse de votre choix au Vésinet.',
-      'Service discret et soigné, sur réservation.',
+      'Service soigné et ponctuel, sur réservation.',
       'Durées estimées lors de la demande.',
     ],
     faq: [
       {
-        question: 'Proposez-vous un service discret ?',
-        answer:
-          'La discrétion et le soin apporté au service font partie de notre approche. Le transport fonctionne sur réservation, à l’adresse de votre choix.',
-      },
-      {
         question: 'Prenez-vous en charge les trajets depuis les quartiers résidentiels du Vésinet ?',
         answer:
-          'Oui. Des abords des lacs aux villas et aux gares du RER A, la prise en charge se fait à l’adresse exacte de votre choix, pour un trajet direct et discret.',
+          'Oui. Des abords des lacs aux villas et aux gares du RER A, la prise en charge se fait à l’adresse exacte de votre choix, pour un trajet direct et ponctuel.',
       },
     ],
   },
   {
-    slug: 'taxi-marly-le-roi',
-    name: 'Marly-le-Roi',
-    title: 'Taxi à Marly-le-Roi',
-    h1: 'Taxi à Marly-le-Roi : trajets locaux et longue distance',
-    metaTitle: 'Taxi Marly-le-Roi | Trajets Locaux et Aéroports',
+    slug: 'taxi-montesson',
+    name: 'Montesson',
+    title: 'Taxi à Montesson',
+    h1: 'Taxi à Montesson : prise en charge à domicile, 7j/7',
+    metaTitle: 'Taxi Montesson | Départ à Domicile, Aéroports',
     metaDescription:
-      'Taxi à Marly-le-Roi 24h/24 : trajets locaux, gares et aéroports. Réservez en ligne ou par téléphone, chauffeur professionnel.',
-    postalCode: '78160',
-    tagline: 'Votre taxi premium à Marly-le-Roi',
+      'Taxi à Montesson 7j/7 : départ à domicile, aéroports, transport médical conventionné. Réservez en ligne ou par téléphone, réponse rapide.',
+    postalCode: '78360',
+    tagline: 'Votre taxi de proximité à Montesson',
     context: [
-      'Marly-le-Roi, célèbre pour le Domaine national de Marly et son Abreuvoir, est une commune résidentielle chargée d’histoire aux portes de la forêt domaniale, desservie par la gare de Marly-le-Roi (ligne L du Transilien vers Paris-Saint-Lazare).',
-      'Sa situation permet de rejoindre aisément Paris, les aéroports et les communes voisines comme Chambourcy et Saint-Germain-en-Laye.',
+      'Montesson, connue pour sa plaine maraîchère et ses quartiers résidentiels, est une commune voisine de Chatou, à deux pas de la boucle de la Seine et des grands axes (A14).',
+      'Moins desservie par les transports en commun, elle se prête particulièrement au transport de porte à porte, pour les aéroports comme pour les rendez-vous du quotidien.',
     ],
     needs: [
-      'Transferts aéroports depuis Marly-le-Roi.',
-      'Déplacements professionnels vers Paris et La Défense.',
-      'Trajets privés et sorties.',
-      'Liaisons vers les gares et communes voisines.',
-    ],
-    destinations: [
-      { label: 'Roissy CDG / Orly', detail: 'Transferts aéroports.' },
-      { label: 'Paris / La Défense', detail: 'Trajets professionnels et privés.' },
-      { label: 'Saint-Germain-en-Laye', detail: 'Liaison locale.' },
-      { label: 'Chambourcy', detail: 'Liaison immédiate.' },
-    ],
-    practical: [
-      'Prise en charge à l’adresse de votre choix à Marly-le-Roi.',
-      'Service sur réservation.',
-      'Réservation anticipée recommandée pour les départs matinaux.',
-    ],
-    faq: [
-      {
-        question: 'Puis-je réserver un trajet tôt le matin ?',
-        answer:
-          'Oui. Pour les départs matinaux, notamment vers les aéroports, une réservation anticipée est recommandée afin de garantir la disponibilité.',
-      },
-      {
-        question: 'Proposez-vous une alternative à la gare de Marly-le-Roi ?',
-        answer:
-          'Oui. En complément de la ligne L du Transilien, notre service de porte à porte est utile avec des bagages, en soirée ou pour un trajet direct vers un aéroport, sans correspondance.',
-      },
-    ],
-  },
-  {
-    slug: 'taxi-maisons-laffitte',
-    name: 'Maisons-Laffitte',
-    title: 'Taxi à Maisons-Laffitte',
-    h1: 'Taxi à Maisons-Laffitte : gare, hippodrome, aéroports',
-    metaTitle: 'Taxi Maisons-Laffitte | Gare RER A et Aéroports',
-    metaDescription:
-      'Taxi à Maisons-Laffitte 24h/24 : gare RER A, hippodrome, aéroports. Réservez en ligne ou par téléphone, confirmation rapide.',
-    postalCode: '78600',
-    tagline: 'Transport premium à Maisons-Laffitte',
-    context: [
-      'Maisons-Laffitte, « cité du cheval » célèbre pour son château et son parc, est une commune élégante de l’Ouest parisien, desservie par le RER A.',
-      'Ses habitants et visiteurs y trouvent des besoins de transport variés, des transferts aéroports aux trajets professionnels vers Paris.',
-    ],
-    needs: [
-      'Transferts aéroports au départ de Maisons-Laffitte.',
-      'Déplacements professionnels vers Paris et La Défense.',
-      'Trajets privés, événements hippiques et sorties.',
-      'Liaisons locales vers les communes voisines.',
+      'Transferts aéroports au départ de Montesson.',
+      'Transport médical conventionné (CPAM) vers vos rendez-vous de soins.',
+      'Déplacements professionnels vers Paris, La Défense et les gares.',
+      'Trajets privés et liaisons locales.',
     ],
     destinations: [
       { label: 'Roissy CDG / Orly', detail: 'Transferts aéroports organisés.' },
       { label: 'La Défense', detail: 'Déplacements d’affaires.' },
-      { label: 'Paris intra-muros', detail: 'Trajets privés et professionnels.' },
-      { label: 'Chambourcy & Poissy', detail: 'Liaisons locales.' },
+      { label: 'Hôpitaux et cliniques', detail: 'Trajets médicaux conventionnés.' },
+      { label: 'Chatou & Sartrouville', detail: 'Liaisons locales.' },
     ],
     practical: [
-      'Prise en charge à l’adresse de votre choix à Maisons-Laffitte.',
-      'Service sur réservation, adapté aux trajets avec bagages.',
-      'Durées estimées selon le trafic lors de la demande.',
-    ],
-    faq: [
-      {
-        question: 'Desservez-vous Maisons-Laffitte pour les transferts aéroports ?',
-        answer:
-          'Oui. Nous organisons les transferts aéroports au départ de Maisons-Laffitte, avec une prise en charge de porte à porte sur réservation.',
-      },
-      {
-        question: 'Assurez-vous les trajets lors des réunions à l’hippodrome de Maisons-Laffitte ?',
-        answer:
-          'Oui. Nous organisons vos trajets vers l’hippodrome et lors des événements hippiques, comme vers le château, le parc ou votre domicile, sur réservation.',
-      },
-    ],
-  },
-  {
-    slug: 'taxi-aigremont',
-    name: 'Aigremont',
-    title: 'Taxi à Aigremont',
-    h1: 'Taxi à Aigremont : prise en charge à domicile',
-    metaTitle: 'Taxi Aigremont | Départ à Domicile 24h/24',
-    metaDescription:
-      'Taxi à Aigremont 24h/24 : départ à domicile, gares, aéroports. Réservez en ligne ou par téléphone, tarif clair.',
-    postalCode: '78240',
-    tagline: 'Votre taxi premium à Aigremont, au calme des Yvelines',
-    context: [
-      'Aigremont est un petit village résidentiel des Yvelines, niché dans un écrin boisé entre Chambourcy, Saint-Germain-en-Laye et Mareil-Marly, et partageant le code postal 78240 avec Chambourcy.',
-      'Ce cadre paisible, à l’écart des grands axes mais à quelques minutes de l’A14 et de l’A13, appelle un service de transport porte à porte, pratique là où les transports en commun sont peu présents.',
-    ],
-    needs: [
-      'Transferts aéroports au départ d’Aigremont.',
-      'Déplacements professionnels vers Paris et La Défense.',
-      'Trajets privés et sorties en soirée.',
-      'Liaisons vers la gare RER A de Saint-Germain-en-Laye.',
-    ],
-    destinations: [
-      { label: 'Roissy CDG / Orly', detail: 'Transferts aéroports organisés à l’avance.' },
-      { label: 'Saint-Germain-en-Laye (RER A)', detail: 'Accès rapide au réseau RER.' },
-      { label: 'Paris / La Défense', detail: 'Déplacements professionnels et privés.' },
-      { label: 'Chambourcy & communes voisines', detail: 'Liaisons locales immédiates.' },
-    ],
-    practical: [
-      'Prise en charge à l’adresse de votre choix à Aigremont.',
-      'Solution adaptée à un village peu desservi par les transports en commun.',
+      'Prise en charge à l’adresse de votre choix à Montesson.',
+      'Solution adaptée aux quartiers peu desservis par les transports en commun.',
       'Réservation conseillée, surtout pour les départs matinaux.',
     ],
     faq: [
       {
-        question: 'Desservez-vous le village d’Aigremont ?',
+        question: 'Desservez-vous toute la commune de Montesson ?',
         answer:
-          'Oui. Aigremont fait partie de notre zone immédiate autour de Chambourcy. La prise en charge se fait à l’adresse de votre choix, sur réservation.',
-      },
-      {
-        question: 'Aigremont est-elle bien reliée aux aéroports ?',
-        answer:
-          'Nous organisons les transferts vers Roissy et Orly au départ d’Aigremont, avec une heure de prise en charge définie selon votre vol et une marge pour le trafic.',
+          'Oui, du centre aux quartiers de la plaine et des bords de Seine. La prise en charge se fait à l’adresse de votre choix, sur réservation.',
       },
     ],
   },
   {
-    slug: 'taxi-fourqueux',
-    name: 'Fourqueux',
-    title: 'Taxi à Fourqueux',
-    h1: 'Taxi à Fourqueux : courses locales et longues distances',
-    metaTitle: 'Taxi Fourqueux | Course Locale ou Longue Distance',
+    slug: 'taxi-rueil-malmaison',
+    name: 'Rueil-Malmaison',
+    title: 'Taxi à Rueil-Malmaison',
+    h1: 'Taxi à Rueil-Malmaison : RER A, La Défense et aéroports',
+    metaTitle: 'Taxi Rueil-Malmaison | RER A, La Défense, Aéroports',
     metaDescription:
-      'Taxi à Fourqueux 24h/24 : courses locales et longues distances, aéroports. Réservez en ligne ou par téléphone.',
-    postalCode: '78112',
-    tagline: 'Transport premium à Fourqueux, aux portes de Saint-Germain',
+      'Taxi à Rueil-Malmaison 7j/7 : RER A, La Défense, aéroports Orly et Roissy, transport médical. Réservez en ligne ou par téléphone.',
+    postalCode: '92500',
+    tagline: 'Votre taxi de proximité à Rueil-Malmaison',
     context: [
-      'Fourqueux, commune déléguée rattachée à Saint-Germain-en-Laye depuis 2019, est un quartier résidentiel verdoyant réputé pour son golf et son cadre paisible, en lisière de la forêt de Saint-Germain.',
-      'Sa proximité immédiate avec le centre de Saint-Germain-en-Laye et le RER A en fait un point de départ idéal, en particulier pour les trajets avec bagages ou en dehors des horaires de transports en commun.',
+      'Rueil-Malmaison, grande ville des Hauts-de-Seine aux portes de l’Ouest parisien, est voisine de Chatou et desservie par le RER A, à quelques minutes de La Défense.',
+      'Entre pôles d’affaires, quartiers résidentiels et sites comme le château de Malmaison, les besoins de transport y sont variés, du déplacement professionnel au trajet médical.',
     ],
     needs: [
-      'Transferts aéroports au départ de Fourqueux.',
-      'Déplacements professionnels vers Paris et La Défense.',
-      'Compléments au RER A de Saint-Germain-en-Laye.',
-      'Trajets privés, sorties et événements.',
+      'Déplacements professionnels vers La Défense et Paris.',
+      'Transferts aéroports au départ de Rueil-Malmaison.',
+      'Transport médical conventionné (CPAM) vers vos rendez-vous de soins.',
+      'Trajets privés, sorties et liaisons locales.',
     ],
     destinations: [
-      { label: 'Roissy CDG / Orly', detail: 'Transferts aéroports de porte à porte.' },
-      { label: 'Saint-Germain-en-Laye centre', detail: 'Liaison immédiate (RER A, commerces).' },
+      { label: 'La Défense', detail: 'Déplacements d’affaires, à quelques minutes.' },
+      { label: 'Roissy CDG / Orly', detail: 'Transferts aéroports organisés.' },
+      { label: 'Hôpitaux et cliniques', detail: 'Trajets médicaux conventionnés.' },
+      { label: 'Chatou & Paris Ouest', detail: 'Liaisons locales et professionnelles.' },
+    ],
+    practical: [
+      'Prise en charge à l’adresse de votre choix à Rueil-Malmaison.',
+      'Accès rapide à La Défense et aux grands axes (A86, A13).',
+      'Service sur réservation, 7j/7.',
+    ],
+    faq: [
+      {
+        question: 'Assurez-vous les trajets vers La Défense ?',
+        answer:
+          'Oui. Rueil-Malmaison est à quelques minutes de La Défense : nous organisons vos déplacements professionnels de porte à porte, ponctuels, sur réservation.',
+      },
+      {
+        question: 'Proposez-vous le transport médical conventionné ?',
+        answer:
+          'Oui. Sur prescription médicale, nous assurons le transport assis conventionné (CPAM) vers vos consultations, examens, dialyses ou séjours hospitaliers.',
+      },
+    ],
+  },
+  {
+    slug: 'taxi-carrieres-sur-seine',
+    name: 'Carrières-sur-Seine',
+    title: 'Taxi à Carrières-sur-Seine',
+    h1: 'Taxi à Carrières-sur-Seine : bords de Seine et aéroports',
+    metaTitle: 'Taxi Carrières-sur-Seine | Gare, Aéroports 7j/7',
+    metaDescription:
+      'Taxi à Carrières-sur-Seine 7j/7 : gare, aéroports Orly et Roissy, transport médical conventionné. Réservez en ligne ou par téléphone.',
+    postalCode: '78420',
+    tagline: 'Votre taxi de proximité à Carrières-sur-Seine',
+    context: [
+      'Carrières-sur-Seine, nichée dans la boucle de la Seine entre Chatou et Houilles, est une commune résidentielle au cadre préservé.',
+      'Ses coteaux, ses quais et ses quartiers pavillonnaires appellent un transport de porte à porte pratique, pour les aéroports comme pour les trajets du quotidien.',
+    ],
+    needs: [
+      'Transferts aéroports au départ de Carrières-sur-Seine.',
+      'Transport médical conventionné (CPAM) vers vos rendez-vous de soins.',
+      'Déplacements professionnels vers Paris et La Défense.',
+      'Liaisons vers les gares et les communes voisines.',
+    ],
+    destinations: [
+      { label: 'Roissy CDG / Orly', detail: 'Transferts aéroports.' },
       { label: 'La Défense', detail: 'Déplacements d’affaires.' },
-      { label: 'Paris intra-muros', detail: 'Trajets privés et professionnels.' },
+      { label: 'Hôpitaux et cliniques', detail: 'Trajets médicaux conventionnés.' },
+      { label: 'Chatou & Houilles', detail: 'Liaisons locales.' },
     ],
     practical: [
-      'Prise en charge à l’adresse de votre choix à Fourqueux.',
-      'Idéal avec des bagages ou en soirée, en complément du RER.',
-      'Service sur réservation.',
+      'Prise en charge à l’adresse de votre choix à Carrières-sur-Seine.',
+      'Service de porte à porte, utile avec des bagages ou en soirée.',
+      'Service sur réservation, 7j/7.',
     ],
     faq: [
       {
-        question: 'Fourqueux fait-elle partie de Saint-Germain-en-Laye ?',
+        question: 'Venez-vous me chercher à domicile à Carrières-sur-Seine ?',
         answer:
-          'Depuis 2019, Fourqueux est une commune déléguée rattachée à Saint-Germain-en-Laye. Nous y assurons la prise en charge à l’adresse de votre choix, sur réservation.',
-      },
-      {
-        question: 'Proposez-vous une alternative au RER depuis Fourqueux ?',
-        answer:
-          'Oui. Notre service de porte à porte est particulièrement utile avec des bagages, en soirée ou pour un trajet direct sans correspondance.',
+          'Oui. La prise en charge se fait à l’adresse exacte de votre choix, du centre aux coteaux et aux bords de Seine, sur réservation.',
       },
     ],
   },
   {
-    slug: 'taxi-mareil-marly',
-    name: 'Mareil-Marly',
-    title: 'Taxi à Mareil-Marly',
-    h1: 'Taxi à Mareil-Marly : gares, aéroports et rendez-vous',
-    metaTitle: 'Taxi Mareil-Marly | Gare, Aéroports, Rendez-vous',
+    slug: 'taxi-houilles',
+    name: 'Houilles',
+    title: 'Taxi à Houilles',
+    h1: 'Taxi à Houilles : gare, aéroports et rendez-vous',
+    metaTitle: 'Taxi Houilles | Gare, Aéroports, Rendez-vous',
     metaDescription:
-      'Taxi à Mareil-Marly 24h/24 : gares, aéroports, rendez-vous. Réservez en ligne ou par téléphone, chauffeur ponctuel.',
-    postalCode: '78750',
-    tagline: 'Votre taxi premium à Mareil-Marly',
+      'Taxi à Houilles 7j/7 : gare Houilles–Carrières, aéroports, transport médical conventionné. Réservez en ligne ou par téléphone.',
+    postalCode: '78800',
+    tagline: 'Votre taxi de proximité à Houilles',
     context: [
-      'Mareil-Marly est une commune résidentielle des Yvelines, lovée dans un environnement vallonné et boisé entre Saint-Germain-en-Laye, Marly-le-Roi et L’Étang-la-Ville.',
-      'Desservie par la gare de Mareil-Marly sur la ligne L du Transilien, la commune bénéficie d’un cadre calme ; notre service complète ces liaisons par un transport direct, utile pour les aéroports et les horaires décalés.',
+      'Houilles, commune animée de l’Ouest parisien proche de Chatou, est desservie par la gare Houilles–Carrières-sur-Seine (Transilien lignes J et L, RER A à proximité).',
+      'Son tissu résidentiel dense et ses commerces génèrent de nombreux besoins de transport, des transferts aéroports aux trajets médicaux.',
     ],
     needs: [
-      'Transferts aéroports au départ de Mareil-Marly.',
+      'Transferts aéroports au départ de Houilles.',
+      'Transport médical conventionné (CPAM) vers vos rendez-vous de soins.',
       'Déplacements professionnels vers Paris et La Défense.',
-      'Compléments à la gare et au Transilien (ligne L).',
-      'Trajets privés et sorties.',
+      'Compléments à la gare pour les trajets avec bagages ou horaires décalés.',
     ],
     destinations: [
-      { label: 'Roissy CDG / Orly', detail: 'Transferts aéroports planifiés.' },
-      { label: 'La Défense', detail: 'Déplacements professionnels.' },
-      { label: 'Saint-Germain-en-Laye (RER A)', detail: 'Liaison locale et correspondance.' },
-      { label: 'Paris / gares parisiennes', detail: 'Trajets directs de porte à porte.' },
+      { label: 'Roissy CDG / Orly', detail: 'Transferts aéroports organisés.' },
+      { label: 'La Défense', detail: 'Déplacements d’affaires.' },
+      { label: 'Hôpitaux et cliniques', detail: 'Trajets médicaux conventionnés.' },
+      { label: 'Chatou & Sartrouville', detail: 'Liaisons locales.' },
     ],
     practical: [
-      'Prise en charge à l’adresse de votre choix à Mareil-Marly.',
-      'Utile pour les trajets tôt le matin ou tard le soir, hors horaires de train.',
-      'Service sur réservation.',
+      'Prise en charge à l’adresse de votre choix à Houilles.',
+      'Utile pour les départs matinaux ou les retours tardifs, hors horaires de train.',
+      'Service sur réservation, 7j/7.',
     ],
     faq: [
       {
-        question: 'Desservez-vous Mareil-Marly ?',
+        question: 'Puis-je réserver un trajet tôt le matin depuis Houilles ?',
         answer:
-          'Oui. Mareil-Marly fait partie de notre zone autour de Saint-Germain-en-Laye et Marly-le-Roi. La prise en charge se fait à l’adresse de votre choix, sur réservation.',
-      },
-      {
-        question: 'Puis-je réserver un trajet en dehors des horaires de train ?',
-        answer:
-          'Bien sûr. Notre service est particulièrement adapté aux départs matinaux et aux retours tardifs, lorsque le Transilien circule peu.',
+          'Oui. Pour les départs matinaux, notamment vers les aéroports, une réservation anticipée est recommandée afin de garantir la disponibilité.',
       },
     ],
   },
   {
     slug: 'taxi-yvelines',
-    name: 'Yvelines (78)',
-    title: 'Taxi dans les Yvelines (78)',
+    name: 'Ouest parisien',
+    title: 'Taxi dans l’Ouest parisien',
     postalCode: '78',
-    tagline: 'Un service premium dans tout l’Ouest des Yvelines',
-    bookingCity: 'Chambourcy',
+    tagline: 'Un service de proximité dans tout l’Ouest parisien',
+    bookingCity: 'Chatou',
     heroLede:
-      'Besoin d’un taxi dans les Yvelines ? Basés à Chambourcy, nous rayonnons sur tout l’Ouest du département, de Saint-Germain-en-Laye à Maisons-Laffitte, et vers Paris, La Défense et les aéroports franciliens, 7j/7, à l’avance comme en course immédiate.',
+      'Besoin d’un taxi dans l’Ouest parisien ? Basés à Chatou, nous rayonnons sur Croissy-sur-Seine, Le Vésinet, Montesson, Rueil-Malmaison et les communes voisines, et vers Paris, La Défense et les aéroports franciliens, 7j/7, à l’avance comme en course immédiate.',
     context: [
-      'Basés à Chambourcy, au cœur des Yvelines (78), nous assurons un service de taxi premium dans tout l’Ouest du département : Saint-Germain-en-Laye, Poissy, Orgeval, Marly-le-Roi, Maisons-Laffitte, Le Vésinet et les communes voisines.',
+      'Basés à Chatou, nous assurons un service de taxi de proximité dans tout l’Ouest parisien : Croissy-sur-Seine, Le Vésinet, Montesson, Rueil-Malmaison, Carrières-sur-Seine, Houilles et les communes voisines.',
       'Cette page régionale regroupe nos zones desservies. Retrouvez plus bas la liste des communes où nous assurons une prise en charge de porte à porte, ainsi que nos liaisons vers Paris, La Défense et les aéroports.',
     ],
     needs: [
       'Transferts vers tous les aéroports franciliens (Roissy, Orly, Le Bourget, Beauvais).',
+      'Transport médical conventionné (CPAM), sur prescription.',
       'Déplacements professionnels vers Paris, La Défense et les pôles d’affaires.',
-      'Trajets privés et sorties dans tout l’Ouest des Yvelines.',
-      'Liaisons entre communes et vers les gares du département (RER A, Transilien).',
+      'Trajets privés et liaisons entre communes et gares (RER A, Transilien).',
     ],
     destinations: [
       { label: 'Aéroports franciliens', detail: 'Roissy CDG, Orly, Le Bourget, Beauvais.' },
       { label: 'La Défense & Paris', detail: 'Déplacements professionnels et privés.' },
-      { label: 'Communes des Yvelines', detail: 'Saint-Germain, Poissy, Marly, Maisons-Laffitte…' },
-      { label: 'Gares du département', detail: 'RER A et Transilien (lignes L, J).' },
+      { label: 'Communes de l’Ouest parisien', detail: 'Croissy, Le Vésinet, Montesson, Rueil…' },
+      { label: 'Gares du secteur', detail: 'RER A (Chatou–Croissy) et Transilien (J, L).' },
     ],
     practical: [
-      'Zone de service : Chambourcy, l’Ouest des Yvelines et l’Île-de-France.',
+      'Zone de service : Chatou, l’Ouest parisien et l’Île-de-France.',
       'Trajets de porte à porte sur réservation, 7j/7.',
       'Estimations et modalités communiquées lors de la demande.',
     ],
     faq: [
       {
-        question: 'Quelles communes des Yvelines desservez-vous ?',
+        question: 'Quelles communes desservez-vous autour de Chatou ?',
         answer:
-          'Depuis Chambourcy, nous desservons notamment Saint-Germain-en-Laye, Poissy, Orgeval, Le Pecq, Le Vésinet, Marly-le-Roi, Maisons-Laffitte, Aigremont, Fourqueux et Mareil-Marly, ainsi que les communes voisines. Votre commune n’y figure pas ? Contactez-nous pour confirmation.',
+          'Depuis Chatou, nous desservons notamment Croissy-sur-Seine, Le Vésinet, Montesson, Rueil-Malmaison, Carrières-sur-Seine et Houilles, ainsi que les communes voisines. Votre commune n’y figure pas ? Contactez-nous pour confirmation.',
       },
       {
         question: 'Quelle est votre zone de service exacte ?',
         answer:
-          'Nous rayonnons depuis Chambourcy sur l’Ouest des Yvelines et l’Île-de-France. N’hésitez pas à nous préciser votre trajet lors de votre demande.',
+          'Nous rayonnons depuis Chatou sur l’Ouest parisien et l’Île-de-France. N’hésitez pas à nous préciser votre trajet lors de votre demande.',
       },
     ],
   },

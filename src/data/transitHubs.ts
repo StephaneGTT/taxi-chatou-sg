@@ -28,8 +28,8 @@ export const transitHubs: TransitHub[] = [
   { short: 'Gare Saint-Lazare', label: 'Gare de Paris-Saint-Lazare', type: 'station', terms: 'paris saint lazare gare' },
   { short: 'Gare de l’Est', label: 'Gare de Paris-Est', type: 'station', terms: 'paris est gare' },
   { short: 'Gare d’Austerlitz', label: 'Gare de Paris-Austerlitz', type: 'station', terms: 'paris austerlitz gare' },
-  { short: 'Gare de Saint-Germain-en-Laye', label: 'Gare de Saint-Germain-en-Laye (RER A)', type: 'station', terms: 'saint germain en laye rer gare' },
-  { short: 'Gare de Poissy', label: 'Gare de Poissy (RER A / Transilien)', type: 'station', terms: 'poissy rer transilien gare' },
+  { short: 'Gare Chatou–Croissy', label: 'Gare de Chatou–Croissy (RER A)', type: 'station', terms: 'chatou croissy rer gare' },
+  { short: 'Gare de Rueil-Malmaison', label: 'Gare de Rueil-Malmaison (RER A)', type: 'station', terms: 'rueil malmaison rer gare' },
 ];
 
 /**
