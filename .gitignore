@@ -32,3 +32,8 @@ yarn-error.log*
 .vscode/*
 !.vscode/extensions.json
 .idea
+
+# skills IA (gardés en local, non versionnés)
+.agents/
+.claude/skills/
+skills-lock.json
