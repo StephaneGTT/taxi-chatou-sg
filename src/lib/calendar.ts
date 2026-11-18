@@ -99,7 +99,7 @@ export function buildIcs(e: CalendarEvent): string {
     'CALSCALE:GREGORIAN',
     'METHOD:PUBLISH',
     'BEGIN:VEVENT',
-    `UID:${uid}@taxi-chatou-geatti.fr`,
+    `UID:${uid}@taxi-chatou.com`,
     `DTSTAMP:${stamp}`,
     `DTSTART:${e.startCompact}`,
     `DTEND:${e.endCompact}`,
