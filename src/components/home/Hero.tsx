@@ -75,7 +75,7 @@ export function Hero() {
               >
                 Votre taxi à Chatou, <span className="text-champagne">confort &amp; sérénité</span>
                 <span className="mt-3 block font-sans text-[clamp(1rem,1.7vw,1.25rem)] font-medium leading-snug tracking-normal text-cream/85">
-                  Aéroports, trajets médicaux, professionnels et privés — 7j/7
+                  Aéroports, trajets médicaux, professionnels et privés, 7j/7
                 </span>
               </h1>
             </Reveal>

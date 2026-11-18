@@ -18,17 +18,17 @@ const gallery: VehicleView[] = [
   {
     label: 'Extérieur',
     src: '/images/vehicule/taxi-chatou-skoda-enyaq-exterieur.webp',
-    alt: 'Škoda Enyaq noire 100 % électrique au coucher du soleil — taxi à Chatou',
+    alt: 'Škoda Enyaq noire 100 % électrique au coucher du soleil, taxi à Chatou',
   },
   {
     label: 'Prise en charge',
     src: '/images/vehicule/taxi-chatou-skoda-enyaq-taxi-valise.webp',
-    alt: 'Taxi Škoda Enyaq, porte arrière ouverte avec une valise — Chatou',
+    alt: 'Taxi Škoda Enyaq, porte arrière ouverte avec une valise, à Chatou',
   },
   {
     label: 'Accès aux places arrière',
     src: '/images/vehicule/taxi-chatou-skoda-enyaq-acces-arriere.webp',
-    alt: 'Accès aux places arrière, portes ouvertes, intérieur cuir beige — Škoda Enyaq',
+    alt: 'Accès aux places arrière, portes ouvertes, intérieur cuir beige, Škoda Enyaq',
   },
   {
     label: 'Poste de conduite',
@@ -38,7 +38,7 @@ const gallery: VehicleView[] = [
   {
     label: 'Places arrière',
     src: '/images/vehicule/taxi-chatou-skoda-enyaq-places-arriere.webp',
-    alt: 'Places arrière spacieuses en cuir beige, toit panoramique — Škoda Enyaq',
+    alt: 'Places arrière spacieuses en cuir beige, toit panoramique, Škoda Enyaq',
   },
   {
     label: 'Coffre',
@@ -199,7 +199,7 @@ export function VehicleShowcase() {
               <Image src={current.src} alt={current.alt} fill sizes="100vw" className="object-contain" />
             </div>
             <figcaption className="mt-3 text-center text-sm text-cream/80">
-              {current.label} — Škoda Enyaq (visuel d’illustration)
+              {current.label} · Škoda Enyaq (visuel d’illustration)
             </figcaption>
           </figure>
         </div>
