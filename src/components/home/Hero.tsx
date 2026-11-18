@@ -1,126 +1,71 @@
 import Image from 'next/image';
-import { ArrowRight, ArrowUpRight, CalendarCheck, CarFront, Clock, Leaf, MapPin, ShieldCheck } from 'lucide-react';
+import { ArrowRight, CalendarCheck, Car, Clock, Leaf, Star, Stethoscope } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
+import { Container } from '@/components/ui/Container';
 import { Reveal } from '@/components/ui/Reveal';
-import { ReassuranceBar } from '@/components/home/ReassuranceBar';
 import { googleBusiness } from '@/data/reviews';
 
-const pills = [
-  { icon: CarFront, strong: 'Confort', rest: '& ponctualité' },
-  { icon: ShieldCheck, strong: 'Sécurité', rest: '& discrétion' },
-  { icon: Clock, strong: 'Disponible', rest: '7j/7' },
+const facts = [
+  { icon: Leaf, label: '100 % électrique' },
+  { icon: Stethoscope, label: 'Conventionné CPAM' },
+  { icon: Clock, label: 'Disponible 7j/7' },
 ];
 
 export function Hero() {
+  const rating = googleBusiness.rating.toFixed(1).replace('.', ',');
+
   return (
-    <section
-      id="accueil"
-      className="relative overflow-hidden bg-ink-900 pt-[88px] text-white lg:flex lg:min-h-[100svh] lg:flex-col"
-    >
-      {/* Accents décoratifs champagne (coins) */}
+    <section id="accueil" className="relative overflow-hidden bg-ink-900 pt-[88px] text-white">
+      {/* Halo beige discret */}
       <div
-        className="pointer-events-none absolute -left-28 -top-24 z-[1] h-80 w-80 rounded-full opacity-70"
-        style={{ background: 'radial-gradient(circle, rgba(219,195,165,0.16), transparent 70%)' }}
         aria-hidden
-      />
-      <div
-        className="pointer-events-none absolute -bottom-32 -right-20 z-[1] h-96 w-96 rounded-full opacity-50"
-        style={{ background: 'radial-gradient(circle, rgba(219,195,165,0.12), transparent 70%)' }}
-        aria-hidden
+        className="pointer-events-none absolute -right-40 -top-40 h-[34rem] w-[34rem] rounded-full"
+        style={{ background: 'radial-gradient(circle, rgba(216,195,165,0.10), transparent 70%)' }}
       />
 
-      <div className="relative lg:flex lg:flex-1">
-        <div className="relative w-full overflow-hidden">
-          {/* Fond : photo réelle du véhicule (Škoda Enyaq 100 % électrique) */}
-          <div className="absolute inset-0" aria-hidden>
-            <Image
-              src="/images/vehicule/taxi-chatou-skoda-enyaq-exterieur.webp"
-              alt="Taxi à Chatou : Škoda Enyaq noire 100 % électrique avec panneau taxi"
-              fill
-              priority
-              fetchPriority="high"
-              quality={78}
-              sizes="100vw"
-              className="object-cover object-[60%_45%]"
-            />
-            {/* Dégradé marine progressif gauche → droite pour la lisibilité du texte */}
-            <div
-              className="absolute inset-0"
-              style={{
-                background:
-                  'linear-gradient(90deg, #001138 0%, rgba(0,17,56,0.92) 32%, rgba(0,17,56,0.6) 60%, rgba(0,17,56,0.12) 100%)',
-              }}
-            />
-            <div
-              className="absolute inset-x-0 bottom-0 h-44"
-              style={{ background: 'linear-gradient(transparent, rgba(0,17,56,0.85))' }}
-            />
-          </div>
-
-          <div className="relative z-10 px-gutter py-12 sm:py-16 lg:flex lg:h-full lg:flex-col lg:justify-end lg:pb-14 lg:pt-16">
-            {/* Badge de confiance — atouts clés */}
-            <span className="absolute left-gutter top-2 z-20 inline-flex items-center gap-1.5 rounded-full border border-champagne/40 bg-ink-900/70 px-2.5 py-1 text-[11px] font-medium text-cream backdrop-blur-sm lg:static lg:left-auto lg:top-auto lg:z-auto lg:mb-5 lg:gap-2 lg:self-start lg:bg-champagne/10 lg:px-3.5 lg:py-1.5 lg:text-xs">
-              <Leaf className="h-3 w-3 shrink-0 text-champagne lg:h-3.5 lg:w-3.5" aria-hidden strokeWidth={1.75} />
-              100 % électrique · Taxi conventionné CPAM
-            </span>
-
-            <Reveal className="lg:max-w-[620px]">
-              <p className="eyebrow inline-flex w-fit items-center gap-1.5 text-champagne tracking-[0.1em] sm:tracking-[0.3em]">
-                <MapPin className="h-3.5 w-3.5 shrink-0" aria-hidden strokeWidth={2.25} />
-                Taxi local à Chatou (78)
-              </p>
+      <Container className="relative pt-10 lg:pt-20">
+        <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
+          {/* Texte */}
+          <div className="pb-12 lg:pb-24">
+            <Reveal>
+              <div className="flex items-center gap-3">
+                <span className="h-px w-10 bg-champagne" aria-hidden />
+                <span className="eyebrow text-champagne">Taxi à Chatou · 7j/7</span>
+              </div>
               <h1
-                className="mt-4 font-serif leading-[1.06] tracking-[-0.02em]"
-                style={{ fontSize: 'clamp(2.1rem, 4.8vw, 3.9rem)' }}
+                className="mt-6 font-serif font-semibold leading-[1.02] tracking-[-0.03em]"
+                style={{ fontSize: 'clamp(2.6rem, 6vw, 4.6rem)' }}
               >
-                Votre taxi à Chatou, <span className="text-champagne">confort &amp; sérénité</span>
-                <span className="mt-3 block font-sans text-[clamp(1rem,1.7vw,1.25rem)] font-medium leading-snug tracking-normal text-cream/85">
-                  Aéroports, trajets médicaux, professionnels et privés, 7j/7
-                </span>
+                Votre taxi à Chatou,
+                <span className="block text-champagne">confort &amp; sérénité.</span>
               </h1>
-            </Reveal>
-
-            {/* Pavés de confiance */}
-            <Reveal delay={90} className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 lg:max-w-[620px]">
-              {pills.map(({ icon: PillIcon, strong, rest }) => (
-                <div key={strong} className="flex items-center gap-2.5">
-                  <span className="inline-grid h-10 w-10 shrink-0 place-items-center rounded-full border border-champagne/30 bg-champagne/10 text-champagne">
-                    <PillIcon className="h-5 w-5" aria-hidden strokeWidth={1.75} />
-                  </span>
-                  <span className="text-xs leading-tight text-cream/80">
-                    <span className="block font-semibold text-white">{strong}</span>
-                    {rest}
-                  </span>
-                </div>
-              ))}
-            </Reveal>
-
-            <Reveal delay={170} className="lg:max-w-[720px]">
-              <p className="mt-6 max-w-xl text-sm leading-relaxed text-cream/80 sm:text-[0.95rem]">
-                Taxi Stéphane Géatti vous accompagne dans tous vos déplacements, à Chatou et dans
-                l’Ouest parisien, avec un service professionnel et un Škoda Enyaq 100 % électrique,
-                confortable et silencieux.
+              <p className="mt-6 max-w-xl text-base leading-relaxed text-cream/80 sm:text-lg">
+                Aéroports, trajets médicaux conventionnés, déplacements professionnels et privés. Un
+                service soigné à bord d’un Škoda Enyaq 100 % électrique.
               </p>
+            </Reveal>
+
+            {/* Plaque signature : note Google */}
+            <Reveal delay={90}>
               <a
                 href="#avis"
-                className="group mt-5 inline-flex flex-wrap items-center gap-x-2 gap-y-1 text-sm text-cream/90 transition-colors hover:text-white"
+                aria-label={`Note ${rating} sur 5, ${googleBusiness.reviewCount} avis Google`}
+                className="mt-8 inline-flex items-stretch overflow-hidden rounded-[10px] border border-champagne/35 transition-colors hover:border-champagne/60"
               >
-                <span className="text-base tracking-widest text-champagne" aria-hidden>
-                  ★★★★★
+                <span className="flex items-center gap-2 bg-champagne px-4 py-2.5 text-ink-900">
+                  <Star className="h-4 w-4 fill-ink-900" aria-hidden strokeWidth={0} />
+                  <span className="font-semibold">{rating}/5</span>
                 </span>
-                <span>
-                  <strong className="font-semibold text-white">
-                    {googleBusiness.rating.toFixed(1).replace('.', ',')}/5
-                  </strong>{' '}
-                  · {googleBusiness.reviewCount} avis sur Google
-                </span>
-                <span className="font-semibold text-champagne underline underline-offset-2 transition-colors group-hover:text-champagne-light">
-                  Voir les avis
+                <span className="flex items-center bg-white/[0.04] px-4 py-2.5 text-sm text-cream/85 backdrop-blur-sm">
+                  {googleBusiness.reviewCount} avis Google
                 </span>
               </a>
-              {/* CTA : empilés pleine largeur en mobile, sur une même ligne en desktop */}
-              <div className="mt-7 flex flex-col gap-3 lg:flex-row lg:flex-wrap lg:items-center">
-                <Button href="/#reservation" size="lg" className="group w-full justify-center lg:w-auto">
+            </Reveal>
+
+            {/* CTA */}
+            <Reveal delay={150}>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center">
+                <Button href="/#reservation" size="lg" className="group justify-center">
                   <CalendarCheck className="h-4 w-4" aria-hidden strokeWidth={2} />
                   Réserver mon taxi
                   <ArrowRight
@@ -128,19 +73,63 @@ export function Hero() {
                     aria-hidden
                   />
                 </Button>
-                <Button href="/#vehicule" variant="outline" size="lg" className="w-full justify-center lg:w-auto">
-                  <CarFront className="h-4 w-4" aria-hidden strokeWidth={2} />
+                <Button href="/#vehicule" variant="outline" size="lg" className="justify-center">
+                  <Car className="h-4 w-4" aria-hidden strokeWidth={2} />
                   Découvrir le véhicule
-                  <ArrowUpRight className="h-4 w-4" aria-hidden />
                 </Button>
               </div>
             </Reveal>
           </div>
-        </div>
-      </div>
 
-      {/* Bandeau de réassurance */}
-      <ReassuranceBar className="bg-ink-900/70 backdrop-blur-sm lg:mt-auto lg:bg-ink-900/55" />
+          {/* Véhicule encadré */}
+          <Reveal delay={120}>
+            <div className="relative">
+              <div className="relative aspect-[4/3] overflow-hidden rounded-[28px] shadow-[0_40px_90px_-45px_rgba(0,0,0,0.75)] ring-1 ring-champagne/25">
+                <Image
+                  src="/images/vehicule/taxi-chatou-skoda-enyaq-exterieur.webp"
+                  alt="Taxi Škoda Enyaq 100 % électrique à Chatou"
+                  fill
+                  priority
+                  fetchPriority="high"
+                  sizes="(max-width: 1024px) 100vw, 46vw"
+                  className="object-cover"
+                />
+                <div
+                  className="absolute inset-0"
+                  style={{ background: 'linear-gradient(180deg, transparent 55%, rgba(7,21,44,0.55))' }}
+                  aria-hidden
+                />
+                <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-[8px] border border-white/15 bg-ink-900/70 px-3 py-1.5 text-xs font-medium text-cream backdrop-blur-sm">
+                  <Car className="h-3.5 w-3.5 text-champagne" aria-hidden />
+                  Škoda Enyaq · 100 % électrique
+                </span>
+              </div>
+              {/* Coin beige signature */}
+              <div
+                aria-hidden
+                className="absolute -right-3 -top-3 hidden h-20 w-20 rounded-tr-[28px] border-r-2 border-t-2 border-champagne/50 sm:block"
+              />
+            </div>
+          </Reveal>
+        </div>
+      </Container>
+
+      {/* Bande de repères (séparateurs) */}
+      <div className="relative border-t border-white/10 bg-ink-800/60">
+        <Container>
+          <ul className="flex flex-col divide-y divide-white/10 sm:flex-row sm:divide-x sm:divide-y-0">
+            {facts.map(({ icon: FactIcon, label }) => (
+              <li
+                key={label}
+                className="flex flex-1 items-center justify-center gap-2.5 py-4 text-sm font-medium text-cream/85"
+              >
+                <FactIcon className="h-5 w-5 shrink-0 text-champagne" aria-hidden strokeWidth={1.5} />
+                {label}
+              </li>
+            ))}
+          </ul>
+        </Container>
+      </div>
     </section>
   );
 }
