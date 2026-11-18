@@ -42,13 +42,13 @@ export function SiteHeader() {
         {/* Logo */}
         <Link href="/" className="flex items-center" aria-label={`${siteConfig.name}, accueil`}>
           <Image
-            src="/images/branding/logo-green.webp"
+            src="/images/branding/logo-geatti.webp"
             alt={siteConfig.name}
-            width={600}
-            height={300}
+            width={1774}
+            height={887}
             priority
-            sizes="(max-width: 640px) 128px, 150px"
-            className="h-16 w-auto sm:h-[72px]"
+            sizes="(max-width: 640px) 150px, 190px"
+            className="h-14 w-auto sm:h-16"
           />
         </Link>
 

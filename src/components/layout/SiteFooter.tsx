@@ -11,24 +11,24 @@ export function SiteFooter() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#050d11] text-cream/90">
+    <footer className="bg-[#00091f] text-cream/90">
       <Container className="py-16">
         <div className="grid gap-12 lg:grid-cols-[1.4fr_repeat(3,1fr)]">
           {/* Marque + coordonnées */}
           <div>
             <Link href="/" className="inline-flex items-center" aria-label={`${siteConfig.name}, accueil`}>
               <Image
-                src="/images/branding/logo-green.webp"
+                src="/images/branding/logo-geatti.webp"
                 alt={siteConfig.name}
-                width={600}
-                height={300}
-                sizes="200px"
-                className="h-24 w-auto"
+                width={1774}
+                height={887}
+                sizes="230px"
+                className="h-20 w-auto"
               />
             </Link>
             <p className="mt-5 max-w-xs text-sm leading-relaxed text-mist">
-              Service de taxi premium à Chambourcy. Transferts aéroports, déplacements
-              professionnels et trajets privés en Île-de-France.
+              Taxi à Chatou et dans l’Ouest parisien. Transferts aéroports, transport médical
+              conventionné, trajets professionnels et privés. Véhicule 100 % électrique, 7j/7.
             </p>
 
             <ul className="mt-6 space-y-3 text-sm">
@@ -81,19 +81,21 @@ export function SiteFooter() {
               )}
             </ul>
 
-            {/* Référencement officiel vérifiable (signal de confiance). */}
-            <a
-              href={siteConfig.officialListing.mairieChambourcyUrl}
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              className="mt-6 inline-flex items-start gap-2.5 rounded-[var(--radius)] border border-champagne/30 bg-champagne/[0.08] px-3.5 py-2.5 text-xs leading-snug text-cream transition-colors hover:border-champagne/60"
-            >
-              <Landmark className="mt-0.5 h-4 w-4 shrink-0 text-champagne" aria-hidden strokeWidth={1.5} />
-              <span>
-                Référencé à l’annuaire officiel
-                <br className="hidden sm:block" /> de la Ville de Chambourcy
-              </span>
-            </a>
+            {/* Référencement officiel vérifiable (signal de confiance) — affiché si une fiche existe. */}
+            {siteConfig.officialListing.mairieChambourcyUrl && (
+              <a
+                href={siteConfig.officialListing.mairieChambourcyUrl}
+                target="_blank"
+                rel="nofollow noopener noreferrer"
+                className="mt-6 inline-flex items-start gap-2.5 rounded-[var(--radius)] border border-champagne/30 bg-champagne/[0.08] px-3.5 py-2.5 text-xs leading-snug text-cream transition-colors hover:border-champagne/60"
+              >
+                <Landmark className="mt-0.5 h-4 w-4 shrink-0 text-champagne" aria-hidden strokeWidth={1.5} />
+                <span>
+                  Référencé à l’annuaire officiel
+                  <br className="hidden sm:block" /> de la Ville de Chatou
+                </span>
+              </a>
+            )}
           </div>
 
           {/* Colonnes de navigation */}
@@ -128,8 +130,8 @@ export function SiteFooter() {
               className="underline underline-offset-2 hover:text-champagne"
             >
               {siteConfig.publisher.name}
-            </a>{' '}
-            ({siteConfig.publisher.parentEntity})
+            </a>
+            {siteConfig.publisher.parentEntity ? ` (${siteConfig.publisher.parentEntity})` : ''}
           </p>
         </div>
       </Container>
