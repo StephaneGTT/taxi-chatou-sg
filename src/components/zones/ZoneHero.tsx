@@ -41,7 +41,7 @@ export function ZoneHero({ city, title, crumbs, lede }: ZoneHeroProps) {
             <>
               Besoin d’un taxi à {city} ? Nous assurons vos transferts vers les gares et les
               aéroports, mais aussi vos déplacements professionnels, médicaux et vos trajets privés,
-              au départ de {city} et des communes voisines, 7j/7.
+              au départ de {city} et des communes voisines, 24h/24 et 7j/7.
             </>
           )}
         </p>

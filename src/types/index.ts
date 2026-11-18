@@ -9,6 +9,10 @@ export type Service = {
   name: string;
   /** Titre de page / H1 */
   title: string;
+  /** Titre SEO (<title>) + Open Graph / Twitter, < 60 car., utilisé tel quel sans suffixe de marque. Défaut : `title` + suffixe. */
+  metaTitle?: string;
+  /** Meta description SEO (~155 car.). Défaut : `cardDescription`. */
+  metaDescription?: string;
   /** Accroche courte (cartes, hero) */
   tagline: string;
   /** Description de la carte (page d'accueil) */

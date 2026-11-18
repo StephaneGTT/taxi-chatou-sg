@@ -5,6 +5,9 @@ export const services: Service[] = [
     slug: 'transfert-aeroport',
     name: 'Transferts aéroports',
     title: 'Transferts aéroports au départ de Chatou',
+    metaTitle: 'Taxi aéroport Chatou : Roissy, Orly, Le Bourget',
+    metaDescription:
+      'Taxi aéroport au départ de Chatou (78) : Roissy-CDG, Orly, Le Bourget et Beauvais, 24h/24 et 7j/7. Forfait à prix fixe possible, réservation à l’avance.',
     tagline: 'Roissy CDG, Orly et Le Bourget en toute sérénité',
     cardDescription:
       'Roissy-Charles-de-Gaulle, Orly, Le Bourget et Beauvais. Forfait aéroport à prix fixe, convenu à l’avance.',
@@ -66,6 +69,9 @@ export const services: Service[] = [
     slug: 'transport-medical',
     name: 'Transport médical (CPAM)',
     title: 'Transport médical conventionné (CPAM)',
+    metaTitle: 'Taxi conventionné CPAM à Chatou | Transport médical',
+    metaDescription:
+      'Taxi conventionné à Chatou (78) : transport médical remboursé sur prescription (CPAM), tiers payant. Consultations, hôpital, dialyse, cures. Réservez 7j/7.',
     tagline: 'Vos trajets de soins pris en charge, sur prescription',
     cardDescription:
       'Taxi conventionné CPAM : consultations, hôpital, dialyse, cures. Sur prescription médicale, avec tiers payant.',
@@ -122,6 +128,9 @@ export const services: Service[] = [
     slug: 'taxi-professionnel',
     name: 'Taxi professionnel',
     title: 'Taxi pour vos déplacements professionnels',
+    metaTitle: 'Taxi professionnel à Chatou | Déplacements d’affaires',
+    metaDescription:
+      'Taxi professionnel à Chatou (78) : rendez-vous, gares, La Défense, Paris. Service discret et ponctuel, trajets récurrents. Réservez 24h/24 et 7j/7.',
     tagline: 'Un transport discret et ponctuel pour vos rendez-vous d’affaires',
     cardDescription:
       'Rendez-vous, gares et déplacements d’affaires. Un service discret et soigné pour vos trajets professionnels.',
@@ -177,6 +186,9 @@ export const services: Service[] = [
     slug: 'trajets-prives',
     name: 'Trajets privés',
     title: 'Trajets privés et occasions particulières',
+    metaTitle: 'Taxi trajets privés à Chatou | Soirées et sorties',
+    metaDescription:
+      'Taxi à Chatou (78) pour vos trajets privés : soirées, restaurants, événements, sorties. Aller simple ou aller-retour, jour et nuit. Réservez à l’avance.',
     tagline: 'Soirées, restaurants, événements : voyagez à votre rythme',
     cardDescription:
       'Soirées, shopping, restaurants et événements. Un trajet privé pour profiter pleinement du moment.',
@@ -232,6 +244,9 @@ export const services: Service[] = [
     slug: 'mise-a-disposition',
     name: 'Mise à disposition',
     title: 'Mise à disposition avec chauffeur',
+    metaTitle: 'Taxi mise à disposition à Chatou | Chauffeur dédié',
+    metaDescription:
+      'Taxi à Chatou (78) en mise à disposition : à l’heure, à la demi-journée ou à la journée, chauffeur et véhicule dédiés à votre programme. Réservez 7j/7.',
     tagline: 'À l’heure, à la demi-journée ou à la journée, selon vos besoins',
     cardDescription:
       'À l’heure, à la demi-journée ou sur plusieurs rendez-vous. Un véhicule et un chauffeur dédiés à votre programme.',

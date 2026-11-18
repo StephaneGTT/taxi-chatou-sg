@@ -28,10 +28,12 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const service = getService(slug);
   if (!service) return {};
   return buildMetadata({
-    title: service.title,
-    description: service.cardDescription,
+    title: service.metaTitle ?? service.title,
+    description: service.metaDescription ?? service.cardDescription,
     path: `/services/${service.slug}`,
     image: service.image,
+    // metaTitle fourni tel quel (< 60 car.) : pas de suffixe de marque ajouté.
+    absoluteTitle: Boolean(service.metaTitle),
   });
 }
 

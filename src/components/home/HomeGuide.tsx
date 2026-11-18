@@ -44,12 +44,12 @@ export function HomeGuide() {
               <TopicHeading eyebrow="Taxi à Chatou" title="Réservez votre taxi à Chatou pour tous vos déplacements" />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-800/75">
                 <p>
-                  Située sur les bords de la Seine, à une vingtaine de minutes de Paris, Chatou est une
-                  ville résidentielle bien desservie, mais où les transports en commun ne couvrent pas
-                  tous les besoins : trajet tôt le matin, départ avec valises, horaires décalés,
-                  rendez-vous à l’autre bout de l’Île-de-France. Notre service de taxi à Chatou répond à
-                  ces situations avec une réponse simple : un chauffeur, un véhicule propre et
-                  confortable, et une arrivée à l’heure, 24h/24 et 7j/7.
+                  Située sur les bords de la Seine, Chatou est une ville résidentielle à une vingtaine
+                  de minutes de Paris. Cependant, les transports en commun n’y couvrent pas tous les
+                  besoins : trajet tôt le matin, départ avec valises, horaires décalés ou rendez-vous à
+                  l’autre bout de l’Île-de-France. Notre service de taxi à Chatou répond donc à ces
+                  situations. En effet, vous bénéficiez d’un chauffeur, d’un véhicule propre et
+                  confortable, et d’une arrivée à l’heure, 24h/24 et 7j/7.
                 </p>
               </div>
 
@@ -110,10 +110,11 @@ export function HomeGuide() {
               <TopicHeading eyebrow="Aéroports" title="Taxi Chatou vers les aéroports de Paris" />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-800/75">
                 <p>
-                  Manquer un vol est une source de stress que vous pouvez éviter. Nous assurons vos
-                  transferts aéroports au départ de Chatou, avec un chauffeur qui connaît les itinéraires
-                  (A86, A13, A14, A15, A1, périphérique) et les aléas de circulation selon l’heure. Suivi
-                  de vol possible pour les arrivées, aide aux bagages incluse.
+                  Manquer un vol est une source de stress que vous pouvez éviter. Nous assurons donc vos
+                  transferts aéroports au départ de Chatou. En effet, le chauffeur connaît les itinéraires
+                  (A86, A13, A14, A15, A1, périphérique) et les aléas de circulation selon l’heure. Par
+                  ailleurs, le suivi de vol est possible pour les arrivées, et l’aide aux bagages est
+                  incluse.
                 </p>
               </div>
 
@@ -142,12 +143,12 @@ export function HomeGuide() {
 
               <H3>Combien coûte un taxi entre Chatou et les aéroports ?</H3>
               <p className="mt-3 text-base leading-relaxed text-ink-800/75">
-                Le prix dépend de la distance réelle, du trafic, de l’heure (tarif jour ou nuit) et des
-                suppléments éventuels (bagages, passager supplémentaire). À titre indicatif, et selon le
-                tarif réglementé des Yvelines, comptez de l’ordre de 40 à 80 € pour Orly et de 50 à 95 €
-                pour Roissy-CDG en journée ; les tarifs de nuit, du dimanche et des jours fériés sont
-                majorés. Nous vous communiquons une estimation avant le départ, et le taximètre affiche le
-                montant exact en fin de course.
+                Le prix dépend de la distance réelle, du trafic et de l’heure (tarif jour ou nuit), ainsi
+                que des suppléments éventuels (bagages, passager supplémentaire). À titre indicatif, et
+                selon le tarif réglementé des Yvelines, comptez de l’ordre de 40 à 80 € pour Orly et de 50
+                à 95 € pour Roissy-CDG en journée. En revanche, les tarifs de nuit, du dimanche et des
+                jours fériés sont majorés. Enfin, nous vous communiquons une estimation avant le départ,
+                et le taximètre affiche le montant exact en fin de course.
               </p>
               <blockquote className="mt-6 rounded-[var(--radius)] border-l-2 border-champagne bg-champagne/10 px-5 py-4 text-sm leading-relaxed text-ink-800/80">
                 <Info className="mb-1 mr-2 inline h-4 w-4 text-champagne-dark" aria-hidden />
@@ -253,11 +254,11 @@ export function HomeGuide() {
               <TopicHeading eyebrow="Tarifs" title="Tarifs des taxis à Chatou : combien coûte votre trajet ?" />
               <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-800/75">
                 <p>
-                  Les taxis sont soumis à une tarification réglementée fixée chaque année par arrêté
-                  préfectoral. Le prix se compose d’une prise en charge, d’un tarif kilométrique (qui varie
-                  selon l’heure, le jour et le retour en charge ou à vide) et d’un temps d’attente ou de
-                  ralentissement au compteur, plus d’éventuels suppléments (bagages encombrants, passager
-                  supplémentaire).
+                  Les taxis sont soumis à une tarification réglementée, fixée chaque année par arrêté
+                  préfectoral. Le prix se compose d’une prise en charge, d’un tarif kilométrique et d’un
+                  temps d’attente au compteur. Ce tarif kilométrique varie notamment selon l’heure, le
+                  jour et le retour en charge ou à vide. Enfin, des suppléments peuvent s’ajouter (bagages
+                  encombrants, passager supplémentaire).
                 </p>
               </div>
 

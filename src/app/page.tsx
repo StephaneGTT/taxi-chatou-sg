@@ -24,7 +24,7 @@ import { buildMetadata, homePageGraph } from '@/lib/seo';
 export const metadata: Metadata = buildMetadata({
   title: 'Taxi Chatou (78) - Réservation 24h/24 7j/7 | Taxi Géatti',
   description:
-    'Taxi à Chatou (78), 24h/24 et 7j/7 : gares, aéroports (Orly, Roissy CDG), transport médical conventionné CPAM, tarifs réglementés. Course immédiate ou réservée à l’avance.',
+    'Taxi à Chatou (78), 24h/24 et 7j/7 : gares, aéroports (Orly, Roissy), transport médical conventionné CPAM, tarifs réglementés. Réservez en ligne.',
   path: '/',
   absoluteTitle: true,
 });

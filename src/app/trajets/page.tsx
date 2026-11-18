@@ -13,7 +13,7 @@ import { routes, estimatePriceRange, type RouteCategory } from '@/data/routes';
 export const metadata: Metadata = buildMetadata({
   title: 'Trajets en taxi au départ de Chatou',
   description:
-    'Taxi de Chatou vers les aéroports (CDG, Orly, Le Bourget, Beauvais), les gares parisiennes, La Défense et Disneyland : prix estimés, durées et réservation 7j/7.',
+    'Taxi de Chatou vers les aéroports (CDG, Orly, Le Bourget), gares parisiennes, La Défense et Disneyland : prix estimés, durées, réservation 24h/24 et 7j/7.',
   path: '/trajets',
 });
 

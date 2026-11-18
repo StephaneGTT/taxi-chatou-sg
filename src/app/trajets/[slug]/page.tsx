@@ -28,7 +28,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   if (!route) return {};
   return buildMetadata({
     title: `Taxi Chatou – ${route.shortName} : prix et réservation`,
-    description: `Taxi de Chatou vers ${route.destination} : distance, durée, prix estimé et réservation 7j/7.${route.forfait ? ' Forfait à prix fixe possible.' : ''}`,
+    description: `Taxi de Chatou vers ${route.destination} : distance, durée, prix estimé et réservation 24h/24 et 7j/7.${route.forfait ? ' Forfait à prix fixe possible.' : ''}`,
     path: `/trajets/${route.slug}`,
   });
 }
@@ -196,7 +196,7 @@ export default async function RoutePage({ params }: Params) {
           <SectionHeading
             eyebrow="Autres trajets au départ de Chatou"
             title="Nos itinéraires les plus demandés"
-            description="Aéroports, gares parisiennes, La Défense ou Disneyland : réservez votre trajet, 7j/7."
+            description="Aéroports, gares parisiennes, La Défense ou Disneyland : réservez votre trajet, 24h/24 et 7j/7."
           />
           <div className="mt-10 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {others.map((r, i) => (

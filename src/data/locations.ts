@@ -13,7 +13,7 @@ export const locations: Location[] = [
     h1: 'Taxi à Croissy-sur-Seine : gare RER A et aéroports',
     metaTitle: 'Taxi Croissy-sur-Seine | Gare RER A et Aéroports',
     metaDescription:
-      'Taxi à Croissy-sur-Seine 7j/7 : gare RER A Chatou–Croissy, aéroports Orly et Roissy, trajets médicaux. Réservez en ligne ou par téléphone.',
+      'Taxi à Croissy-sur-Seine 24h/24 et 7j/7 : gare RER A Chatou–Croissy, aéroports Orly et Roissy, trajets médicaux. Réservez en ligne ou par téléphone.',
     postalCode: '78290',
     tagline: 'Votre taxi de proximité à Croissy-sur-Seine',
     context: [
@@ -57,7 +57,7 @@ export const locations: Location[] = [
     h1: 'Taxi au Vésinet : gares RER A et transferts aéroports',
     metaTitle: 'Taxi Le Vésinet | Gare RER A, Orly et Roissy',
     metaDescription:
-      'Taxi au Vésinet 7j/7 : gares RER A, Orly, Roissy CDG, transport médical. Réservez en ligne ou par téléphone, tarif annoncé avant le départ.',
+      'Taxi au Vésinet 24h/24 et 7j/7 : gares RER A, Orly, Roissy CDG, transport médical. Réservez en ligne ou par téléphone, tarif annoncé avant le départ.',
     postalCode: '78110',
     tagline: 'Votre taxi de proximité au Vésinet',
     context: [
@@ -93,10 +93,10 @@ export const locations: Location[] = [
     slug: 'taxi-montesson',
     name: 'Montesson',
     title: 'Taxi à Montesson',
-    h1: 'Taxi à Montesson : prise en charge à domicile, 7j/7',
+    h1: 'Taxi à Montesson : prise en charge à domicile, 24h/24 et 7j/7',
     metaTitle: 'Taxi Montesson | Départ à Domicile, Aéroports',
     metaDescription:
-      'Taxi à Montesson 7j/7 : départ à domicile, aéroports, transport médical conventionné. Réservez en ligne ou par téléphone, réponse rapide.',
+      'Taxi à Montesson 24h/24 et 7j/7 : départ à domicile, aéroports, transport médical conventionné. Réservez en ligne ou par téléphone, réponse rapide.',
     postalCode: '78360',
     tagline: 'Votre taxi de proximité à Montesson',
     context: [
@@ -135,7 +135,7 @@ export const locations: Location[] = [
     h1: 'Taxi à Rueil-Malmaison : RER A, La Défense et aéroports',
     metaTitle: 'Taxi Rueil-Malmaison | RER A, La Défense, Aéroports',
     metaDescription:
-      'Taxi à Rueil-Malmaison 7j/7 : RER A, La Défense, aéroports Orly et Roissy, transport médical. Réservez en ligne ou par téléphone.',
+      'Taxi à Rueil-Malmaison 24h/24 et 7j/7 : RER A, La Défense, aéroports Orly et Roissy, transport médical. Réservez en ligne ou par téléphone.',
     postalCode: '92500',
     tagline: 'Votre taxi de proximité à Rueil-Malmaison',
     context: [
@@ -157,7 +157,7 @@ export const locations: Location[] = [
     practical: [
       'Prise en charge à l’adresse de votre choix à Rueil-Malmaison.',
       'Accès rapide à La Défense et aux grands axes (A86, A13).',
-      'Service sur réservation, 7j/7.',
+      'Service sur réservation, 24h/24 et 7j/7.',
     ],
     faq: [
       {
@@ -177,14 +177,15 @@ export const locations: Location[] = [
     name: 'Carrières-sur-Seine',
     title: 'Taxi à Carrières-sur-Seine',
     h1: 'Taxi à Carrières-sur-Seine : bords de Seine et aéroports',
-    metaTitle: 'Taxi Carrières-sur-Seine | Gare, Aéroports 7j/7',
+    metaTitle: 'Taxi Carrières-sur-Seine | Gare, Aéroports 24h/24 et 7j/7',
     metaDescription:
-      'Taxi à Carrières-sur-Seine 7j/7 : gare, aéroports Orly et Roissy, transport médical conventionné. Réservez en ligne ou par téléphone.',
+      'Taxi à Carrières-sur-Seine 24h/24 et 7j/7 : gare, aéroports Orly et Roissy, transport médical conventionné. Réservez en ligne ou par téléphone.',
     postalCode: '78420',
     tagline: 'Votre taxi de proximité à Carrières-sur-Seine',
     context: [
       'Carrières-sur-Seine, nichée dans la boucle de la Seine entre Chatou et Houilles, est une commune résidentielle au cadre préservé.',
       'Ses coteaux, ses quais et ses quartiers pavillonnaires appellent un transport de porte à porte pratique, pour les aéroports comme pour les trajets du quotidien.',
+      'Par ailleurs, la commune n’a pas de gare sur son territoire. Pour rejoindre le RER A à Chatou–Croissy ou la gare Houilles–Carrières, le taxi assure donc une liaison directe. Ainsi, vous voyagez sans correspondance, même tôt le matin ou avec des bagages.',
     ],
     needs: [
       'Transferts aéroports au départ de Carrières-sur-Seine.',
@@ -201,13 +202,23 @@ export const locations: Location[] = [
     practical: [
       'Prise en charge à l’adresse de votre choix à Carrières-sur-Seine.',
       'Service de porte à porte, utile avec des bagages ou en soirée.',
-      'Service sur réservation, 7j/7.',
+      'Service sur réservation, 24h/24 et 7j/7.',
     ],
     faq: [
       {
         question: 'Venez-vous me chercher à domicile à Carrières-sur-Seine ?',
         answer:
           'Oui. La prise en charge se fait à l’adresse exacte de votre choix, du centre aux coteaux et aux bords de Seine, sur réservation.',
+      },
+      {
+        question: 'Quel délai pour un taxi à Carrières-sur-Seine ?',
+        answer:
+          'Pour une course immédiate, nous vous indiquons le délai d’arrivée au moment de l’appel, selon la disponibilité. Cependant, pour un horaire précis (train, vol ou rendez-vous), la réservation à l’avance reste préférable.',
+      },
+      {
+        question: 'Assurez-vous les départs aéroport de nuit depuis Carrières-sur-Seine ?',
+        answer:
+          'Oui. Notre service fonctionne 24h/24 et 7j/7. Ainsi, nous assurons les départs très tôt le matin comme les retours tardifs. Pensez toutefois à réserver à l’avance pour garantir la disponibilité.',
       },
     ],
   },
@@ -218,12 +229,13 @@ export const locations: Location[] = [
     h1: 'Taxi à Houilles : gare, aéroports et rendez-vous',
     metaTitle: 'Taxi Houilles | Gare, Aéroports, Rendez-vous',
     metaDescription:
-      'Taxi à Houilles 7j/7 : gare Houilles–Carrières, aéroports, transport médical conventionné. Réservez en ligne ou par téléphone.',
+      'Taxi à Houilles 24h/24 et 7j/7 : gare Houilles–Carrières, aéroports, transport médical conventionné. Réservez en ligne ou par téléphone.',
     postalCode: '78800',
     tagline: 'Votre taxi de proximité à Houilles',
     context: [
       'Houilles, commune animée de l’Ouest parisien proche de Chatou, est desservie par la gare Houilles–Carrières-sur-Seine (Transilien lignes J et L, RER A à proximité).',
       'Son tissu résidentiel dense et ses commerces génèrent de nombreux besoins de transport, des transferts aéroports aux trajets médicaux.',
+      'En complément du train, le taxi apporte une réponse directe de porte à porte. En effet, il se révèle utile avec des bagages, en soirée ou pour un départ matinal vers un aéroport. De plus, il évite les correspondances et l’attente sur le quai.',
     ],
     needs: [
       'Transferts aéroports au départ de Houilles.',
@@ -240,13 +252,23 @@ export const locations: Location[] = [
     practical: [
       'Prise en charge à l’adresse de votre choix à Houilles.',
       'Utile pour les départs matinaux ou les retours tardifs, hors horaires de train.',
-      'Service sur réservation, 7j/7.',
+      'Service sur réservation, 24h/24 et 7j/7.',
     ],
     faq: [
       {
         question: 'Puis-je réserver un trajet tôt le matin depuis Houilles ?',
         answer:
           'Oui. Pour les départs matinaux, notamment vers les aéroports, une réservation anticipée est recommandée afin de garantir la disponibilité.',
+      },
+      {
+        question: 'Desservez-vous la gare de Houilles–Carrières ?',
+        answer:
+          'Oui. Nous assurons les transferts depuis et vers la gare de Houilles–Carrières, ainsi que vers les gares parisiennes. Par ailleurs, nous vous déposons à l’adresse de votre choix, sans correspondance.',
+      },
+      {
+        question: 'Le transport médical conventionné est-il possible depuis Houilles ?',
+        answer:
+          'Oui. Sur prescription médicale, nous assurons le transport assis conventionné (CPAM) vers vos consultations, examens ou séjours hospitaliers. De plus, le tiers payant s’applique selon votre situation.',
       },
     ],
   },
@@ -258,7 +280,7 @@ export const locations: Location[] = [
     tagline: 'Un service de proximité dans tout l’Ouest parisien',
     bookingCity: 'Chatou',
     heroLede:
-      'Besoin d’un taxi dans l’Ouest parisien ? Basés à Chatou, nous rayonnons sur Croissy-sur-Seine, Le Vésinet, Montesson, Rueil-Malmaison et les communes voisines, et vers Paris, La Défense et les aéroports franciliens, 7j/7, à l’avance comme en course immédiate.',
+      'Besoin d’un taxi dans l’Ouest parisien ? Basés à Chatou, nous rayonnons sur Croissy-sur-Seine, Le Vésinet, Montesson, Rueil-Malmaison et les communes voisines, et vers Paris, La Défense et les aéroports franciliens, 24h/24 et 7j/7, à l’avance comme en course immédiate.',
     context: [
       'Basés à Chatou, nous assurons un service de taxi de proximité dans tout l’Ouest parisien : Croissy-sur-Seine, Le Vésinet, Montesson, Rueil-Malmaison, Carrières-sur-Seine, Houilles et les communes voisines.',
       'Cette page régionale regroupe nos zones desservies. Retrouvez plus bas la liste des communes où nous assurons une prise en charge de porte à porte, ainsi que nos liaisons vers Paris, La Défense et les aéroports.',
@@ -277,7 +299,7 @@ export const locations: Location[] = [
     ],
     practical: [
       'Zone de service : Chatou, l’Ouest parisien et l’Île-de-France.',
-      'Trajets de porte à porte sur réservation, 7j/7.',
+      'Trajets de porte à porte sur réservation, 24h/24 et 7j/7.',
       'Estimations et modalités communiquées lors de la demande.',
     ],
     faq: [
