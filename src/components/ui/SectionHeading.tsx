@@ -52,14 +52,17 @@ export function SectionHeading({
     >
       <div className={cn(twoCol && 'max-w-xl')}>
         {eyebrow && (
-          <p
+          <div
             className={cn(
-              'eyebrow mb-4',
-              isDarkBg ? 'text-champagne' : 'text-champagne-dark',
+              'mb-4 flex items-center gap-3',
+              align === 'center' && !twoCol && 'justify-center',
             )}
           >
-            {eyebrow}
-          </p>
+            <span className="h-px w-10 shrink-0 bg-champagne" aria-hidden />
+            <span className={cn('eyebrow', isDarkBg ? 'text-champagne' : 'text-champagne-dark')}>
+              {eyebrow}
+            </span>
+          </div>
         )}
         <Tag
           className={cn(
