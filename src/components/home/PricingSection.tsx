@@ -11,14 +11,14 @@ import {
   pricingSource,
 } from '@/data/pricing';
 
-export function PricingSection({ city = 'Chambourcy' }: { city?: string }) {
+export function PricingSection({ city = 'Chatou' }: { city?: string }) {
   return (
     <section id="tarifs" className="scroll-mt-24 bg-cream py-20 sm:py-24">
       <Container>
         <SectionHeading
           eyebrow="Tarifs"
           title={`Tarif taxi à ${city} en ${pricingYear}`}
-          description="Anes applique les tarifs réglementés des taxis des Yvelines. Le prix combine une prise en charge, un tarif kilométrique (A, B, C ou D selon le jour, l’heure et le retour en charge ou à vide) et, parfois, un tarif d’attente. Le minimum de course est de 8 €. Au final, le taximètre affiche le montant exact."
+          description="Nous appliquons les tarifs réglementés des taxis des Yvelines. Le prix combine une prise en charge, un tarif kilométrique (A, B, C ou D selon le jour, l’heure et le retour en charge ou à vide) et, parfois, un tarif d’attente. Le minimum de course est de 8 €. Au final, le taximètre affiche le montant exact."
         />
 
         {/* Chiffres clés */}

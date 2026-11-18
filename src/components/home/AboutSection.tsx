@@ -11,16 +11,16 @@ export function AboutSection() {
           <Reveal>
             <p className="eyebrow text-champagne-dark">À propos</p>
             <h2 className="mt-4 text-h2 text-ink-900">
-              Un service de confiance à Chambourcy et ses environs
+              Un service de confiance à Chatou et ses environs
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-ink-800/75">
               <p>
-                Pour vos déplacements privés et professionnels, Anes soigne la qualité de
-                l’accueil, l’attention aux détails et la simplicité de réservation.
+                Pour vos déplacements privés, professionnels et médicaux, Stéphane soigne la
+                qualité de l’accueil, l’attention aux détails et la simplicité de réservation.
               </p>
               <p>
-                Nous partons de Chambourcy, Saint-Germain-en-Laye, Poissy et des communes
-                voisines, vers Paris et les aéroports d’Île-de-France.
+                Nous partons de Chatou, Croissy-sur-Seine, Le Vésinet, Rueil-Malmaison et des
+                communes voisines, vers Paris et les aéroports d’Île-de-France.
               </p>
             </div>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -36,8 +36,8 @@ export function AboutSection() {
           <Reveal delay={120}>
             <div className="relative aspect-video overflow-hidden rounded-[var(--radius-lg)] shadow-card">
               <Image
-                src="/images/vehicule/taxi-chambourcy-bmw-profil.webp"
-                alt="Taxi à Chambourcy : le break BMW noir, de profil, siglé G7"
+                src="/images/vehicule/taxi-chatou-skoda-enyaq.webp"
+                alt="Taxi à Chatou : Škoda Enyaq noire 100 % électrique"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"

@@ -8,7 +8,7 @@ export function FloatingWhatsApp() {
 
   const href = whatsappUrl(
     whatsapp,
-    'Bonjour, je souhaite obtenir des informations pour un trajet en taxi à Chambourcy.',
+    'Bonjour, je souhaite obtenir des informations pour un trajet en taxi à Chatou.',
   );
 
   return (

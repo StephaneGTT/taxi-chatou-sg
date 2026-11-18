@@ -25,12 +25,12 @@ export function ServiceHero({ service, crumbs }: { service: Service; crumbs: Cru
           className="absolute inset-0"
           style={{
             background:
-              'linear-gradient(90deg, #080d10 0%, rgba(8,13,16,0.93) 32%, rgba(8,13,16,0.6) 64%, rgba(8,13,16,0.18) 100%)',
+              'linear-gradient(90deg, #001138 0%, rgba(0,17,56,0.93) 32%, rgba(0,17,56,0.6) 64%, rgba(0,17,56,0.18) 100%)',
           }}
         />
         <div
           className="absolute inset-x-0 bottom-0 h-32"
-          style={{ background: 'linear-gradient(transparent, rgba(8,13,16,0.9))' }}
+          style={{ background: 'linear-gradient(transparent, rgba(0,17,56,0.9))' }}
         />
       </div>
 
@@ -40,7 +40,7 @@ export function ServiceHero({ service, crumbs }: { service: Service; crumbs: Cru
           <span className="inline-grid h-11 w-11 place-items-center rounded-full bg-champagne/15 text-champagne">
             <Icon name={service.icon} className="h-5 w-5" />
           </span>
-          <p className="eyebrow text-champagne">Service · Taxi à Chambourcy</p>
+          <p className="eyebrow text-champagne">Service · Taxi à Chatou</p>
         </div>
         <h1
           className="mt-5 max-w-3xl text-display text-balance"

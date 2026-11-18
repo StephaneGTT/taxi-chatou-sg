@@ -1,4 +1,4 @@
-import { Leaf, BadgeCheck, Briefcase } from 'lucide-react';
+import { Leaf, BadgeCheck, Stethoscope } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Reveal } from '@/components/ui/Reveal';
@@ -8,7 +8,7 @@ const engagements = [
     icon: Leaf,
     title: 'Véhicule 100% électrique : un transport plus écoresponsable',
     description:
-      'Voyagez à bord d’une BMW 100% électrique, moderne et confortable. Zéro émission à l’usage et habitacle silencieux : profitez d’un trajet tout en souplesse, tout en privilégiant une mobilité plus responsable.',
+      'Voyagez à bord d’une Škoda Enyaq 100 % électrique, moderne et confortable. Zéro émission à l’usage et habitacle silencieux : profitez d’un trajet tout en souplesse, tout en privilégiant une mobilité plus responsable.',
   },
   {
     icon: BadgeCheck,
@@ -17,10 +17,10 @@ const engagements = [
       'Faites confiance à un chauffeur artisan taxi français, indépendant et expérimenté, qui met son savoir-faire au service de votre satisfaction. Ponctualité, discrétion, sécurité et accueil personnalisé sont au cœur de chaque trajet.',
   },
   {
-    icon: Briefcase,
-    title: 'Taxi G7 : un service Plus dédié aux professionnels',
+    icon: Stethoscope,
+    title: 'Taxi conventionné : vos trajets médicaux pris en charge',
     description:
-      'Bénéficiez de l’expertise d’un chauffeur affilié au réseau G7, proposant un service Plus adapté aux exigences des professionnels. Déplacements d’affaires, transferts vers les gares et aéroports, rendez-vous clients : profitez d’un transport fiable, confortable et soigné, avec une attention particulière portée à votre ponctualité et à votre tranquillité.',
+      'En tant que taxi conventionné par l’Assurance Maladie, nous assurons vos trajets de soins sur prescription (consultations, hôpital, dialyse, cures), avec le tiers payant selon votre situation. Un accompagnement attentionné, pour les rendez-vous ponctuels comme récurrents.',
   },
 ];
 

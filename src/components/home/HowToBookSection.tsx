@@ -6,7 +6,7 @@ import { Reveal } from '@/components/ui/Reveal';
 import { WhatsAppIcon } from '@/components/ui/WhatsAppIcon';
 import { siteConfig } from '@/config/site';
 
-export function HowToBookSection({ city = 'Chambourcy' }: { city?: string }) {
+export function HowToBookSection({ city = 'Chatou' }: { city?: string }) {
   const prepare = [
     `L’adresse de départ à ${city}`,
     'La destination',

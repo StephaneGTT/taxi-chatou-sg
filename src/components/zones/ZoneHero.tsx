@@ -20,29 +20,29 @@ export function ZoneHero({ city, title, crumbs, lede }: ZoneHeroProps) {
       {/* Image de fond */}
       <div className="absolute inset-0" aria-hidden>
         <Image
-          src="/images/hero/hero.webp"
-          alt={`Taxi à ${city}, break BMW noir`}
+          src="/images/vehicule/taxi-chatou-skoda-enyaq.webp"
+          alt={`Taxi à ${city}, Škoda Enyaq noire 100 % électrique`}
           fill
           priority
           sizes="100vw"
-          className="object-cover object-[65%_center]"
+          className="object-cover object-[60%_center]"
         />
         <div
           className="absolute inset-0"
           style={{
             background:
-              'linear-gradient(90deg, #080d10 0%, rgba(8,13,16,0.93) 30%, rgba(8,13,16,0.58) 62%, rgba(8,13,16,0.12) 100%)',
+              'linear-gradient(90deg, #001138 0%, rgba(0,17,56,0.93) 30%, rgba(0,17,56,0.58) 62%, rgba(0,17,56,0.12) 100%)',
           }}
         />
         <div
           className="absolute inset-x-0 bottom-0 h-32"
-          style={{ background: 'linear-gradient(transparent, rgba(8,13,16,0.9))' }}
+          style={{ background: 'linear-gradient(transparent, rgba(0,17,56,0.9))' }}
         />
       </div>
 
       <Container className="relative z-10 flex h-full flex-col lg:min-h-[calc(72vh-136px)] lg:justify-center">
         <Breadcrumb items={crumbs} tone="light" className="mb-7" />
-        <p className="eyebrow text-champagne">Zone desservie · Yvelines (78)</p>
+        <p className="eyebrow text-champagne">Zone desservie · Ouest parisien</p>
         <h1
           className="mt-4 max-w-3xl text-display text-balance"
           style={{ fontSize: 'clamp(2.25rem, 4vw, 3.5rem)' }}

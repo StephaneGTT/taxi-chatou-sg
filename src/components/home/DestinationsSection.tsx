@@ -11,19 +11,19 @@ import { locations } from '@/data/locations';
  */
 const featuredRoutes = [
   {
-    title: 'Saint-Germain-en-Laye',
-    description: 'Centre-ville, gare RER A et lieux de rendez-vous, à toute heure de la journée.',
-    href: '/zones/taxi-saint-germain-en-laye',
+    title: 'Croissy-sur-Seine',
+    description: 'Centre-ville, gare RER A Chatou–Croissy et lieux de rendez-vous, à toute heure.',
+    href: '/zones/taxi-croissy-sur-seine',
   },
   {
-    title: 'Poissy',
-    description: 'Gare (RER A et Transilien), zones d’activité, hôpital et destinations locales.',
-    href: '/zones/taxi-poissy',
+    title: 'Rueil-Malmaison',
+    description: 'RER A, château de Malmaison et accès direct à La Défense, à quelques minutes.',
+    href: '/zones/taxi-rueil-malmaison',
   },
   {
     title: 'Paris & La Défense',
     description: 'Déplacements professionnels ou privés ; réservation conseillée aux heures de pointe.',
-    href: '/trajets/taxi-chambourcy-la-defense',
+    href: '/trajets/taxi-chatou-la-defense',
   },
   {
     title: 'Aéroports de Paris',
@@ -38,8 +38,8 @@ export function DestinationsSection() {
       <Container>
         <SectionHeading
           eyebrow="Destinations & zones"
-          title="Trajets populaires depuis Chambourcy"
-          description="Au départ de Chambourcy, nous couvrons tout l’Ouest parisien et l’Île-de-France. Ainsi, nous desservons les gares, les aéroports, Paris et La Défense."
+          title="Trajets populaires depuis Chatou"
+          description="Au départ de Chatou, nous couvrons tout l’Ouest parisien et l’Île-de-France. Ainsi, nous desservons les gares, les aéroports, Paris et La Défense."
         />
 
         {/* Trajets mis en avant (avec liens internes) */}
@@ -52,7 +52,7 @@ export function DestinationsSection() {
               >
                 <div>
                   <h3 className="font-serif text-lg leading-snug text-ink-900">
-                    Taxi Chambourcy&nbsp;– {route.title}
+                    Taxi Chatou&nbsp;– {route.title}
                   </h3>
                   <p className="mt-2 text-sm leading-relaxed text-ink-800/70">
                     {route.description}
@@ -74,13 +74,13 @@ export function DestinationsSection() {
         <div className="mt-16">
           <div className="lg:grid lg:grid-cols-2 lg:items-end lg:gap-x-12">
             <h3 className="max-w-xl font-serif text-xl text-ink-900">
-              Taxi à Chambourcy et dans les communes voisines
+              Taxi à Chatou et dans les communes voisines
             </h3>
             <p className="mt-3 max-w-prose text-sm leading-relaxed text-ink-800/70 lg:mt-0">
-              Nous intervenons à Chambourcy, mais aussi dans les communes proches : Orgeval, Poissy,
-              Saint-Germain-en-Laye, Aigremont, Fourqueux ou Mareil-Marly. Par ailleurs, nous
-              assurons les départs vers les gares, les aéroports et Paris. Votre commune n’apparaît
-              pas dans la liste ? Contactez-nous pour confirmation.
+              Nous intervenons à Chatou, mais aussi dans les communes proches : Croissy-sur-Seine,
+              Le Vésinet, Montesson, Rueil-Malmaison, Carrières-sur-Seine ou Houilles. Par ailleurs,
+              nous assurons les départs vers les gares, les aéroports et Paris. Votre commune
+              n’apparaît pas dans la liste ? Contactez-nous pour confirmation.
             </p>
           </div>
           <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">

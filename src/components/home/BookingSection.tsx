@@ -10,10 +10,10 @@ const types = [
   { icon: Sparkles, label: 'Trajets privés' },
 ];
 
-export function BookingSection({ city = 'Chambourcy' }: { city?: string }) {
+export function BookingSection({ city = 'Chatou' }: { city?: string }) {
   const description =
-    city === 'Chambourcy'
-      ? 'Réserver un taxi à Chambourcy (78) ne prend que quelques minutes. Choisissez une course immédiate ou un départ programmé : nous venons vous chercher à l’adresse de votre choix, que ce soit votre domicile, votre bureau, un hôtel, une clinique ou un lieu de rendez-vous. Notre service couvre Chambourcy et les communes voisines : Orgeval, Poissy, Saint-Germain-en-Laye, Aigremont, Fourqueux et Mareil-Marly.'
+    city === 'Chatou'
+      ? 'Réserver un taxi à Chatou (78) ne prend que quelques minutes. Choisissez une course immédiate ou un départ programmé : nous venons vous chercher à l’adresse de votre choix, que ce soit votre domicile, votre bureau, un hôtel, une clinique ou un lieu de rendez-vous. Notre service couvre Chatou et les communes voisines : Croissy-sur-Seine, Le Vésinet, Montesson, Rueil-Malmaison, Carrières-sur-Seine et Houilles.'
       : `Réserver un taxi à ${city} (78) ne prend que quelques minutes. Choisissez une course immédiate ou un départ programmé : nous venons vous chercher à l’adresse de votre choix, que ce soit votre domicile, votre bureau, un hôtel, une clinique ou un lieu de rendez-vous. Notre service couvre ${city} et les communes voisines de l’Ouest parisien.`;
 
   return (

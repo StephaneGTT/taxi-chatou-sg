@@ -7,12 +7,12 @@ const pillars = [
   {
     icon: UserRound,
     title: 'Accueil personnalisé',
-    description: 'Anes vous accueille et adapte chaque trajet à vos préférences.',
+    description: 'Stéphane vous accueille et adapte chaque trajet à vos préférences.',
   },
   {
     icon: Gem,
     title: 'Confort et discrétion',
-    description: 'Véhicule BMW 100% électrique et spacieux, bouteille d’eau offerte et trajets discrets, pour voyager au calme.',
+    description: 'Véhicule Škoda Enyaq 100 % électrique et spacieux, trajets discrets, pour voyager au calme.',
   },
   {
     icon: Clock,
@@ -22,7 +22,7 @@ const pillars = [
   {
     icon: MapPin,
     title: 'Connaissance locale',
-    description: 'Chambourcy, Paris Ouest et l’ensemble de l’Île-de-France.',
+    description: 'Chatou, l’Ouest parisien et l’ensemble de l’Île-de-France.',
   },
 ];
 

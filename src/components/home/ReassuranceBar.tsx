@@ -1,15 +1,15 @@
-import { Clock, Leaf, UserRound, ShieldCheck, MapPin, Languages } from 'lucide-react';
+import { Clock, Leaf, UserRound, ShieldCheck, MapPin, Stethoscope } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Marquee } from '@/components/ui/Marquee';
 import { cn } from '@/lib/utils';
 
 const features = [
   { icon: Clock, label: 'Ponctualité\net sérénité' },
-  { icon: Leaf, label: 'Véhicule BMW\n100% électrique' },
+  { icon: Leaf, label: 'Véhicule 100%\nélectrique' },
   { icon: UserRound, label: 'Chauffeur\nprofessionnel' },
   { icon: ShieldCheck, label: 'Trajets discrets\net sécurisés' },
-  { icon: Languages, label: 'Langues parlées\nFR · EN · ES' },
-  { icon: MapPin, label: 'Chambourcy et\nÎle-de-France' },
+  { icon: Stethoscope, label: 'Conventionné\nCPAM' },
+  { icon: MapPin, label: 'Chatou et\nl’Ouest parisien' },
 ];
 
 /**

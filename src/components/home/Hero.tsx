@@ -1,11 +1,9 @@
 import Image from 'next/image';
-import { ArrowRight, ArrowUpRight, CalendarCheck, CarFront, Clock, Landmark, MapPin, ShieldCheck } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, CalendarCheck, CarFront, Clock, Leaf, MapPin, ShieldCheck } from 'lucide-react';
 import { Button } from '@/components/ui/Button';
 import { Reveal } from '@/components/ui/Reveal';
-import { HeroVehicleRail } from '@/components/home/HeroVehicleRail';
 import { ReassuranceBar } from '@/components/home/ReassuranceBar';
 import { googleBusiness } from '@/data/reviews';
-import { siteConfig } from '@/config/site';
 
 const pills = [
   { icon: CarFront, strong: 'Confort', rest: '& ponctualité' },
@@ -19,77 +17,63 @@ export function Hero() {
       id="accueil"
       className="relative overflow-hidden bg-ink-900 pt-[88px] text-white lg:flex lg:min-h-[100svh] lg:flex-col"
     >
-      {/* Accents décoratifs verts (coins) */}
+      {/* Accents décoratifs champagne (coins) */}
       <div
         className="pointer-events-none absolute -left-28 -top-24 z-[1] h-80 w-80 rounded-full opacity-70"
-        style={{ background: 'radial-gradient(circle, rgba(106,165,32,0.18), transparent 70%)' }}
+        style={{ background: 'radial-gradient(circle, rgba(219,195,165,0.16), transparent 70%)' }}
         aria-hidden
       />
       <div
         className="pointer-events-none absolute -bottom-32 -right-20 z-[1] h-96 w-96 rounded-full opacity-50"
-        style={{ background: 'radial-gradient(circle, rgba(106,165,32,0.14), transparent 70%)' }}
+        style={{ background: 'radial-gradient(circle, rgba(219,195,165,0.12), transparent 70%)' }}
         aria-hidden
       />
 
-      {/* Split 20 / 80 */}
       <div className="relative lg:flex lg:flex-1">
-        {/* 20 % : colonne de photos du véhicule (desktop) */}
-        <HeroVehicleRail />
-
-        {/* 80 % : photo du chauffeur + texte */}
-        <div className="relative overflow-hidden lg:w-4/5">
-          {/* Fond : photo réelle du chauffeur devant la BMW */}
+        <div className="relative w-full overflow-hidden">
+          {/* Fond : photo réelle du véhicule (Škoda Enyaq 100 % électrique) */}
           <div className="absolute inset-0" aria-hidden>
             <Image
-              src="/images/hero/hero-chauffeur.webp"
-              alt="Chauffeur de taxi à Chambourcy en costume devant sa BMW noire, panneau « Taxi Chambourcy »"
+              src="/images/vehicule/taxi-chatou-skoda-enyaq.webp"
+              alt="Taxi à Chatou : Škoda Enyaq noire 100 % électrique avec panneau taxi"
               fill
               priority
               fetchPriority="high"
-              quality={76}
+              quality={78}
               sizes="100vw"
-              className="object-cover object-[50%_20%] lg:object-[8%_24%]"
+              className="object-cover object-[60%_45%]"
             />
-            {/* Dégradé progressif gauche → droite pour la lisibilité du texte */}
+            {/* Dégradé marine progressif gauche → droite pour la lisibilité du texte */}
             <div
               className="absolute inset-0"
               style={{
                 background:
-                  'linear-gradient(90deg, #090f10 0%, rgba(9,15,16,0.92) 30%, rgba(9,15,16,0.56) 58%, rgba(9,15,16,0.08) 100%)',
+                  'linear-gradient(90deg, #001138 0%, rgba(0,17,56,0.92) 32%, rgba(0,17,56,0.6) 60%, rgba(0,17,56,0.12) 100%)',
               }}
             />
             <div
               className="absolute inset-x-0 bottom-0 h-44"
-              style={{ background: 'linear-gradient(transparent, rgba(9,15,16,0.82))' }}
+              style={{ background: 'linear-gradient(transparent, rgba(0,17,56,0.85))' }}
             />
           </div>
 
           <div className="relative z-10 px-gutter py-12 sm:py-16 lg:flex lg:h-full lg:flex-col lg:justify-end lg:pb-14 lg:pt-16">
-            {/* Badge de confiance — annuaire mairie */}
-            <a
-              href={siteConfig.officialListing.mairieChambourcyUrl}
-              target="_blank"
-              rel="nofollow noopener noreferrer"
-              className="absolute left-gutter top-2 z-20 inline-flex items-center gap-1.5 rounded-full border border-champagne/40 bg-ink-900/70 px-2.5 py-1 text-[11px] font-medium text-cream backdrop-blur-sm transition-colors hover:border-champagne/60 lg:static lg:left-auto lg:top-auto lg:z-auto lg:mb-5 lg:gap-2 lg:self-start lg:bg-champagne/10 lg:px-3.5 lg:py-1.5 lg:text-xs lg:hover:bg-champagne/15"
-            >
-              <Landmark
-                className="h-3 w-3 shrink-0 text-champagne lg:h-3.5 lg:w-3.5"
-                aria-hidden
-                strokeWidth={1.75}
-              />
-              Référencé à l’annuaire officiel de la mairie
-            </a>
+            {/* Badge de confiance — atouts clés */}
+            <span className="absolute left-gutter top-2 z-20 inline-flex items-center gap-1.5 rounded-full border border-champagne/40 bg-ink-900/70 px-2.5 py-1 text-[11px] font-medium text-cream backdrop-blur-sm lg:static lg:left-auto lg:top-auto lg:z-auto lg:mb-5 lg:gap-2 lg:self-start lg:bg-champagne/10 lg:px-3.5 lg:py-1.5 lg:text-xs">
+              <Leaf className="h-3 w-3 shrink-0 text-champagne lg:h-3.5 lg:w-3.5" aria-hidden strokeWidth={1.75} />
+              100 % électrique · Taxi conventionné CPAM
+            </span>
 
             <Reveal className="lg:max-w-[620px]">
               <p className="eyebrow inline-flex w-fit items-center gap-1.5 text-champagne tracking-[0.1em] sm:tracking-[0.3em]">
                 <MapPin className="h-3.5 w-3.5 shrink-0" aria-hidden strokeWidth={2.25} />
-                Taxi local à Chambourcy (78)
+                Taxi local à Chatou (78)
               </p>
               <h1
                 className="mt-4 font-serif leading-[1.06] tracking-[-0.02em]"
                 style={{ fontSize: 'clamp(2.1rem, 4.8vw, 3.9rem)' }}
               >
-                Taxi Chambourcy <span className="text-champagne">(78)</span>
+                Taxi Chatou <span className="text-champagne">(78)</span>
                 <span className="mt-3 block font-sans text-[clamp(1rem,1.7vw,1.25rem)] font-medium leading-snug tracking-normal text-cream/85">
                   Votre taxi local, disponible 7j/7
                 </span>
@@ -113,9 +97,9 @@ export function Hero() {
 
             <Reveal delay={170} className="lg:max-w-[720px]">
               <p className="mt-6 max-w-xl text-sm leading-relaxed text-cream/80 sm:text-[0.95rem]">
-                Besoin d’un taxi à Chambourcy ? Anes vous prend en charge pour vos trajets privés,
-                professionnels, ou vers les gares et aéroports en région parisienne. Anes vous conduit
-                avec sérieux, ponctualité et confort, partout où vous allez.
+                Besoin d’un taxi à Chatou ? Stéphane vous prend en charge pour vos trajets privés,
+                professionnels, médicaux (conventionné CPAM), ou vers les gares et aéroports d’Île-de-France.
+                Un service sérieux, ponctuel et confortable, à bord d’un véhicule 100 % électrique.
               </p>
               <a
                 href="#avis"
@@ -152,15 +136,6 @@ export function Hero() {
               </div>
             </Reveal>
           </div>
-
-          {/* Panneau lumineux « Taxi » (desktop) */}
-          <Image
-            src="/images/hero/panneau-taxi.webp"
-            alt="Panneau lumineux de taxi Chambourcy"
-            width={1774}
-            height={887}
-            className="pointer-events-none absolute bottom-6 right-6 z-20 hidden w-[180px] drop-shadow-[0_14px_30px_rgba(0,0,0,0.55)] lg:block xl:bottom-8 xl:right-10 xl:w-[216px]"
-          />
         </div>
       </div>
 
