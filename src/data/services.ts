@@ -9,7 +9,7 @@ export const services: Service[] = [
     cardDescription:
       'Roissy-Charles-de-Gaulle, Orly, Le Bourget et Beauvais. Forfait aéroport à prix fixe, convenu à l’avance.',
     icon: 'Plane',
-    image: '/images/services/airport.webp',
+    image: '/images/vehicule/taxi-chatou-skoda-enyaq-taxi-valise.webp',
     imageAlt: 'Taxi à Chatou prêt pour un transfert aéroport, coffre spacieux pour les bagages',
     intro: [
       'Le transfert vers l’aéroport est un moment sensible : il conditionne la sérénité de tout un voyage. Nous organisons votre prise en charge à l’avance, avec une adresse de départ précise et une heure calculée en tenant compte du trajet et des marges d’enregistrement habituelles.',
@@ -126,7 +126,7 @@ export const services: Service[] = [
     cardDescription:
       'Rendez-vous, gares et déplacements d’affaires. Un service discret et soigné pour vos trajets professionnels.',
     icon: 'Briefcase',
-    image: '/images/services/business.webp',
+    image: '/images/vehicule/taxi-chatou-skoda-enyaq-poste-conduite.webp',
     imageAlt: 'Taxi professionnel à Chatou : intérieur soigné pour vos déplacements d’affaires',
     intro: [
       'Pour vos rendez-vous et déplacements d’affaires, la régularité et la discrétion comptent autant que le confort. Nous proposons un transport pensé pour les professionnels : un cadre calme pour préparer une réunion, passer un appel ou simplement souffler entre deux étapes.',
@@ -181,7 +181,7 @@ export const services: Service[] = [
     cardDescription:
       'Soirées, shopping, restaurants et événements. Un trajet privé pour profiter pleinement du moment.',
     icon: 'Sparkles',
-    image: '/images/services/private.webp',
+    image: '/images/vehicule/taxi-chatou-skoda-enyaq-places-arriere.webp',
     imageAlt: 'Trajet privé à Chatou : véhicule confortable pour vos sorties',
     intro: [
       'Certaines occasions méritent un transport à la hauteur du moment. Pour une soirée, un dîner, une sortie culturelle ou un événement familial, nous assurons un trajet privé qui vous permet de profiter pleinement, sans vous soucier du stationnement ni du retour.',
@@ -236,7 +236,7 @@ export const services: Service[] = [
     cardDescription:
       'À l’heure, à la demi-journée ou sur plusieurs rendez-vous. Un véhicule et un chauffeur dédiés à votre programme.',
     icon: 'Clock',
-    image: '/images/services/disposal.webp',
+    image: '/images/vehicule/taxi-chatou-skoda-enyaq-coffre-bagages.webp',
     imageAlt: 'Taxi à disposition à Chatou, chauffeur dédié à votre programme de la journée',
     intro: [
       'Lorsque votre journée comporte plusieurs étapes, la mise à disposition est la solution la plus souple. Un véhicule et un chauffeur restent dédiés à votre programme : rendez-vous successifs, visites, événement sur une journée ou déplacement comportant des temps d’attente.',
