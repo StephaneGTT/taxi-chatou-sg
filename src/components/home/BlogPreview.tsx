@@ -9,7 +9,7 @@ export function BlogPreview({ posts }: { posts: BlogPost[] }) {
   if (posts.length === 0) return null;
 
   return (
-    <section className="bg-[#f7f4ef] py-20 sm:py-24">
+    <section className="bg-sand py-20 sm:py-24">
       <Container>
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <SectionHeading

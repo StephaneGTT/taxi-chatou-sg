@@ -185,7 +185,7 @@ export default async function RoutePage({ params }: Params) {
 
       {/* FAQ */}
       {route.faq.length > 0 && (
-        <section className="bg-[#f7f4ef] py-20 sm:py-24">
+        <section className="bg-sand py-20 sm:py-24">
           <Container>
             <div className="grid gap-12 lg:grid-cols-[0.8fr_1.2fr] lg:gap-16">
               <SectionHeading

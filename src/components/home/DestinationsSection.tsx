@@ -34,7 +34,7 @@ const featuredRoutes = [
 
 export function DestinationsSection() {
   return (
-    <section id="destinations" className="scroll-mt-24 bg-[#f7f4ef] py-20 sm:py-24">
+    <section id="destinations" className="scroll-mt-24 bg-sand py-20 sm:py-24">
       <Container>
         <SectionHeading
           eyebrow="Destinations & zones"

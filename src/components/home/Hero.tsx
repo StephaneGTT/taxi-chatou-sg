@@ -73,9 +73,9 @@ export function Hero() {
                 className="mt-4 font-serif leading-[1.06] tracking-[-0.02em]"
                 style={{ fontSize: 'clamp(2.1rem, 4.8vw, 3.9rem)' }}
               >
-                Taxi Chatou <span className="text-champagne">(78)</span>
+                Votre taxi à Chatou, <span className="text-champagne">confort &amp; sérénité</span>
                 <span className="mt-3 block font-sans text-[clamp(1rem,1.7vw,1.25rem)] font-medium leading-snug tracking-normal text-cream/85">
-                  Votre taxi local, disponible 7j/7
+                  Aéroports, trajets médicaux, professionnels et privés — 7j/7
                 </span>
               </h1>
             </Reveal>
@@ -97,9 +97,9 @@ export function Hero() {
 
             <Reveal delay={170} className="lg:max-w-[720px]">
               <p className="mt-6 max-w-xl text-sm leading-relaxed text-cream/80 sm:text-[0.95rem]">
-                Besoin d’un taxi à Chatou ? Stéphane vous prend en charge pour vos trajets privés,
-                professionnels, médicaux (conventionné CPAM), ou vers les gares et aéroports d’Île-de-France.
-                Un service sérieux, ponctuel et confortable, à bord d’un véhicule 100 % électrique.
+                Taxi Stéphane Géatti vous accompagne dans tous vos déplacements, à Chatou et dans
+                l’Ouest parisien, avec un service professionnel et un Škoda Enyaq 100 % électrique,
+                confortable et silencieux.
               </p>
               <a
                 href="#avis"
@@ -128,9 +128,9 @@ export function Hero() {
                     aria-hidden
                   />
                 </Button>
-                <Button href="/#services" variant="outline" size="lg" className="w-full justify-center lg:w-auto">
+                <Button href="/#vehicule" variant="outline" size="lg" className="w-full justify-center lg:w-auto">
                   <CarFront className="h-4 w-4" aria-hidden strokeWidth={2} />
-                  Découvrir nos services
+                  Découvrir le véhicule
                   <ArrowUpRight className="h-4 w-4" aria-hidden />
                 </Button>
               </div>

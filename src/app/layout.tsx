@@ -1,19 +1,19 @@
 import type { Metadata } from 'next';
-import { Fraunces, Inter } from 'next/font/google';
+import { Outfit, Inter } from 'next/font/google';
 import './globals.css';
 import { SiteHeader } from '@/components/layout/SiteHeader';
 import { SiteFooter } from '@/components/layout/SiteFooter';
 import { FloatingWhatsApp } from '@/components/layout/FloatingWhatsApp';
-import { FloatingCall } from '@/components/layout/FloatingCall';
+import { MobileReserveBar } from '@/components/layout/MobileReserveBar';
 import { JsonLd } from '@/components/seo/JsonLd';
 import { siteGraph } from '@/lib/seo';
 import { siteConfig } from '@/config/site';
 
-const serif = Fraunces({
+const serif = Outfit({
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-serif',
-  weight: ['400', '500', '600'],
+  weight: ['400', '500', '600', '700'],
 });
 
 const sans = Inter({
@@ -66,7 +66,7 @@ const turnstileEnabled = Boolean(process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY);
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="fr" className={`${serif.variable} ${sans.variable}`}>
-      <body>
+      <body className="pb-[84px] lg:pb-0">
         {/* Anti-spam Turnstile : préconnexion pour accélérer le chargement du widget (LCP). */}
         {turnstileEnabled && (
           <link rel="preconnect" href="https://challenges.cloudflare.com" crossOrigin="anonymous" />
@@ -82,7 +82,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main id="contenu">{children}</main>
         <SiteFooter />
         <FloatingWhatsApp />
-        <FloatingCall />
+        <MobileReserveBar />
       </body>
     </html>
   );

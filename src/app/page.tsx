@@ -3,6 +3,8 @@ import { Hero } from '@/components/home/Hero';
 import { BookingSection } from '@/components/home/BookingSection';
 import { HowToBookSection } from '@/components/home/HowToBookSection';
 import { ServicesSection } from '@/components/home/ServicesSection';
+import { VehicleShowcase } from '@/components/home/VehicleShowcase';
+import { PassengerExperience } from '@/components/home/PassengerExperience';
 import { WhyChoose } from '@/components/home/WhyChoose';
 import { ClientsSection } from '@/components/home/ClientsSection';
 import { DestinationsSection } from '@/components/home/DestinationsSection';
@@ -50,6 +52,8 @@ export default function HomePage() {
       <BookingSection />
       <HowToBookSection />
       <ServicesSection />
+      <VehicleShowcase />
+      <PassengerExperience />
       <WhyChoose />
       <DestinationsSection />
       <PricingSection />

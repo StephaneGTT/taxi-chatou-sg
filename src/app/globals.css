@@ -3,24 +3,25 @@
 @tailwind utilities;
 
 /* ===========================================================================
-   Tokens du design system — Univers « Signature marine » (Taxi Stéphane Géatti)
-   Marine + champagne/or du logo. Noms de tokens conservés (ink/champagne) pour
-   éviter un renommage global ; seules les valeurs changent.
+   Tokens du design system — Univers « Premium marine & beige » (Taxi Stéphane Géatti)
+   Bleu marine + beige. Noms de tokens conservés (ink/champagne) pour éviter un
+   renommage global ; seules les valeurs changent. « champagne » = beige.
    =========================================================================== */
 :root {
-  --ink-900: #001138; /* marine profond (logo) : texte, header, hero */
-  --ink-800: #0a1c44;
-  --ink-700: #16294f;
-  /* Accent de marque = champagne / or clair du logo. */
-  --champagne: #dbc3a5; /* accent sur marine + fond de bouton */
-  --champagne-light: #ecdcc0; /* survol */
-  --champagne-dark: #8a6a2e; /* or foncé : texte/liens sur fond clair (AA ≥ 4.5) */
-  --cream: #f6f1e7;
-  --mist: #a9adb0;
+  --ink-900: #0b1d3a; /* bleu marine profond : header, footer, hero, titres */
+  --ink-800: #07152c; /* bleu nuit : sections sombres / contraste */
+  --ink-700: #13294a;
+  /* Accent de marque = beige élégant. */
+  --champagne: #d8c3a5; /* beige : accent sur marine + fond de bouton */
+  --champagne-light: #e7d7be; /* survol */
+  --champagne-dark: #8a6e42; /* beige foncé : texte/liens sur fond clair (AA ≥ 4.5) */
+  --cream: #faf9f6; /* blanc cassé : fond principal */
+  --beige-clair: #f3ebdd; /* fonds secondaires */
+  --mist: #9aa6bd; /* texte secondaire sur fond marine */
   --white: #ffffff;
 
-  --radius: 6px;
-  --radius-lg: 10px;
+  --radius: 10px;
+  --radius-lg: 16px;
   --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
 
   --header-height: 88px;
@@ -48,8 +49,8 @@
   h2,
   h3,
   h4 {
-    font-family: var(--font-serif), 'Fraunces', Georgia, serif;
-    font-weight: 500;
+    font-family: var(--font-serif), 'Outfit', system-ui, sans-serif;
+    font-weight: 600;
     letter-spacing: -0.02em;
   }
 

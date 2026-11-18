@@ -190,7 +190,7 @@ export default async function BlogPostPage({ params }: Params) {
 
       {/* Articles associés */}
       {related.length > 0 && (
-        <section className="bg-[#f7f4ef] py-20 sm:py-24">
+        <section className="bg-sand py-20 sm:py-24">
           <Container>
             <h2 className="text-h2 text-ink-900">À lire également</h2>
             <div className="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">

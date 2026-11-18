@@ -17,7 +17,7 @@ export function BookingSection({ city = 'Chatou' }: { city?: string }) {
       : `Réserver un taxi à ${city} (78) ne prend que quelques minutes. Choisissez une course immédiate ou un départ programmé : nous venons vous chercher à l’adresse de votre choix, que ce soit votre domicile, votre bureau, un hôtel, une clinique ou un lieu de rendez-vous. Notre service couvre ${city} et les communes voisines de l’Ouest parisien.`;
 
   return (
-    <section className="bg-[#f7f4ef] py-20 sm:py-24">
+    <section className="bg-sand py-20 sm:py-24">
       <Container>
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <div className="lg:sticky lg:top-28">

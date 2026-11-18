@@ -17,7 +17,7 @@ export function FloatingWhatsApp() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contactez-nous sur WhatsApp"
-      className="group fixed bottom-5 right-5 z-40 flex items-center rounded-full bg-[#25D366] text-white shadow-lg shadow-black/25 ring-1 ring-black/5 transition-colors duration-300 ease-premium hover:bg-[#1fab57]"
+      className="group fixed bottom-5 right-5 z-40 hidden items-center rounded-full bg-[#25D366] text-white shadow-lg shadow-black/25 ring-1 ring-black/5 transition-colors duration-300 ease-premium hover:bg-[#1fab57] lg:flex"
     >
       <span className="grid h-14 w-14 shrink-0 place-items-center">
         <WhatsAppIcon className="h-7 w-7" />
