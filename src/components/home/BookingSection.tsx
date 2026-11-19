@@ -20,7 +20,7 @@ export function BookingSection({ city = 'Chatou' }: { city?: string }) {
     <section className="bg-sand py-20 sm:py-24">
       <Container>
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-          <div className="lg:sticky lg:top-28">
+          <div className="lg:sticky lg:top-28 [&_p]:hyphens-auto [&_p]:text-justify">
             <SectionHeading
               eyebrow="Réservation"
               title={`Réserver un taxi à ${city} (78)`}

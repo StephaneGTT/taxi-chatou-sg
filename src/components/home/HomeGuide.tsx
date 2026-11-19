@@ -37,7 +37,7 @@ export function HomeGuide() {
   return (
     <section className="bg-cream py-20 sm:py-24">
       <Container>
-        <div className="mx-auto max-w-3xl space-y-16">
+        <div className="mx-auto max-w-3xl space-y-16 [&_p]:hyphens-auto [&_p]:text-justify">
           {/* 1. Réservez votre taxi à Chatou pour tous vos déplacements */}
           <Reveal>
             <article>
