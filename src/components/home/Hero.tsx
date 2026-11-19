@@ -37,8 +37,9 @@ export function Hero() {
                 <span className="block text-champagne">confort &amp; sérénité.</span>
               </h1>
               <p className="mt-6 max-w-md text-[0.975rem] leading-relaxed text-cream/75">
-                Gare RER A, aéroports, transport médical conventionné et déplacements professionnels
-                ou privés. Un chauffeur à l’heure, à bord d’un Škoda Enyaq 100 % électrique.
+                Taxi à Chatou pour la gare RER A, les aéroports, le transport médical conventionné et
+                vos déplacements professionnels ou privés. Un chauffeur à l’heure, à bord d’un Škoda
+                Enyaq 100 % électrique.
               </p>
             </Reveal>
 
