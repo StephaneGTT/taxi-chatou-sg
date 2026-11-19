@@ -3,7 +3,7 @@ import type { FaqItem } from '@/types';
 /** FAQ générale affichée sur la page d'accueil (alimente aussi le JSON-LD FAQPage). */
 export const homeFaq: FaqItem[] = [
   {
-    question: 'Comment réserver un taxi à Chatou ?',
+    question: 'Comment faire appel à un taxi ?',
     answer:
       'Remplissez le formulaire en ligne ou appelez-nous au 06 12 29 51 54 (également joignable par SMS et WhatsApp), en précisant votre départ, votre destination, la date, l’heure et le nombre de passagers et de bagages. Nous revenons ensuite vers vous pour confirmer : aucune réservation ne part automatiquement.',
   },
@@ -13,9 +13,9 @@ export const homeFaq: FaqItem[] = [
       'Dans les Yvelines, en 2026 : prise en charge 3,00 €, kilomètre de 1,00 € à 3,00 € selon le tarif A, B, C ou D, heure d’attente 41,56 € et minimum de course 8 €. S’ajoutent des suppléments réglementés : 2 € par bagage encombrant et 4 € dès le 5ᵉ passager. Le détail figure dans notre grille tarifaire.',
   },
   {
-    question: 'Quel est le prix d’un taxi pour 10 km à Chatou ?',
+    question: 'Quel est le prix d’un taxi pour 20 km ?',
     answer:
-      'Comptez environ 13 € à 23 € pour 10 km de jour, selon que le taxi revient en charge (tarif A) ou à vide (tarif C) : prise en charge 3,00 € + 10 km. De nuit, le dimanche et les jours fériés, la fourchette monte à 18 € – 33 €. L’attente et les suppléments s’ajoutent ; le taximètre fait foi.',
+      'Comptez environ 23 € à 43 € pour 20 km de jour, selon que le taxi revient en charge (tarif A) ou à vide (tarif C) : prise en charge 3,00 € + 20 km. De nuit, le dimanche et les jours fériés, la fourchette monte à 33 € – 63 €. L’attente et les suppléments s’ajoutent ; le taximètre fait foi.',
   },
   {
     question: 'Comment calcule-t-on le prix d’une course ?',
@@ -28,7 +28,7 @@ export const homeFaq: FaqItem[] = [
       'Demandez une estimation avant le départ : indiquez votre adresse, votre destination et votre horaire, et nous vous donnons une fourchette indicative. Le taximètre fixe toutefois le prix définitif : il additionne la prise en charge, la distance et le temps d’attente, sans dépasser les tarifs réglementés.',
   },
   {
-    question: 'Faut-il réserver à l’avance ?',
+    question: 'Est-il préférable de réserver un taxi à l’avance ?',
     answer:
       'Oui, surtout pour une gare, un aéroport ou un rendez-vous à heure fixe : vous avez ainsi un chauffeur à l’heure convenue, bagages compris. Pour un départ tôt le matin ou tard le soir, anticipez davantage. Une course de dernière minute reste possible, selon les disponibilités.',
   },
@@ -58,7 +58,7 @@ export const homeFaq: FaqItem[] = [
       'Depuis Chatou, notre service rayonne sur l’Ouest parisien et l’Île-de-France. Nous desservons notamment Croissy-sur-Seine, Le Vésinet, Montesson, Rueil-Malmaison, Carrières-sur-Seine et Houilles, ainsi que les communes voisines. Votre commune n’y figure pas ? Contactez-nous pour confirmation.',
   },
   {
-    question: 'Quels transports en commun desservent Chatou ?',
+    question: 'Quels sont les transports en commun disponibles à Chatou ?',
     answer:
       'Chatou est desservie par le RER A (gare de Chatou–Croissy) et plusieurs lignes de bus vers Croissy-sur-Seine, Le Vésinet, Rueil-Malmaison et Montesson. Le taxi reste la solution la plus pratique en soirée après les derniers passages, tôt le matin, avec des bagages ou pour rejoindre un aéroport sans correspondance.',
   },
