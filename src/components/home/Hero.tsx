@@ -18,7 +18,7 @@ export function Hero() {
       />
 
       <Container className="relative pt-10 lg:pt-20">
-        <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:gap-14">
+        <div className="grid items-center gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-14">
           {/* Texte */}
           <div className="pb-12 lg:pb-24">
             <Reveal>
