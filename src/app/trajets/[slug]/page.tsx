@@ -50,7 +50,7 @@ export default async function RoutePage({ params }: Params) {
   const facts = [
     { icon: MapPin, label: 'Distance', value: `~ ${route.distanceKm} km` },
     { icon: Clock, label: 'Durée estimée', value: `${route.durationMin[0]}–${route.durationMin[1]} min` },
-    { icon: Euro, label: 'Prix estimé (jour)', value: `≈ ${price.low}–${price.high} €` },
+    { icon: Euro, label: 'Prix estimé', value: `≈ ${price.low}–${price.high} €` },
   ];
 
   return (
@@ -136,8 +136,9 @@ export default async function RoutePage({ params }: Params) {
                   ))}
                 </div>
                 <p className="mt-4 text-xs leading-relaxed text-ink-800/55">
-                  Prix estimé selon le tarif réglementé des Yvelines (jour). Il est plus élevé la nuit,
-                  le dimanche et les jours fériés.{route.forfait ? ' Un forfait à prix fixe est possible pour ce trajet.' : ''}{' '}
+                  Fourchette indicative selon le tarif réglementé des Yvelines : la fourchette basse
+                  correspond à une course de jour, la fourchette haute à la nuit, au dimanche et aux
+                  jours fériés.{route.forfait ? ' Un forfait à prix fixe est possible pour ce trajet.' : ''}{' '}
                   Le taximètre fait foi. <Link href="/#tarifs" className="text-champagne-dark underline underline-offset-2">Voir la grille tarifaire</Link>.
                 </p>
               </Reveal>

@@ -30,11 +30,15 @@ export type TaxiRoute = {
   faq: { question: string; answer: string }[];
 };
 
-/** Estimation de prix (journée) à partir du tarif réglementé : prise en charge 3 € + km. */
+/**
+ * Estimation de prix à partir du tarif réglementé des Yvelines : prise en charge 3 € + km.
+ * Fourchette basse 2 €/km (course de jour, retour à vide – tarif C), fourchette haute 3 €/km
+ * (nuit, dimanche et jours fériés, retour à vide – tarif D). Le taximètre fait foi.
+ */
 export function estimatePriceRange(km: number): { low: number; high: number } {
   const base = 3; // prise en charge
-  const low = Math.max(8, Math.round(base + km * 1.0)); // tarif A (jour, retour en charge)
-  const high = Math.max(8, Math.round(base + km * 2.0)); // tarif C (jour, retour à vide)
+  const low = Math.max(8, Math.round(base + km * 2.0)); // 2 €/km (tarif C : jour, retour à vide)
+  const high = Math.max(8, Math.round(base + km * 3.0)); // 3 €/km (tarif D : nuit/dimanche/férié, retour à vide)
   return { low, high };
 }
 

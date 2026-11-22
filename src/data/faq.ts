@@ -15,7 +15,7 @@ export const homeFaq: FaqItem[] = [
   {
     question: 'Quel est le prix d’un taxi pour 20 km ?',
     answer:
-      'Comptez environ 23 € à 43 € pour 20 km de jour, selon que le taxi revient en charge (tarif A) ou à vide (tarif C) : prise en charge 3,00 € + 20 km. De nuit, le dimanche et les jours fériés, la fourchette monte à 33 € – 63 €. L’attente et les suppléments s’ajoutent ; le taximètre fait foi.',
+      'Comptez de l’ordre de 43 € à 63 € pour 20 km, prise en charge de 3,00 € comprise. La fourchette basse correspond à une course de jour (environ 2 €/km, retour à vide), la fourchette haute à la nuit, au dimanche et aux jours fériés (environ 3 €/km). L’attente et les suppléments s’ajoutent ; le taximètre fait foi.',
   },
   {
     question: 'Comment calcule-t-on le prix d’une course ?',

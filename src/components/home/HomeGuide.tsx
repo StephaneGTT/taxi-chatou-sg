@@ -145,10 +145,10 @@ export function HomeGuide() {
               <p className="mt-3 text-base leading-relaxed text-ink-800/75">
                 Le prix dépend de la distance réelle, du trafic et de l’heure (tarif jour ou nuit), ainsi
                 que des suppléments éventuels (bagages, passager supplémentaire). À titre indicatif, et
-                selon le tarif réglementé des Yvelines, comptez de l’ordre de 40 à 80 € pour Orly et de 50
-                à 95 € pour Roissy-CDG en journée. En revanche, les tarifs de nuit, du dimanche et des
-                jours fériés sont majorés. Enfin, nous vous communiquons une estimation avant le départ,
-                et le taximètre affiche le montant exact en fin de course.
+                selon le tarif réglementé des Yvelines, comptez de l’ordre de 70 à 110 € pour Orly et de
+                90 à 140 € pour Roissy-CDG. La fourchette haute correspond aux courses de nuit, du
+                dimanche et des jours fériés. Enfin, nous vous communiquons une estimation avant le
+                départ, et le taximètre affiche le montant exact en fin de course.
               </p>
               <blockquote className="mt-6 rounded-[var(--radius)] border-l-2 border-champagne bg-champagne/10 px-5 py-4 text-sm leading-relaxed text-ink-800/80">
                 <Info className="mb-1 mr-2 inline h-4 w-4 text-champagne-dark" aria-hidden />
