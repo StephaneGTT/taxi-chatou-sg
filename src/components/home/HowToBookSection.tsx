@@ -1,4 +1,4 @@
-import { Phone, CalendarClock, Zap, Check } from 'lucide-react';
+import { Phone, CalendarClock, MapPin, Check } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Button } from '@/components/ui/Button';
@@ -21,7 +21,7 @@ export function HowToBookSection({ city = 'Chatou' }: { city?: string }) {
         <SectionHeading
           eyebrow="Réserver"
           title={`Comment commander un taxi à ${city} ?`}
-          description="Pour un trajet immédiat comme pour un départ programmé, transmettez-nous vos informations : nous organisons la prise en charge à l’adresse de votre choix, puis revenons vers vous pour confirmer."
+          description="Sur réservation, transmettez-nous vos informations : nous organisons la prise en charge à l’adresse de votre choix, puis revenons vers vous pour confirmer."
           tone="light"
         />
 
@@ -66,7 +66,7 @@ export function HowToBookSection({ city = 'Chatou' }: { city?: string }) {
             </div>
           </Reveal>
 
-          {/* Immédiat vs à l'avance */}
+          {/* Réservation à l'avance + prise en charge partout */}
           <div className="grid gap-5">
             <Reveal delay={90}>
               <div className="flex gap-4 rounded-[var(--radius)] border border-white/10 bg-white/[0.04] p-6">
@@ -86,19 +86,19 @@ export function HowToBookSection({ city = 'Chatou' }: { city?: string }) {
             </Reveal>
             <Reveal delay={170}>
               <div className="flex gap-4 rounded-[var(--radius)] border border-white/10 bg-white/[0.04] p-6">
-                <Zap className="h-7 w-7 shrink-0 text-champagne" aria-hidden strokeWidth={1.5} />
+                <MapPin className="h-7 w-7 shrink-0 text-champagne" aria-hidden strokeWidth={1.5} />
                 <div>
-                  <h3 className="font-serif text-lg text-white">Course immédiate</h3>
+                  <h3 className="font-serif text-lg text-white">Prise en charge partout</h3>
                   <p className="mt-1.5 text-sm leading-relaxed text-mist">
-                    Pour un départ de dernière minute, appelez-nous directement. Nous vous prenons
-                    alors en charge au plus vite, selon les disponibilités.
+                    Nous venons vous chercher là où vous êtes : à votre domicile, au bureau, mais
+                    aussi directement à l’aéroport (Roissy, Orly) ou en gare.
                   </p>
                 </div>
               </div>
             </Reveal>
             <Reveal delay={250}>
               <p className="text-sm text-mist/80">
-                Service disponible <span className="text-champagne">7j/7</span>, sur réservation.
+                Service disponible <span className="text-champagne">24h/24 et 7j/7</span>, sur réservation.
               </p>
             </Reveal>
           </div>

@@ -59,9 +59,10 @@ export default function CgvPage() {
               </p>
               <p>
                 La réservation est confirmée par le Transporteur, qui recontacte le client pour
-                valider les modalités et le tarif. Les courses de dernière minute sont acceptées sous
-                réserve de disponibilité. Le Transporteur peut refuser une demande qu’il ne peut pas
-                honorer et en informe alors le client dans les meilleurs délais.
+                valider les modalités et le tarif. Les trajets se réservent à l’avance, au plus tôt
+                4 heures avant le départ, sous réserve de disponibilité. Le Transporteur peut refuser
+                une demande qu’il ne peut pas honorer et en informe alors le client dans les meilleurs
+                délais.
               </p>
 
               <h2>3. Tarifs</h2>

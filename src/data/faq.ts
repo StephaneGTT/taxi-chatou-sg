@@ -30,12 +30,12 @@ export const homeFaq: FaqItem[] = [
   {
     question: 'Est-il préférable de réserver un taxi à l’avance ?',
     answer:
-      'Oui, surtout pour une gare, un aéroport ou un rendez-vous à heure fixe : vous avez ainsi un chauffeur à l’heure convenue, bagages compris. Pour un départ tôt le matin ou tard le soir, anticipez davantage. Une course de dernière minute reste possible, selon les disponibilités.',
+      'Oui. Nos trajets se réservent uniquement à l’avance, au plus tôt 4 heures avant le départ. En anticipant, vous avez un chauffeur à l’heure convenue, bagages compris, surtout pour une gare, un aéroport ou un rendez-vous à heure fixe. Pour un départ tôt le matin ou tard le soir, réservez la veille.',
   },
   {
-    question: 'Comment réserver un taxi à Chatou pour un départ immédiat ?',
+    question: 'Combien de temps à l’avance faut-il réserver ?',
     answer:
-      'Appelez-nous directement au 06 12 29 51 54. Précisez votre adresse à Chatou (78400) et votre destination : nous vous indiquons le délai d’arrivée du chauffeur, en fonction de sa disponibilité. Pour un horaire précis (train, vol, rendez-vous), la réservation à l’avance reste préférable.',
+      'Les réservations se prennent au plus tôt 4 heures avant le départ : si vous réservez à midi, le premier créneau disponible est 16 h. Pour une gare, un aéroport ou un départ très tôt le matin, réservez la veille afin de garantir la disponibilité.',
   },
   {
     question: 'Proposez-vous un taxi 24h/24, y compris la nuit ?',

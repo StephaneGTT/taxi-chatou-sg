@@ -1,6 +1,6 @@
 'use client';
 
-import { cloneElement, isValidElement, useId, useMemo, useRef, useState } from 'react';
+import { cloneElement, isValidElement, useEffect, useId, useRef, useState } from 'react';
 import { ArrowRight, CheckCircle2, Copy } from 'lucide-react';
 import { bookingSchema, type BookingInput } from '@/lib/validations';
 import { siteConfig } from '@/config/site';
@@ -23,6 +23,48 @@ const todayISO = () => {
   now.setMinutes(now.getMinutes() - now.getTimezoneOffset());
   return now.toISOString().slice(0, 10);
 };
+
+/** Délai minimum entre la réservation et le départ (heures). */
+const LEAD_HOURS = 4;
+/** Pas des créneaux horaires proposés (minutes). */
+const SLOT_MINUTES = 30;
+
+/** Créneaux de 00:00 à 23:30, par pas de 30 min. */
+const TIME_SLOTS: string[] = (() => {
+  const slots: string[] = [];
+  for (let h = 0; h < 24; h += 1) {
+    for (let m = 0; m < 60; m += SLOT_MINUTES) {
+      slots.push(`${String(h).padStart(2, '0')}:${String(m).padStart(2, '0')}`);
+    }
+  }
+  return slots;
+})();
+
+/** Date locale au format yyyy-mm-dd (compatible input[type=date]). */
+function localDateISO(d: Date): string {
+  const x = new Date(d);
+  x.setMinutes(x.getMinutes() - x.getTimezoneOffset());
+  return x.toISOString().slice(0, 10);
+}
+
+/** Heure locale au format HH:MM. */
+function localTime(d: Date): string {
+  return `${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`;
+}
+
+/** Arrondit une date au créneau de 30 min supérieur. */
+function ceilToSlot(d: Date): Date {
+  const x = new Date(d);
+  x.setSeconds(0, 0);
+  const m = x.getMinutes();
+  if (m === 0 || m === SLOT_MINUTES) return x;
+  if (m < SLOT_MINUTES) x.setMinutes(SLOT_MINUTES);
+  else {
+    x.setMinutes(0);
+    x.setHours(x.getHours() + 1);
+  }
+  return x;
+}
 
 function buildEmailBody(data: BookingInput): string {
   return [
@@ -62,7 +104,32 @@ export function BookingForm() {
   const [turnstileToken, setTurnstileToken] = useState('');
   const [turnstileKey, setTurnstileKey] = useState(0);
   const [formError, setFormError] = useState('');
-  const minDate = useMemo(todayISO, []);
+
+  // Réservation possible au plus tôt 4 h à l'avance : on calcule le premier créneau
+  // réservable côté client (useEffect) pour éviter toute incohérence d'hydratation.
+  const [minBookable, setMinBookable] = useState<Date | null>(null);
+  const [date, setDate] = useState('');
+  const [heure, setHeure] = useState('');
+
+  useEffect(() => {
+    const mb = ceilToSlot(new Date(Date.now() + LEAD_HOURS * 60 * 60 * 1000));
+    setMinBookable(mb);
+    setDate(localDateISO(mb));
+    setHeure(localTime(mb));
+  }, []);
+
+  const minDateISO = minBookable ? localDateISO(minBookable) : todayISO();
+  const minTime = minBookable ? localTime(minBookable) : '';
+  const isMinDate = minBookable !== null && date === minDateISO;
+
+  function handleDateChange(value: string) {
+    setDate(value);
+    // Si la nouvelle date est le jour minimum et que l'heure choisie est trop tôt,
+    // on la ramène au premier créneau disponible.
+    if (minBookable && value === minDateISO && heure < minTime) {
+      setHeure(TIME_SLOTS.find((s) => s >= minTime) ?? '');
+    }
+  }
 
   // Valeurs des champs adresse (miroir) pour détecter un aéroport / une gare.
   const [departValue, setDepartValue] = useState('');
@@ -270,11 +337,33 @@ export function BookingForm() {
         </Field>
 
         <Field id={field('date')} name="date" label="Date" error={errors.date}>
-          <input id={field('date')} name="date" type="date" min={minDate} />
+          <input
+            id={field('date')}
+            name="date"
+            type="date"
+            min={minDateISO}
+            value={date}
+            onChange={(e) => handleDateChange(e.target.value)}
+          />
         </Field>
         <Field id={field('heure')} name="heure" label="Heure" error={errors.heure}>
-          <input id={field('heure')} name="heure" type="time" />
+          <select
+            id={field('heure')}
+            name="heure"
+            value={heure}
+            onChange={(e) => setHeure(e.target.value)}
+          >
+            {!minBookable && <option value="">—</option>}
+            {TIME_SLOTS.map((slot) => (
+              <option key={slot} value={slot} disabled={isMinDate && slot < minTime}>
+                {slot}
+              </option>
+            ))}
+          </select>
         </Field>
+        <p className="text-xs leading-relaxed text-ink-800/60 sm:col-span-2">
+          Réservation au plus tôt 4 h à l’avance : seuls les créneaux disponibles sont proposés.
+        </p>
 
         {/* Bloc gare / aéroport : affiché dès qu'un aéroport ou une gare est sélectionné. */}
         {showVolTrain && (

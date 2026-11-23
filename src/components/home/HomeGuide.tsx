@@ -85,7 +85,7 @@ export function HomeGuide() {
               <p className="mt-3 text-base leading-relaxed text-ink-800/75">Trois façons de nous joindre, au choix :</p>
               <ol className="mt-4 space-y-3">
                 {[
-                  <>Par téléphone au <a href={phoneHref} className="font-medium text-champagne-dark underline underline-offset-2 hover:text-ink-900">{phone}</a>, pour un départ immédiat ou une réservation.</>,
+                  <>Par téléphone au <a href={phoneHref} className="font-medium text-champagne-dark underline underline-offset-2 hover:text-ink-900">{phone}</a>, pour réserver votre trajet et convenir de l’heure de prise en charge.</>,
                   <>En ligne, via notre <a href="#reservation" className="font-medium text-champagne-dark underline underline-offset-2 hover:text-ink-900">formulaire de réservation</a> : adresse de départ, destination, date, heure, nombre de passagers et de bagages.</>,
                   <>Par message (SMS ou WhatsApp) pour confirmer un trajet récurrent.</>,
                 ].map((item, i) => (
@@ -98,8 +98,9 @@ export function HomeGuide() {
                 ))}
               </ol>
               <p className="mt-4 text-base leading-relaxed text-ink-800/75">
-                Vous recevez une confirmation avec les informations de votre course. Pour un départ
-                immédiat, appelez-nous : nous vous donnons le délai d’arrivée du chauffeur.
+                Vous recevez une confirmation avec les informations de votre course. Les réservations
+                se prennent au plus tôt 4 heures à l’avance : pensez à anticiper, surtout pour un
+                départ tôt le matin ou un horaire précis.
               </p>
             </article>
           </Reveal>
@@ -112,9 +113,10 @@ export function HomeGuide() {
                 <p>
                   Manquer un vol est une source de stress que vous pouvez éviter. Nous assurons donc vos
                   transferts aéroports au départ de Chatou. En effet, le chauffeur connaît les itinéraires
-                  (A86, A13, A14, A15, A1, périphérique) et les aléas de circulation selon l’heure. Par
-                  ailleurs, le suivi de vol est possible pour les arrivées, et l’aide aux bagages est
-                  incluse.
+                  (A86, A13, A14, A15, A1, périphérique) et les aléas de circulation selon l’heure. Au
+                  retour, nous venons aussi vous chercher à votre descente d’avion, directement au
+                  terminal : grâce au suivi de vol, nous ajustons l’heure de prise en charge, et l’aide
+                  aux bagages est incluse.
                 </p>
               </div>
 
@@ -328,9 +330,9 @@ export function HomeGuide() {
 
               <H3>Une réservation simple et rapide, 24h/24 et 7j/7</H3>
               <p className="mt-3 text-base leading-relaxed text-ink-800/75">
-                Un appel, un formulaire, un message : votre course est enregistrée en quelques instants.
-                Départ immédiat ou réservation à l’avance, jour ou nuit, nous restons joignables en
-                permanence.
+                Un appel, un formulaire, un message : votre demande est enregistrée en quelques instants.
+                Réservez à l’avance, de jour comme de nuit : nous restons joignables en permanence pour
+                confirmer votre prise en charge.
               </p>
 
               <div className="mt-8 flex flex-wrap gap-3">

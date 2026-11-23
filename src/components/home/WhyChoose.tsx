@@ -17,7 +17,7 @@ const pillars = [
   {
     icon: Clock,
     title: 'Disponible 24h/24',
-    description: 'Course immédiate ou réservée à l’avance, 24h/24 et 7j/7 : votre chauffeur vous attend à l’heure, bagages compris.',
+    description: 'Réservez à l’avance, 24h/24 et 7j/7 : votre chauffeur vous attend à l’heure convenue, bagages compris.',
   },
   {
     icon: MapPin,

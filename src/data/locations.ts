@@ -211,9 +211,9 @@ export const locations: Location[] = [
           'Oui. La prise en charge se fait à l’adresse exacte de votre choix, du centre aux coteaux et aux bords de Seine, sur réservation.',
       },
       {
-        question: 'Quel délai pour un taxi à Carrières-sur-Seine ?',
+        question: 'Combien de temps à l’avance réserver à Carrières-sur-Seine ?',
         answer:
-          'Pour une course immédiate, nous vous indiquons le délai d’arrivée au moment de l’appel, selon la disponibilité. Cependant, pour un horaire précis (train, vol ou rendez-vous), la réservation à l’avance reste préférable.',
+          'Nos trajets se réservent au plus tôt 4 heures à l’avance : indiquez votre adresse, votre destination et l’heure souhaitée, et nous confirmons la prise en charge. Pour un horaire précis (train, vol ou rendez-vous), anticipez davantage.',
       },
       {
         question: 'Assurez-vous les départs aéroport de nuit depuis Carrières-sur-Seine ?',
@@ -370,7 +370,7 @@ export const locations: Location[] = [
     tagline: 'Un service de proximité dans tout l’Ouest parisien',
     bookingCity: 'Chatou',
     heroLede:
-      'Besoin d’un taxi dans l’Ouest parisien ? Basés à Chatou, nous rayonnons sur Croissy-sur-Seine, Le Vésinet, Montesson, Rueil-Malmaison et les communes voisines, et vers Paris, La Défense et les aéroports franciliens, 24h/24 et 7j/7, à l’avance comme en course immédiate.',
+      'Besoin d’un taxi dans l’Ouest parisien ? Basés à Chatou, nous rayonnons sur Croissy-sur-Seine, Le Vésinet, Montesson, Rueil-Malmaison et les communes voisines, et vers Paris, La Défense et les aéroports franciliens, 24h/24 et 7j/7, sur réservation.',
     context: [
       'Basés à Chatou, nous assurons un service de taxi de proximité dans tout l’Ouest parisien : Croissy-sur-Seine, Le Vésinet, Montesson, Rueil-Malmaison, Carrières-sur-Seine, Houilles, Nanterre, Le Pecq et les communes voisines.',
       'Cette page régionale regroupe nos zones desservies. Retrouvez plus bas la liste des communes où nous assurons une prise en charge de porte à porte, ainsi que nos liaisons vers Paris, La Défense et les aéroports.',
