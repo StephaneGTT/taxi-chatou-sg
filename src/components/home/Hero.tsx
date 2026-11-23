@@ -37,9 +37,9 @@ export function Hero() {
                 <span className="block text-champagne">confort &amp; sérénité.</span>
               </h1>
               <p className="mt-6 max-w-md text-[0.975rem] leading-relaxed text-cream/75">
-                Taxi à Chatou pour tous vos trajets, 24h/24 et 7j/7 : gares, aéroports, transport
-                médical conventionné, déplacements professionnels ou privés. Un chauffeur ponctuel et
-                attentionné, à bord d’un Škoda Enyaq 100 % électrique.
+                Taxi à Chatou pour tous vos trajets, 24h/24 et 7j/7 : gares, aéroports, déplacements
+                professionnels ou privés. Un chauffeur ponctuel et attentionné, à bord d’un Škoda
+                Enyaq Coupé RS 100 % électrique.
               </p>
             </Reveal>
 
@@ -95,7 +95,7 @@ export function Hero() {
               <div className="relative aspect-[16/9] overflow-hidden rounded-[24px] shadow-[0_50px_100px_-50px_rgba(0,0,0,0.85)] ring-1 ring-white/10">
                 <Image
                   src="/images/vehicule/taxi-chatou-skoda-enyaq-exterieur.webp"
-                  alt="Taxi Škoda Enyaq 100 % électrique à Chatou"
+                  alt="Taxi Škoda Enyaq Coupé RS 100 % électrique à Chatou"
                   fill
                   priority
                   fetchPriority="high"
@@ -109,7 +109,7 @@ export function Hero() {
                 />
                 <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-ink-900/70 px-3.5 py-1.5 text-xs font-medium text-cream backdrop-blur-sm">
                   <Car className="h-3.5 w-3.5 text-champagne" aria-hidden />
-                  Škoda Enyaq · 100 % électrique
+                  Škoda Enyaq Coupé RS · 100 % électrique
                 </span>
               </div>
               {/* Filet beige signature, discret */}

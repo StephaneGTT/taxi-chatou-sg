@@ -84,10 +84,10 @@ export const siteConfig = {
     operatorName: 'Stéphane Géatti', // Exploitant
     siret: '907 820 054 00035', // SIRET complet (14 chiffres)
     vatNumber: 'FR01907820054', // N° de TVA intracommunautaire
-    licenseNumber: '', // Autorisation de stationnement (taxi) — N° ADS — À COMPLÉTER
+    licenseNumber: '2024/02', // Autorisation de stationnement (taxi) — N° ADS
     stationZone: 'Chatou', // Commune de rattachement / zone de stationnement du taxi
-    adsAuthority: 'la Mairie de Chatou', // Autorité ayant délivré l'ADS — À CONFIRMER
-    adsDate: '', // Date de délivrance de l'ADS — À COMPLÉTER
+    adsAuthority: 'la Mairie de Chatou', // Autorité ayant délivré l'ADS
+    adsDate: '19 novembre 2024', // Date de délivrance de l'ADS
     // Médiateur de la consommation : CM2C (coordonnées officielles — cm2c.net).
     mediatorName: 'CM2C, Centre de la Médiation de la Consommation de Conciliateurs de Justice',
     mediatorAddress: '49 rue de Ponthieu, 75008 Paris',

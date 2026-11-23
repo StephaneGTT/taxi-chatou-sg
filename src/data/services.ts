@@ -13,7 +13,7 @@ export const services: Service[] = [
       'Roissy-Charles-de-Gaulle, Orly, Le Bourget et Beauvais. Forfait aéroport à prix fixe, convenu à l’avance.',
     icon: 'Plane',
     image: '/images/vehicule/taxi-chatou-skoda-enyaq-arriere.webp',
-    imageAlt: 'Taxi Škoda Enyaq électrique à Chatou, prêt pour un transfert aéroport',
+    imageAlt: 'Taxi Škoda Enyaq Coupé RS électrique à Chatou, prêt pour un transfert aéroport',
     intro: [
       'Le transfert vers l’aéroport est un moment sensible : il conditionne la sérénité de tout un voyage. Nous organisons votre prise en charge à l’avance, avec une adresse de départ précise et une heure calculée en tenant compte du trajet et des marges d’enregistrement habituelles.',
       'Au retour, le principe est le même : vous indiquez votre vol, nous convenons ensemble du point de rendez-vous, et vous retrouvez un véhicule confortable sans attente inutile à la sortie de l’avion.',
@@ -66,65 +66,6 @@ export const services: Service[] = [
     ],
   },
   {
-    slug: 'transport-medical',
-    name: 'Transport médical (CPAM)',
-    title: 'Transport médical conventionné (CPAM)',
-    metaTitle: 'Taxi conventionné CPAM à Chatou | Transport médical',
-    metaDescription:
-      'Taxi conventionné à Chatou (78) : transport médical remboursé sur prescription (CPAM), tiers payant. Consultations, hôpital, dialyse, cures. Réservez 7j/7.',
-    tagline: 'Vos trajets de soins pris en charge, sur prescription',
-    cardDescription:
-      'Taxi conventionné CPAM : consultations, hôpital, dialyse, cures. Sur prescription médicale, avec tiers payant.',
-    icon: 'Stethoscope',
-    image: '/images/vehicule/taxi-chatou-skoda-enyaq-exterieur.webp',
-    imageAlt: 'Taxi conventionné à Chatou : Škoda Enyaq noire électrique, confortable pour le transport médical',
-    intro: [
-      'En tant que taxi conventionné par l’Assurance Maladie, nous assurons vos trajets de soins sur prescription médicale : consultations, examens, hospitalisations, séances de dialyse, de chimiothérapie ou cures. La prise en charge se fait à votre domicile, en douceur.',
-      'Le transport est assuré dans le cadre du conventionnement CPAM, avec le tiers payant lorsque les conditions sont réunies : vous présentez votre prescription médicale de transport, et nous vous accompagnons avec ponctualité et attention.',
-    ],
-    benefits: [
-      {
-        title: 'Conventionné CPAM',
-        description:
-          'Transport assis professionnalisé pris en charge par l’Assurance Maladie, sur prescription médicale, avec tiers payant selon votre situation.',
-      },
-      {
-        title: 'Accompagnement attentionné',
-        description:
-          'Une aide à la montée et à la descente, un véhicule électrique silencieux et confortable, adaptés aux personnes fragilisées ou âgées.',
-      },
-      {
-        title: 'Ponctualité pour vos soins',
-        description:
-          'Une prise en charge à l’heure pour vos rendez-vous récurrents (dialyse, séances), organisée à l’avance.',
-      },
-    ],
-    practical: [
-      'Munissez-vous de votre prescription médicale de transport (bon de transport).',
-      'Précisez l’établissement, la date et l’heure du rendez-vous lors de la réservation.',
-      'Trajets récurrents (dialyse, cures) organisés à l’avance pour plus de sérénité.',
-      'Le tiers payant s’applique selon les conditions de prise en charge de l’Assurance Maladie.',
-    ],
-    destinations: [
-      'Hôpitaux et centres hospitaliers de l’Ouest parisien',
-      'Cliniques, cabinets et centres d’examens',
-      'Centres de dialyse et de radiothérapie',
-      'Établissements de soins et de cure',
-    ],
-    faq: [
-      {
-        question: 'Le transport médical est-il remboursé ?',
-        answer:
-          'Oui, lorsque votre médecin établit une prescription médicale de transport. En tant que taxi conventionné, nous appliquons le tiers payant selon votre situation : vous n’avancez pas la part prise en charge par l’Assurance Maladie.',
-      },
-      {
-        question: 'Que dois-je préparer pour un trajet conventionné ?',
-        answer:
-          'Votre prescription médicale de transport (bon de transport) et, le cas échéant, votre attestation de prise en charge. Indiquez-nous l’établissement, la date et l’heure de votre rendez-vous lors de la réservation.',
-      },
-    ],
-  },
-  {
     slug: 'taxi-professionnel',
     name: 'Taxi professionnel',
     title: 'Taxi pour vos déplacements professionnels',
@@ -136,7 +77,7 @@ export const services: Service[] = [
       'Rendez-vous, gares et déplacements d’affaires. Un service discret et soigné pour vos trajets professionnels.',
     icon: 'Briefcase',
     image: '/images/vehicule/taxi-chatou-skoda-enyaq-profil.webp',
-    imageAlt: 'Taxi professionnel à Chatou : Škoda Enyaq électrique noir, vue de profil',
+    imageAlt: 'Taxi professionnel à Chatou : Škoda Enyaq Coupé RS électrique noir, vue de profil',
     intro: [
       'Pour vos rendez-vous et déplacements d’affaires, la régularité et la discrétion comptent autant que le confort. Nous proposons un transport pensé pour les professionnels : un cadre calme pour préparer une réunion, passer un appel ou simplement souffler entre deux étapes.',
       'Les trajets récurrents peuvent être organisés à l’avance afin de fluidifier votre agenda, depuis Chatou et les communes voisines vers Paris, La Défense et les principales gares.',
@@ -194,7 +135,7 @@ export const services: Service[] = [
       'Soirées, shopping, restaurants et événements. Un trajet privé pour profiter pleinement du moment.',
     icon: 'Sparkles',
     image: '/images/vehicule/taxi-chatou-skoda-enyaq-places-arriere.webp',
-    imageAlt: 'Trajet privé à Chatou : places arrière spacieuses du taxi Škoda Enyaq',
+    imageAlt: 'Trajet privé à Chatou : places arrière spacieuses du taxi Škoda Enyaq Coupé RS',
     intro: [
       'Certaines occasions méritent un transport à la hauteur du moment. Pour une soirée, un dîner, une sortie culturelle ou un événement familial, nous assurons un trajet privé qui vous permet de profiter pleinement, sans vous soucier du stationnement ni du retour.',
       'Vous choisissez vos horaires, nous nous occupons du reste, dans un véhicule confortable et un service attentionné.',
@@ -252,7 +193,7 @@ export const services: Service[] = [
       'À l’heure, à la demi-journée ou sur plusieurs rendez-vous. Un véhicule et un chauffeur dédiés à votre programme.',
     icon: 'Clock',
     image: '/images/vehicule/taxi-chatou-skoda-enyaq-avant-parc.webp',
-    imageAlt: 'Taxi Škoda Enyaq électrique à Chatou, à disposition pour votre programme',
+    imageAlt: 'Taxi Škoda Enyaq Coupé RS électrique à Chatou, à disposition pour votre programme',
     intro: [
       'Lorsque votre journée comporte plusieurs étapes, la mise à disposition est la solution la plus souple. Un véhicule et un chauffeur restent dédiés à votre programme : rendez-vous successifs, visites, événement sur une journée ou déplacement comportant des temps d’attente.',
       'Vous définissez les grandes lignes de votre journée, nous adaptons le déroulé au fil de vos besoins.',
@@ -295,6 +236,65 @@ export const services: Service[] = [
         question: 'Puis-je modifier mon programme en cours de journée ?',
         answer:
           'Oui, dans la limite de la durée réservée. La souplesse est l’intérêt principal de cette formule.',
+      },
+    ],
+  },
+  {
+    slug: 'transport-medical',
+    name: 'Transport médical (CPAM)',
+    title: 'Transport médical conventionné (CPAM)',
+    metaTitle: 'Taxi conventionné CPAM à Chatou | Transport médical',
+    metaDescription:
+      'Taxi conventionné à Chatou (78) : transport médical remboursé sur prescription (CPAM), tiers payant. Consultations, hôpital, dialyse, cures. Réservez 7j/7.',
+    tagline: 'Vos trajets de soins pris en charge, sur prescription',
+    cardDescription:
+      'Taxi conventionné CPAM : consultations, hôpital, dialyse, cures. Sur prescription médicale, avec tiers payant.',
+    icon: 'Stethoscope',
+    image: '/images/vehicule/taxi-chatou-skoda-enyaq-exterieur.webp',
+    imageAlt: 'Taxi conventionné à Chatou : Škoda Enyaq Coupé RS noire électrique, confortable pour le transport médical',
+    intro: [
+      'En tant que taxi conventionné par l’Assurance Maladie, nous assurons vos trajets de soins sur prescription médicale : consultations, examens, hospitalisations, séances de dialyse, de chimiothérapie ou cures. La prise en charge se fait à votre domicile, en douceur.',
+      'Le transport est assuré dans le cadre du conventionnement CPAM, avec le tiers payant lorsque les conditions sont réunies : vous présentez votre prescription médicale de transport, et nous vous accompagnons avec ponctualité et attention.',
+    ],
+    benefits: [
+      {
+        title: 'Conventionné CPAM',
+        description:
+          'Transport assis professionnalisé pris en charge par l’Assurance Maladie, sur prescription médicale, avec tiers payant selon votre situation.',
+      },
+      {
+        title: 'Accompagnement attentionné',
+        description:
+          'Une aide à la montée et à la descente, un véhicule électrique silencieux et confortable, adaptés aux personnes fragilisées ou âgées.',
+      },
+      {
+        title: 'Ponctualité pour vos soins',
+        description:
+          'Une prise en charge à l’heure pour vos rendez-vous récurrents (dialyse, séances), organisée à l’avance.',
+      },
+    ],
+    practical: [
+      'Munissez-vous de votre prescription médicale de transport (bon de transport).',
+      'Précisez l’établissement, la date et l’heure du rendez-vous lors de la réservation.',
+      'Trajets récurrents (dialyse, cures) organisés à l’avance pour plus de sérénité.',
+      'Le tiers payant s’applique selon les conditions de prise en charge de l’Assurance Maladie.',
+    ],
+    destinations: [
+      'Hôpitaux et centres hospitaliers de l’Ouest parisien',
+      'Cliniques, cabinets et centres d’examens',
+      'Centres de dialyse et de radiothérapie',
+      'Établissements de soins et de cure',
+    ],
+    faq: [
+      {
+        question: 'Le transport médical est-il remboursé ?',
+        answer:
+          'Oui, lorsque votre médecin établit une prescription médicale de transport. En tant que taxi conventionné, nous appliquons le tiers payant selon votre situation : vous n’avancez pas la part prise en charge par l’Assurance Maladie.',
+      },
+      {
+        question: 'Que dois-je préparer pour un trajet conventionné ?',
+        answer:
+          'Votre prescription médicale de transport (bon de transport) et, le cas échéant, votre attestation de prise en charge. Indiquez-nous l’établissement, la date et l’heure de votre rendez-vous lors de la réservation.',
       },
     ],
   },

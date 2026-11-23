@@ -23,6 +23,21 @@ import { buildMetadata, breadcrumbSchema, faqSchema, serviceSchema, absoluteUrl 
 
 type Params = { params: Promise<{ slug: string }> };
 
+/**
+ * Photos réelles du véhicule attribuées au hero des pages zones.
+ * Réparties de façon cyclique selon l'ordre des communes : chaque zone affiche
+ * une vue différente (le texte alt est, lui, propre à chaque commune).
+ */
+const ZONE_HERO_PHOTOS = [
+  '/images/vehicule/taxi-chatou-skoda-enyaq-exterieur.webp',
+  '/images/vehicule/taxi-chatou-skoda-enyaq-avant.webp',
+  '/images/vehicule/taxi-chatou-skoda-enyaq-profil.webp',
+  '/images/vehicule/taxi-chatou-skoda-enyaq-arriere.webp',
+  '/images/vehicule/taxi-chatou-skoda-enyaq-avant-parc.webp',
+  '/images/vehicule/taxi-chatou-skoda-enyaq-arriere-rue.webp',
+  '/images/vehicule/taxi-chatou-skoda-enyaq-places-arriere.webp',
+];
+
 export function generateStaticParams() {
   return getLocationSlugs().map((slug) => ({ slug }));
 }
@@ -50,6 +65,12 @@ export default async function ZonePage({ params }: Params) {
   const path = `/zones/${location.slug}`;
   const others = locations.filter((l) => l.slug !== location.slug).slice(0, 6);
 
+  // Photo du hero : une vue différente par commune (répartition cyclique),
+  // avec un texte alt propre à la zone.
+  const zoneIndex = Math.max(0, locations.findIndex((l) => l.slug === location.slug));
+  const heroImage = ZONE_HERO_PHOTOS[zoneIndex % ZONE_HERO_PHOTOS.length] ?? ZONE_HERO_PHOTOS[0]!;
+  const heroImageAlt = `${location.title} : Škoda Enyaq Coupé RS 100 % électrique`;
+
   return (
     <>
       <JsonLd
@@ -72,6 +93,8 @@ export default async function ZonePage({ params }: Params) {
         city={location.name}
         title={location.h1 ?? location.title}
         lede={location.heroLede}
+        image={heroImage}
+        imageAlt={heroImageAlt}
         crumbs={[
           { name: 'Accueil', path: '/' },
           { name: 'Zones desservies', path: '/zones' },

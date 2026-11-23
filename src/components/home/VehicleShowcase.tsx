@@ -7,44 +7,44 @@ import { Container } from '@/components/ui/Container';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Reveal } from '@/components/ui/Reveal';
 
-/** Galerie du véhicule : photos réelles du taxi (Škoda Enyaq électrique). */
+/** Galerie du véhicule : photos réelles du taxi (Škoda Enyaq Coupé RS électrique). */
 type VehicleView = { label: string; src: string; alt: string };
 
 const gallery: VehicleView[] = [
   {
     label: 'Extérieur',
     src: '/images/vehicule/taxi-chatou-skoda-enyaq-exterieur.webp',
-    alt: 'Taxi Škoda Enyaq noir 100 % électrique à Chatou, vue avant trois-quarts',
+    alt: 'Taxi Škoda Enyaq Coupé RS noir 100 % électrique à Chatou, vue avant trois-quarts',
   },
   {
     label: 'Avant',
     src: '/images/vehicule/taxi-chatou-skoda-enyaq-avant.webp',
-    alt: 'Face avant du taxi Škoda Enyaq électrique à Chatou',
+    alt: 'Face avant du taxi Škoda Enyaq Coupé RS électrique à Chatou',
   },
   {
     label: 'Profil',
     src: '/images/vehicule/taxi-chatou-skoda-enyaq-profil.webp',
-    alt: 'Profil du taxi Škoda Enyaq électrique noir à Chatou',
+    alt: 'Profil du taxi Škoda Enyaq Coupé RS électrique noir à Chatou',
   },
   {
     label: 'Arrière',
     src: '/images/vehicule/taxi-chatou-skoda-enyaq-arriere.webp',
-    alt: 'Vue arrière du taxi Škoda Enyaq électrique à Chatou',
+    alt: 'Vue arrière du taxi Škoda Enyaq Coupé RS électrique à Chatou',
   },
   {
     label: 'Places arrière',
     src: '/images/vehicule/taxi-chatou-skoda-enyaq-places-arriere.webp',
-    alt: 'Places arrière spacieuses en cuir du taxi Škoda Enyaq à Chatou',
+    alt: 'Places arrière spacieuses en cuir du taxi Škoda Enyaq Coupé RS à Chatou',
   },
   {
     label: 'Trois-quarts avant',
     src: '/images/vehicule/taxi-chatou-skoda-enyaq-avant-parc.webp',
-    alt: 'Taxi Škoda Enyaq électrique noir à Chatou, trois-quarts avant',
+    alt: 'Taxi Škoda Enyaq Coupé RS électrique noir à Chatou, trois-quarts avant',
   },
   {
     label: 'Trois-quarts arrière',
     src: '/images/vehicule/taxi-chatou-skoda-enyaq-arriere-rue.webp',
-    alt: 'Taxi Škoda Enyaq électrique noir à Chatou, trois-quarts arrière',
+    alt: 'Taxi Škoda Enyaq Coupé RS électrique noir à Chatou, trois-quarts arrière',
   },
 ];
 
@@ -85,7 +85,7 @@ export function VehicleShowcase() {
       <Container>
         <SectionHeading
           eyebrow="Le véhicule"
-          title="Un Škoda Enyaq 100 % électrique"
+          title="Un Škoda Enyaq Coupé RS 100 % électrique"
           description="Un véhicule récent et spacieux, à l’intérieur cuir soigné, pour voyager au calme : conduite silencieuse, zéro émission à l’usage et coffre généreux pour vos bagages et transferts aéroport."
         />
 
@@ -195,7 +195,7 @@ export function VehicleShowcase() {
               <Image src={current.src} alt={current.alt} fill sizes="100vw" className="object-contain" />
             </div>
             <figcaption className="mt-3 text-center text-sm text-cream/80">
-              {current.label} · Škoda Enyaq 100 % électrique
+              {current.label} · Škoda Enyaq Coupé RS 100 % électrique
             </figcaption>
           </figure>
         </div>

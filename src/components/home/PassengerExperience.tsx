@@ -38,7 +38,7 @@ export function PassengerExperience() {
         <SectionHeading
           eyebrow="Expérience passager"
           title="Voyagez confortablement, profitez de chaque trajet"
-          description="À bord du Škoda Enyaq, chaque déplacement devient un moment de calme : un véhicule électrique récent, spacieux et silencieux, pour arriver détendu."
+          description="À bord du Škoda Enyaq Coupé RS, chaque déplacement devient un moment de calme : un véhicule électrique récent, spacieux et silencieux, pour arriver détendu."
         />
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {comforts.map(({ icon: ComfortIcon, title, description }, index) => (

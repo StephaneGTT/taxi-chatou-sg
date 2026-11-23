@@ -1,4 +1,4 @@
-import { Clock, Leaf, UserRound, ShieldCheck, MapPin, Stethoscope } from 'lucide-react';
+import { Clock, Leaf, UserRound, ShieldCheck, MapPin, CreditCard } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { Marquee } from '@/components/ui/Marquee';
 import { cn } from '@/lib/utils';
@@ -8,7 +8,7 @@ const features = [
   { icon: Leaf, label: 'Véhicule 100%\nélectrique' },
   { icon: UserRound, label: 'Chauffeur\nprofessionnel' },
   { icon: ShieldCheck, label: 'Trajets discrets\net sécurisés' },
-  { icon: Stethoscope, label: 'Conventionné\nCPAM' },
+  { icon: CreditCard, label: 'Paiement CB\net espèces' },
   { icon: MapPin, label: 'Chatou et\nl’Ouest parisien' },
 ];
 

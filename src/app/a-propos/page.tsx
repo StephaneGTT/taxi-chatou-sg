@@ -84,7 +84,7 @@ export default function AboutPage() {
             <Reveal>
               <p className="eyebrow text-champagne-dark">Le véhicule</p>
               <h2 className="mt-3 max-w-2xl text-h2 text-ink-900">
-                Une Škoda Enyaq 100 % électrique, spacieuse et confortable
+                Une Škoda Enyaq Coupé RS 100 % électrique, spacieuse et confortable
               </h2>
               <p className="mt-4 max-w-2xl text-base leading-relaxed text-ink-800/75">
                 Un véhicule récent et soigneusement entretenu : conduite silencieuse, zéro émission
@@ -97,7 +97,7 @@ export default function AboutPage() {
               <div className="relative aspect-video overflow-hidden rounded-[var(--radius-lg)] shadow-card">
                 <Image
                   src="/images/vehicule/taxi-chatou-skoda-enyaq-exterieur.webp"
-                  alt="Taxi à Chatou : Škoda Enyaq noire 100 % électrique, avec panneau taxi"
+                  alt="Taxi à Chatou : Škoda Enyaq Coupé RS noire 100 % électrique, avec panneau taxi"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"

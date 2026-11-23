@@ -12,7 +12,7 @@ const pillars = [
   {
     icon: Gem,
     title: 'Confort et discrétion',
-    description: 'Véhicule Škoda Enyaq 100 % électrique et spacieux, trajets discrets, pour voyager au calme.',
+    description: 'Véhicule Škoda Enyaq Coupé RS 100 % électrique et spacieux, trajets discrets, pour voyager au calme.',
   },
   {
     icon: Clock,
