@@ -21,6 +21,8 @@ export type TaxiRoute = {
   distanceKm: number;
   /** Durée estimée min–max selon le trafic (minutes) */
   durationMin: [number, number];
+  /** Fourchette de prix indicative [bas, haut] en euros (sinon : estimée depuis la distance). */
+  priceRange?: [number, number];
   /** Un forfait à prix fixe est proposé (aéroports) */
   forfait?: boolean;
   /** 2 paragraphes d'introduction, propres à ce trajet */
@@ -49,7 +51,8 @@ export const routes: TaxiRoute[] = [
     shortName: 'Aéroport CDG',
     category: 'Aéroport',
     distanceKm: 45,
-    durationMin: [40, 75],
+    durationMin: [40, 90],
+    priceRange: [80, 130],
     forfait: true,
     intro: [
       'Rejoindre l’aéroport Paris-Charles-de-Gaulle depuis Chatou suppose d’anticiper le trafic de l’A86 et de l’A1, en particulier tôt le matin et aux heures de pointe.',
@@ -74,7 +77,8 @@ export const routes: TaxiRoute[] = [
     shortName: 'Aéroport d’Orly',
     category: 'Aéroport',
     distanceKm: 35,
-    durationMin: [35, 70],
+    durationMin: [35, 80],
+    priceRange: [70, 110],
     forfait: true,
     intro: [
       'Orly se situe au sud de Paris : depuis Chatou, l’itinéraire emprunte le plus souvent l’A86 pour contourner la capitale, un trajet sensible au trafic selon l’heure.',
@@ -99,7 +103,8 @@ export const routes: TaxiRoute[] = [
     shortName: 'Aéroport du Bourget',
     category: 'Aéroport',
     distanceKm: 35,
-    durationMin: [35, 65],
+    durationMin: [35, 80],
+    priceRange: [70, 100],
     forfait: true,
     intro: [
       'Le Bourget, première plateforme d’aviation d’affaires d’Europe, accueille vols privés et grands salons. Depuis Chatou, l’accès se fait par l’A86 puis l’A1.',
@@ -124,7 +129,8 @@ export const routes: TaxiRoute[] = [
     shortName: 'Aéroport de Beauvais',
     category: 'Aéroport',
     distanceKm: 80,
-    durationMin: [70, 100],
+    durationMin: [70, 120],
+    priceRange: [150, 200],
     forfait: true,
     intro: [
       'Beauvais-Tillé, dans l’Oise, est le plus éloigné des aéroports franciliens : comptez environ 1 h 10 de route depuis Chatou, principalement par l’A15 et l’A16.',
@@ -149,7 +155,8 @@ export const routes: TaxiRoute[] = [
     shortName: 'Gare Saint-Lazare',
     category: 'Gare',
     distanceKm: 18,
-    durationMin: [25, 55],
+    durationMin: [45, 80],
+    priceRange: [50, 80],
     intro: [
       'Saint-Lazare est la gare parisienne la plus naturelle depuis l’Ouest francilien, porte d’entrée vers la Normandie et de nombreuses lignes Transilien.',
       'Un taxi au départ de Chatou vous y dépose en porte-à-porte, une solution directe et confortable avec des bagages, en complément ou en alternative au RER A.',
@@ -173,7 +180,8 @@ export const routes: TaxiRoute[] = [
     shortName: 'Gare de Lyon',
     category: 'Gare',
     distanceKm: 25,
-    durationMin: [35, 65],
+    durationMin: [45, 90],
+    priceRange: [60, 80],
     intro: [
       'La Gare de Lyon, grand hub des TGV vers le Sud-Est et la Méditerranée, se situe à l’est de Paris : depuis Chatou, le trajet traverse l’agglomération et dépend fortement du trafic.',
       'Nous anticipons ce temps de traversée pour vous déposer à l’heure, hall des départs, prêt à embarquer.',
@@ -198,6 +206,7 @@ export const routes: TaxiRoute[] = [
     category: 'Quartier d’affaires',
     distanceKm: 10,
     durationMin: [15, 35],
+    priceRange: [25, 40],
     intro: [
       'La Défense, premier quartier d’affaires européen, est tout proche de Chatou : quelques kilomètres par l’A14 ou via Nanterre suffisent pour rejoindre le cœur du quartier.',
       'Pour un rendez-vous d’affaires, une arrivée ponctuelle et un cadre calme comptent : nous vous déposons au pied de votre tour ou sur le parvis, à l’heure convenue.',
@@ -221,7 +230,8 @@ export const routes: TaxiRoute[] = [
     shortName: 'Disneyland Paris',
     category: 'Loisir',
     distanceKm: 55,
-    durationMin: [50, 85],
+    durationMin: [60, 80],
+    priceRange: [120, 160],
     intro: [
       'Disneyland Paris, à Marne-la-Vallée, se trouve à l’est de l’agglomération : depuis Chatou, le trajet traverse la région et se prépare, surtout en période de vacances.',
       'En famille, le taxi offre un vrai confort : porte-à-porte, bagages et poussettes embarqués, sans correspondance ni stationnement à gérer.',

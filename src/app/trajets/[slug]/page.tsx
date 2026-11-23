@@ -39,7 +39,9 @@ export default async function RoutePage({ params }: Params) {
   if (!route) notFound();
 
   const path = `/trajets/${route.slug}`;
-  const price = estimatePriceRange(route.distanceKm);
+  const price = route.priceRange
+    ? { low: route.priceRange[0], high: route.priceRange[1] }
+    : estimatePriceRange(route.distanceKm);
   const others = routes.filter((r) => r.slug !== route.slug);
   const crumbs = [
     { name: 'Accueil', path: '/' },
@@ -136,9 +138,8 @@ export default async function RoutePage({ params }: Params) {
                   ))}
                 </div>
                 <p className="mt-4 text-xs leading-relaxed text-ink-800/55">
-                  Fourchette indicative selon le tarif réglementé des Yvelines : la fourchette basse
-                  correspond à une course de jour, la fourchette haute à la nuit, au dimanche et aux
-                  jours fériés.{route.forfait ? ' Un forfait à prix fixe est possible pour ce trajet.' : ''}{' '}
+                  Fourchette indicative, selon l’horaire, le trafic et le trajet réel. Les tarifs sont
+                  majorés la nuit, le dimanche et les jours fériés.{route.forfait ? ' Un forfait à prix fixe est possible pour ce trajet.' : ''}{' '}
                   Le taximètre fait foi. <Link href="/#tarifs" className="text-champagne-dark underline underline-offset-2">Voir la grille tarifaire</Link>.
                 </p>
               </Reveal>
