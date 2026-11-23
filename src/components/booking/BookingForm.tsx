@@ -318,7 +318,7 @@ export function BookingForm() {
       className="rounded-[var(--radius-lg)] border border-ink-900/8 bg-white p-6 shadow-card sm:p-8"
     >
       <div className="grid gap-5 sm:grid-cols-2">
-        <Field id={field('depart')} name="depart" label="Lieu de départ" error={errors.depart}>
+        <Field id={field('depart')} name="depart" label="Lieu de départ" error={errors.depart} required>
           <AddressAutocomplete
             id={field('depart')}
             name="depart"
@@ -327,7 +327,7 @@ export function BookingForm() {
             onValueChange={setDepartValue}
           />
         </Field>
-        <Field id={field('arrivee')} name="arrivee" label="Destination" error={errors.arrivee}>
+        <Field id={field('arrivee')} name="arrivee" label="Destination" error={errors.arrivee} required>
           <AddressAutocomplete
             id={field('arrivee')}
             name="arrivee"
@@ -336,7 +336,7 @@ export function BookingForm() {
           />
         </Field>
 
-        <Field id={field('date')} name="date" label="Date" error={errors.date}>
+        <Field id={field('date')} name="date" label="Date" error={errors.date} required>
           <input
             id={field('date')}
             name="date"
@@ -346,7 +346,7 @@ export function BookingForm() {
             onChange={(e) => handleDateChange(e.target.value)}
           />
         </Field>
-        <Field id={field('heure')} name="heure" label="Heure" error={errors.heure}>
+        <Field id={field('heure')} name="heure" label="Heure" error={errors.heure} required>
           <select
             id={field('heure')}
             name="heure"
@@ -418,7 +418,7 @@ export function BookingForm() {
           </div>
         )}
 
-        <Field id={field('passagers')} name="passagers" label="Passagers" error={errors.passagers}>
+        <Field id={field('passagers')} name="passagers" label="Passagers" error={errors.passagers} required>
           <select id={field('passagers')} name="passagers" defaultValue="1">
             {[1, 2, 3, 4, 5, 6, 7].map((n) => (
               <option key={n} value={n}>
@@ -427,11 +427,17 @@ export function BookingForm() {
             ))}
           </select>
         </Field>
-        <Field id={field('nom')} name="nom" label="Nom" error={errors.nom}>
-          <input id={field('nom')} name="nom" type="text" placeholder="Votre nom" autoComplete="name" />
+        <Field id={field('nom')} name="nom" label="Nom et prénom" error={errors.nom} required>
+          <input
+            id={field('nom')}
+            name="nom"
+            type="text"
+            placeholder="Votre nom et prénom"
+            autoComplete="name"
+          />
         </Field>
 
-        <Field id={field('telephone')} name="telephone" label="Téléphone" error={errors.telephone}>
+        <Field id={field('telephone')} name="telephone" label="Téléphone" error={errors.telephone} required>
           <input
             id={field('telephone')}
             name="telephone"
@@ -440,7 +446,7 @@ export function BookingForm() {
             autoComplete="tel"
           />
         </Field>
-        <Field id={field('email')} name="email" label="E-mail" error={errors.email}>
+        <Field id={field('email')} name="email" label="E-mail" error={errors.email} required>
           <input
             id={field('email')}
             name="email"
@@ -490,6 +496,10 @@ export function BookingForm() {
         )}
       </div>
 
+      <p className="mt-4 text-xs text-ink-900/55">
+        <span className="text-red-500">*</span> Champ obligatoire
+      </p>
+
       <Turnstile key={turnstileKey} onToken={setTurnstileToken} />
 
       <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -538,12 +548,14 @@ function Field({
   id,
   label,
   error,
+  required,
   children,
 }: {
   id: string;
   name: string;
   label: string;
   error?: string;
+  required?: boolean;
   children: React.ReactNode;
 }) {
   const errorId = `${id}-error`;
@@ -557,6 +569,7 @@ function Field({
         className: controlClass,
         'aria-invalid': error ? true : undefined,
         'aria-describedby': error ? errorId : undefined,
+        'aria-required': required ? true : undefined,
       })
     : children;
 
@@ -564,6 +577,14 @@ function Field({
     <div>
       <label htmlFor={id} className="mb-2 block text-xs font-semibold text-ink-900">
         {label}
+        {required && (
+          <>
+            <span aria-hidden className="ml-0.5 text-red-500">
+              *
+            </span>
+            <span className="sr-only"> (obligatoire)</span>
+          </>
+        )}
       </label>
       {control}
       {error && (
