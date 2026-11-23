@@ -55,7 +55,7 @@ export const homeFaq: FaqItem[] = [
   {
     question: 'Quelles zones desservez-vous ?',
     answer:
-      'Depuis Chatou, notre service rayonne sur l’Ouest parisien et l’Île-de-France. Nous desservons notamment Croissy-sur-Seine, Le Vésinet, Montesson, Rueil-Malmaison, Carrières-sur-Seine et Houilles, ainsi que les communes voisines. Votre commune n’y figure pas ? Contactez-nous pour confirmation.',
+      'Depuis Chatou, notre service rayonne sur l’Ouest parisien et l’Île-de-France. Nous desservons notamment Croissy-sur-Seine, Le Vésinet, Montesson, Rueil-Malmaison, Carrières-sur-Seine, Houilles, Nanterre et Le Pecq, ainsi que les communes voisines. Votre commune n’y figure pas ? Contactez-nous pour confirmation.',
   },
   {
     question: 'Quels sont les transports en commun disponibles à Chatou ?',

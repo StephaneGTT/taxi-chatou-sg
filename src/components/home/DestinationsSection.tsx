@@ -78,7 +78,8 @@ export function DestinationsSection() {
             </h3>
             <p className="mt-3 max-w-prose text-sm leading-relaxed text-ink-800/70 lg:mt-0">
               Nous intervenons à Chatou, mais aussi dans les communes proches : Croissy-sur-Seine,
-              Le Vésinet, Montesson, Rueil-Malmaison, Carrières-sur-Seine ou Houilles. Par ailleurs,
+              Le Vésinet, Montesson, Rueil-Malmaison, Carrières-sur-Seine, Houilles, Nanterre ou
+              Le Pecq. Par ailleurs,
               nous assurons les départs vers les gares, les aéroports et Paris. Votre commune
               n’apparaît pas dans la liste ? Contactez-nous pour confirmation.
             </p>

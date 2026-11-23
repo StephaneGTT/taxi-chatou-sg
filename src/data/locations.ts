@@ -273,6 +273,96 @@ export const locations: Location[] = [
     ],
   },
   {
+    slug: 'taxi-le-pecq',
+    name: 'Le Pecq',
+    title: 'Taxi au Pecq',
+    h1: 'Taxi au Pecq : gare RER A et transferts aéroports',
+    metaTitle: 'Taxi Le Pecq | Gare RER A, Orly et Roissy',
+    metaDescription:
+      'Taxi au Pecq (78) 24h/24 et 7j/7 : gare RER A Le Vésinet–Le Pecq, aéroports Orly et Roissy, transport médical conventionné. Réservez en ligne ou par téléphone.',
+    postalCode: '78230',
+    tagline: 'Votre taxi de proximité au Pecq',
+    context: [
+      'Le Pecq, commune des bords de Seine au pied de Saint-Germain-en-Laye, est voisine du Vésinet et toute proche de Chatou.',
+      'Entre les quais, le centre et les quartiers résidentiels, les besoins de transport y sont nombreux : aéroports, rendez-vous médicaux, trajets professionnels et sorties.',
+      'La commune partage la gare RER A Le Vésinet–Le Pecq. En complément du train, le taxi assure une liaison directe de porte à porte. Ainsi, vous voyagez sans correspondance, même tôt le matin ou avec des bagages.',
+    ],
+    needs: [
+      'Transferts aéroports au départ du Pecq.',
+      'Transport médical conventionné (CPAM) vers vos rendez-vous de soins.',
+      'Déplacements professionnels vers Paris et La Défense.',
+      'Compléments au RER A pour les trajets avec bagages ou horaires décalés.',
+    ],
+    destinations: [
+      { label: 'Roissy CDG / Orly', detail: 'Transferts aéroports organisés.' },
+      { label: 'La Défense', detail: 'Déplacements d’affaires.' },
+      { label: 'Hôpitaux et cliniques', detail: 'Trajets médicaux conventionnés.' },
+      { label: 'Chatou & Le Vésinet', detail: 'Liaisons locales.' },
+    ],
+    practical: [
+      'Prise en charge à l’adresse de votre choix au Pecq.',
+      'Service de porte à porte, utile avec des bagages ou en soirée.',
+      'Service sur réservation, 24h/24 et 7j/7.',
+    ],
+    faq: [
+      {
+        question: 'Desservez-vous la gare du Vésinet–Le Pecq ?',
+        answer:
+          'Oui. Nous assurons les transferts depuis et vers la gare Le Vésinet–Le Pecq (RER A), ainsi que vers les gares parisiennes. Par ailleurs, nous vous déposons à l’adresse de votre choix, sans correspondance.',
+      },
+      {
+        question: 'Assurez-vous les trajets médicaux depuis Le Pecq ?',
+        answer:
+          'Oui. Sur prescription médicale, nous assurons le transport assis conventionné (CPAM) vers vos consultations, examens et séjours hospitaliers, à l’adresse de votre choix.',
+      },
+    ],
+  },
+  {
+    slug: 'taxi-nanterre',
+    name: 'Nanterre',
+    title: 'Taxi à Nanterre',
+    h1: 'Taxi à Nanterre : La Défense, gares et aéroports',
+    metaTitle: 'Taxi Nanterre | La Défense, Gares, Aéroports',
+    metaDescription:
+      'Taxi à Nanterre (92) 24h/24 et 7j/7 : La Défense, RER A, aéroports Orly et Roissy, transport médical conventionné. Réservez en ligne ou par téléphone.',
+    postalCode: '92000',
+    tagline: 'Votre taxi de proximité à Nanterre',
+    context: [
+      'Nanterre, préfecture des Hauts-de-Seine aux portes de La Défense, est voisine de Rueil-Malmaison et proche de Chatou.',
+      'Entre le quartier d’affaires, l’université et les zones résidentielles, les besoins de transport y sont variés : aéroports, déplacements professionnels, rendez-vous médicaux et trajets du quotidien.',
+      'La ville est desservie par le RER A (Nanterre-Préfecture, Nanterre-Ville, Nanterre-Université) et le Transilien. En complément, le taxi offre une liaison directe de porte à porte, notamment avec des bagages ou aux horaires décalés.',
+    ],
+    needs: [
+      'Déplacements professionnels vers La Défense et Paris.',
+      'Transferts aéroports au départ de Nanterre.',
+      'Transport médical conventionné (CPAM) vers vos rendez-vous de soins.',
+      'Liaisons vers les gares et les communes voisines.',
+    ],
+    destinations: [
+      { label: 'La Défense', detail: 'Déplacements d’affaires de porte à porte.' },
+      { label: 'Roissy CDG / Orly', detail: 'Transferts aéroports organisés.' },
+      { label: 'Hôpitaux et cliniques', detail: 'Trajets médicaux conventionnés.' },
+      { label: 'Chatou & Rueil-Malmaison', detail: 'Liaisons locales.' },
+    ],
+    practical: [
+      'Prise en charge à l’adresse de votre choix à Nanterre.',
+      'Idéal pour les déplacements d’affaires vers La Défense et les trajets avec bagages.',
+      'Service sur réservation, 24h/24 et 7j/7.',
+    ],
+    faq: [
+      {
+        question: 'Assurez-vous les trajets vers La Défense depuis Nanterre ?',
+        answer:
+          'Oui. Nanterre est aux portes de La Défense : nous organisons vos déplacements professionnels de porte à porte, ponctuels, sur réservation. Par ailleurs, nous desservons Paris et les gares parisiennes.',
+      },
+      {
+        question: 'Proposez-vous le transport médical conventionné à Nanterre ?',
+        answer:
+          'Oui. Sur prescription médicale, nous assurons le transport assis conventionné (CPAM) vers vos consultations, examens, dialyses ou séjours hospitaliers, avec le tiers payant selon votre situation.',
+      },
+    ],
+  },
+  {
     slug: 'taxi-yvelines',
     name: 'Ouest parisien',
     title: 'Taxi dans l’Ouest parisien',
@@ -282,7 +372,7 @@ export const locations: Location[] = [
     heroLede:
       'Besoin d’un taxi dans l’Ouest parisien ? Basés à Chatou, nous rayonnons sur Croissy-sur-Seine, Le Vésinet, Montesson, Rueil-Malmaison et les communes voisines, et vers Paris, La Défense et les aéroports franciliens, 24h/24 et 7j/7, à l’avance comme en course immédiate.',
     context: [
-      'Basés à Chatou, nous assurons un service de taxi de proximité dans tout l’Ouest parisien : Croissy-sur-Seine, Le Vésinet, Montesson, Rueil-Malmaison, Carrières-sur-Seine, Houilles et les communes voisines.',
+      'Basés à Chatou, nous assurons un service de taxi de proximité dans tout l’Ouest parisien : Croissy-sur-Seine, Le Vésinet, Montesson, Rueil-Malmaison, Carrières-sur-Seine, Houilles, Nanterre, Le Pecq et les communes voisines.',
       'Cette page régionale regroupe nos zones desservies. Retrouvez plus bas la liste des communes où nous assurons une prise en charge de porte à porte, ainsi que nos liaisons vers Paris, La Défense et les aéroports.',
     ],
     needs: [
@@ -306,7 +396,7 @@ export const locations: Location[] = [
       {
         question: 'Quelles communes desservez-vous autour de Chatou ?',
         answer:
-          'Depuis Chatou, nous desservons notamment Croissy-sur-Seine, Le Vésinet, Montesson, Rueil-Malmaison, Carrières-sur-Seine et Houilles, ainsi que les communes voisines. Votre commune n’y figure pas ? Contactez-nous pour confirmation.',
+          'Depuis Chatou, nous desservons notamment Croissy-sur-Seine, Le Vésinet, Montesson, Rueil-Malmaison, Carrières-sur-Seine, Houilles, Nanterre et Le Pecq, ainsi que les communes voisines. Votre commune n’y figure pas ? Contactez-nous pour confirmation.',
       },
       {
         question: 'Quelle est votre zone de service exacte ?',
