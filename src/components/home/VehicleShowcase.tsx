@@ -7,48 +7,44 @@ import { Container } from '@/components/ui/Container';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { Reveal } from '@/components/ui/Reveal';
 
-/**
- * Galerie du véhicule (Škoda Enyaq).
- * ⚠️ Les visuels sont des illustrations : ne pas les présenter comme des
- * photographies authentiques du véhicule exact, ni affirmer un équipement non confirmé.
- */
+/** Galerie du véhicule : photos réelles du taxi (Škoda Enyaq électrique). */
 type VehicleView = { label: string; src: string; alt: string };
 
 const gallery: VehicleView[] = [
   {
     label: 'Extérieur',
     src: '/images/vehicule/taxi-chatou-skoda-enyaq-exterieur.webp',
-    alt: 'Škoda Enyaq noire 100 % électrique au coucher du soleil, taxi à Chatou',
+    alt: 'Taxi Škoda Enyaq noir 100 % électrique à Chatou, vue avant trois-quarts',
   },
   {
-    label: 'Prise en charge',
-    src: '/images/vehicule/taxi-chatou-skoda-enyaq-taxi-valise.webp',
-    alt: 'Taxi Škoda Enyaq, porte arrière ouverte avec une valise, à Chatou',
+    label: 'Avant',
+    src: '/images/vehicule/taxi-chatou-skoda-enyaq-avant.webp',
+    alt: 'Face avant du taxi Škoda Enyaq électrique à Chatou',
   },
   {
-    label: 'Accès aux places arrière',
-    src: '/images/vehicule/taxi-chatou-skoda-enyaq-acces-arriere.webp',
-    alt: 'Accès aux places arrière, portes ouvertes, intérieur cuir beige, Škoda Enyaq',
+    label: 'Profil',
+    src: '/images/vehicule/taxi-chatou-skoda-enyaq-profil.webp',
+    alt: 'Profil du taxi Škoda Enyaq électrique noir à Chatou',
   },
   {
-    label: 'Poste de conduite',
-    src: '/images/vehicule/taxi-chatou-skoda-enyaq-poste-conduite.webp',
-    alt: 'Poste de conduite connecté du Škoda Enyaq électrique',
+    label: 'Arrière',
+    src: '/images/vehicule/taxi-chatou-skoda-enyaq-arriere.webp',
+    alt: 'Vue arrière du taxi Škoda Enyaq électrique à Chatou',
   },
   {
     label: 'Places arrière',
     src: '/images/vehicule/taxi-chatou-skoda-enyaq-places-arriere.webp',
-    alt: 'Places arrière spacieuses en cuir beige, toit panoramique, Škoda Enyaq',
+    alt: 'Places arrière spacieuses en cuir du taxi Škoda Enyaq à Chatou',
   },
   {
-    label: 'Coffre',
-    src: '/images/vehicule/taxi-chatou-skoda-enyaq-coffre.webp',
-    alt: 'Coffre spacieux du Škoda Enyaq',
+    label: 'Trois-quarts avant',
+    src: '/images/vehicule/taxi-chatou-skoda-enyaq-avant-parc.webp',
+    alt: 'Taxi Škoda Enyaq électrique noir à Chatou, trois-quarts avant',
   },
   {
-    label: 'Coffre avec bagages',
-    src: '/images/vehicule/taxi-chatou-skoda-enyaq-coffre-bagages.webp',
-    alt: 'Coffre du Škoda Enyaq chargé de valises et sacs',
+    label: 'Trois-quarts arrière',
+    src: '/images/vehicule/taxi-chatou-skoda-enyaq-arriere-rue.webp',
+    alt: 'Taxi Škoda Enyaq électrique noir à Chatou, trois-quarts arrière',
   },
 ];
 
@@ -90,7 +86,7 @@ export function VehicleShowcase() {
         <SectionHeading
           eyebrow="Le véhicule"
           title="Un Škoda Enyaq 100 % électrique"
-          description="Un véhicule récent et spacieux, à l’intérieur cuir beige, pour voyager au calme : conduite silencieuse, zéro émission à l’usage et coffre généreux pour vos bagages et transferts aéroport."
+          description="Un véhicule récent et spacieux, à l’intérieur cuir soigné, pour voyager au calme : conduite silencieuse, zéro émission à l’usage et coffre généreux pour vos bagages et transferts aéroport."
         />
 
         {/* Visuel principal */}
@@ -199,7 +195,7 @@ export function VehicleShowcase() {
               <Image src={current.src} alt={current.alt} fill sizes="100vw" className="object-contain" />
             </div>
             <figcaption className="mt-3 text-center text-sm text-cream/80">
-              {current.label} · Škoda Enyaq (visuel d’illustration)
+              {current.label} · Škoda Enyaq 100 % électrique
             </figcaption>
           </figure>
         </div>

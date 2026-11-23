@@ -12,8 +12,8 @@ export const services: Service[] = [
     cardDescription:
       'Roissy-Charles-de-Gaulle, Orly, Le Bourget et Beauvais. Forfait aéroport à prix fixe, convenu à l’avance.',
     icon: 'Plane',
-    image: '/images/vehicule/taxi-chatou-skoda-enyaq-taxi-valise.webp',
-    imageAlt: 'Taxi à Chatou prêt pour un transfert aéroport, coffre spacieux pour les bagages',
+    image: '/images/vehicule/taxi-chatou-skoda-enyaq-arriere.webp',
+    imageAlt: 'Taxi Škoda Enyaq électrique à Chatou, prêt pour un transfert aéroport',
     intro: [
       'Le transfert vers l’aéroport est un moment sensible : il conditionne la sérénité de tout un voyage. Nous organisons votre prise en charge à l’avance, avec une adresse de départ précise et une heure calculée en tenant compte du trajet et des marges d’enregistrement habituelles.',
       'Au retour, le principe est le même : vous indiquez votre vol, nous convenons ensemble du point de rendez-vous, et vous retrouvez un véhicule confortable sans attente inutile à la sortie de l’avion.',
@@ -135,8 +135,8 @@ export const services: Service[] = [
     cardDescription:
       'Rendez-vous, gares et déplacements d’affaires. Un service discret et soigné pour vos trajets professionnels.',
     icon: 'Briefcase',
-    image: '/images/vehicule/taxi-chatou-skoda-enyaq-poste-conduite.webp',
-    imageAlt: 'Taxi professionnel à Chatou : intérieur soigné pour vos déplacements d’affaires',
+    image: '/images/vehicule/taxi-chatou-skoda-enyaq-profil.webp',
+    imageAlt: 'Taxi professionnel à Chatou : Škoda Enyaq électrique noir, vue de profil',
     intro: [
       'Pour vos rendez-vous et déplacements d’affaires, la régularité et la discrétion comptent autant que le confort. Nous proposons un transport pensé pour les professionnels : un cadre calme pour préparer une réunion, passer un appel ou simplement souffler entre deux étapes.',
       'Les trajets récurrents peuvent être organisés à l’avance afin de fluidifier votre agenda, depuis Chatou et les communes voisines vers Paris, La Défense et les principales gares.',
@@ -194,7 +194,7 @@ export const services: Service[] = [
       'Soirées, shopping, restaurants et événements. Un trajet privé pour profiter pleinement du moment.',
     icon: 'Sparkles',
     image: '/images/vehicule/taxi-chatou-skoda-enyaq-places-arriere.webp',
-    imageAlt: 'Trajet privé à Chatou : véhicule confortable pour vos sorties',
+    imageAlt: 'Trajet privé à Chatou : places arrière spacieuses du taxi Škoda Enyaq',
     intro: [
       'Certaines occasions méritent un transport à la hauteur du moment. Pour une soirée, un dîner, une sortie culturelle ou un événement familial, nous assurons un trajet privé qui vous permet de profiter pleinement, sans vous soucier du stationnement ni du retour.',
       'Vous choisissez vos horaires, nous nous occupons du reste, dans un véhicule confortable et un service attentionné.',
@@ -251,8 +251,8 @@ export const services: Service[] = [
     cardDescription:
       'À l’heure, à la demi-journée ou sur plusieurs rendez-vous. Un véhicule et un chauffeur dédiés à votre programme.',
     icon: 'Clock',
-    image: '/images/vehicule/taxi-chatou-skoda-enyaq-coffre-bagages.webp',
-    imageAlt: 'Taxi à disposition à Chatou, chauffeur dédié à votre programme de la journée',
+    image: '/images/vehicule/taxi-chatou-skoda-enyaq-avant-parc.webp',
+    imageAlt: 'Taxi Škoda Enyaq électrique à Chatou, à disposition pour votre programme',
     intro: [
       'Lorsque votre journée comporte plusieurs étapes, la mise à disposition est la solution la plus souple. Un véhicule et un chauffeur restent dédiés à votre programme : rendez-vous successifs, visites, événement sur une journée ou déplacement comportant des temps d’attente.',
       'Vous définissez les grandes lignes de votre journée, nous adaptons le déroulé au fil de vos besoins.',
