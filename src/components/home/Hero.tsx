@@ -107,15 +107,33 @@ export function Hero() {
                   style={{ background: 'linear-gradient(180deg, transparent 62%, rgba(7,21,44,0.5))' }}
                   aria-hidden
                 />
-                <span className="absolute bottom-4 left-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-ink-900/70 px-3.5 py-1.5 text-xs font-medium text-cream backdrop-blur-sm">
+                <span className="absolute left-4 top-4 inline-flex items-center gap-2 rounded-full border border-white/15 bg-ink-900/70 px-3.5 py-1.5 text-xs font-medium text-cream backdrop-blur-sm">
                   <Car className="h-3.5 w-3.5 text-champagne" aria-hidden />
                   Škoda Enyaq Coupé RS · 100 % électrique
                 </span>
               </div>
+
+              {/* Chauffeur : avatar rond + nom, flottant sur le visuel */}
+              <div className="absolute -bottom-5 left-4 flex items-center gap-2.5 rounded-full border border-white/15 bg-ink-900/85 py-1.5 pl-1.5 pr-4 shadow-[0_18px_40px_-20px_rgba(0,0,0,0.85)] backdrop-blur-sm sm:left-6">
+                <span className="relative block h-11 w-11 shrink-0 overflow-hidden rounded-full ring-2 ring-champagne/60">
+                  <Image
+                    src="/images/chauffeur/stephane-geatti.webp"
+                    alt="Stéphane Géatti, chauffeur de taxi à Chatou"
+                    fill
+                    sizes="44px"
+                    className="object-cover"
+                  />
+                </span>
+                <span className="leading-tight">
+                  <span className="block text-sm font-semibold text-cream">Stéphane</span>
+                  <span className="block text-xs text-cream/60">Votre chauffeur</span>
+                </span>
+              </div>
+
               {/* Filet beige signature, discret */}
               <div
                 aria-hidden
-                className="absolute -bottom-2.5 -left-2.5 hidden h-16 w-16 rounded-bl-[24px] border-b-2 border-l-2 border-champagne/40 sm:block"
+                className="absolute -right-2.5 -top-2.5 hidden h-16 w-16 rounded-tr-[24px] border-r-2 border-t-2 border-champagne/40 sm:block"
               />
             </div>
           </Reveal>
