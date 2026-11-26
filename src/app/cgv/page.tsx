@@ -19,6 +19,8 @@ function Value({ value, placeholder }: { value: string; placeholder: string }) {
 
 export default function CgvPage() {
   const { legal, contact } = siteConfig;
+  // Forme juridique en minuscule initiale pour la phrase (en préservant l'acronyme, ex. « EI »).
+  const legalFormLower = legal.legalForm.charAt(0).toLowerCase() + legal.legalForm.slice(1);
 
   return (
     <>
@@ -40,8 +42,10 @@ export default function CgvPage() {
               <p>
                 Les présentes conditions générales de vente (CGV) régissent les prestations de
                 transport public particulier de personnes par taxi proposées sous le nom commercial
-                «&nbsp;{siteConfig.name}&nbsp;» par {legal.legalName}, {legal.legalForm.toLowerCase()}{' '}
-                au capital de {legal.capital}, {legal.rcs}, dont le siège social est situé{' '}
+                «&nbsp;{siteConfig.name}&nbsp;» par {legal.legalName}, {legalFormLower}
+                {legal.siren ? `, immatriculé sous le numéro SIREN ${legal.siren}` : ''}
+                {legal.capital ? `, au capital de ${legal.capital}` : ''}
+                {legal.rcs ? `, ${legal.rcs}` : ''}, dont le siège social est situé{' '}
                 {legal.headquarters} (le «&nbsp;Transporteur&nbsp;»).
               </p>
               <p>
