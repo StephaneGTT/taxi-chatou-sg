@@ -27,6 +27,8 @@ export default function ServicesIndexPage() {
         eyebrow="Nos services"
         title="Des solutions de transport pour tous vos déplacements"
         description="Un service pensé pour vos transferts aéroports, votre transport médical conventionné, vos déplacements professionnels, vos trajets privés et vos mises à disposition."
+        image="/images/vehicule/taxi-chatou-skoda-enyaq-places-arriere.webp"
+        imageAlt="Places arrière spacieuses du taxi à Chatou, Škoda Enyaq Coupé RS"
         crumbs={[
           { name: 'Accueil', path: '/' },
           { name: 'Services', path: '/services' },

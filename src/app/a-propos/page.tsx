@@ -44,20 +44,50 @@ export default function AboutPage() {
 
       <section className="bg-cream py-20 sm:py-24">
         <Container>
-          <div className="prose-content mx-auto max-w-prose">
-            <h2>Votre taxi à Chatou</h2>
-            <p>
-              {siteConfig.name} est un service de taxi artisanal basé à Chatou et rayonnant sur
-              l’Ouest parisien. Stéphane Géatti met un point d’honneur à offrir un transport
-              ponctuel, confortable et attentionné, du particulier au professionnel.
-            </p>
-            <p>
-              Taxi réglementé (titulaire d’une autorisation de stationnement) et{' '}
-              <strong>conventionné par l’Assurance Maladie</strong>, il assure aussi bien vos
-              transferts aéroports et déplacements professionnels que vos trajets de soins sur
-              prescription médicale.
-            </p>
+          {/* Présentation du chauffeur : portrait + intro */}
+          <div className="grid items-center gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:gap-14">
+            <Reveal>
+              <figure className="relative mx-auto w-full max-w-xs">
+                <div className="relative aspect-square overflow-hidden rounded-[var(--radius-lg)] shadow-card ring-1 ring-ink-900/5">
+                  <Image
+                    src="/images/chauffeur/stephane-geatti.webp"
+                    alt="Stéphane Géatti, votre chauffeur de taxi à Chatou"
+                    fill
+                    priority
+                    sizes="(max-width: 1024px) 70vw, 30vw"
+                    className="object-cover"
+                  />
+                </div>
+                <figcaption className="absolute -bottom-3 left-1/2 flex -translate-x-1/2 items-center gap-2 whitespace-nowrap rounded-full border border-ink-900/10 bg-white px-4 py-2 text-sm shadow-card">
+                  <span className="font-serif font-semibold text-ink-900">Stéphane Géatti</span>
+                  <span className="text-ink-900/35">·</span>
+                  <span className="text-ink-900/60">Votre chauffeur</span>
+                </figcaption>
+                <div
+                  aria-hidden
+                  className="absolute -right-2.5 -top-2.5 hidden h-14 w-14 rounded-tr-[var(--radius-lg)] border-r-2 border-t-2 border-champagne/50 sm:block"
+                />
+              </figure>
+            </Reveal>
+            <Reveal delay={120}>
+              <div className="prose-content">
+                <h2>Votre taxi à Chatou</h2>
+                <p>
+                  {siteConfig.name} est un service de taxi artisanal basé à Chatou et rayonnant sur
+                  l’Ouest parisien. Stéphane Géatti met un point d’honneur à offrir un transport
+                  ponctuel, confortable et attentionné, du particulier au professionnel.
+                </p>
+                <p>
+                  Taxi réglementé (titulaire d’une autorisation de stationnement) et{' '}
+                  <strong>conventionné par l’Assurance Maladie</strong>, il assure aussi bien vos
+                  transferts aéroports et déplacements professionnels que vos trajets de soins sur
+                  prescription médicale.
+                </p>
+              </div>
+            </Reveal>
+          </div>
 
+          <div className="prose-content mx-auto mt-16 max-w-prose">
             <h2>Notre approche</h2>
             <p>
               Que ce soit pour un transfert aéroport, un déplacement professionnel, un trajet médical

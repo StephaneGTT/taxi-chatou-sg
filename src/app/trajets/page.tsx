@@ -37,6 +37,8 @@ export default function TrajetsPage() {
         eyebrow="Trajets"
         title="Trajets en taxi au départ de Chatou"
         description="Aéroports, gares parisiennes, La Défense, Disneyland : retrouvez nos itinéraires les plus demandés, avec une estimation de prix et de durée."
+        image="/images/vehicule/taxi-chatou-skoda-enyaq-avant-parc.webp"
+        imageAlt="Taxi Škoda Enyaq Coupé RS prêt pour un trajet au départ de Chatou"
         crumbs={[
           { name: 'Accueil', path: '/' },
           { name: 'Trajets', path: '/trajets' },

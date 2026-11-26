@@ -28,6 +28,8 @@ export default function ZonesIndexPage() {
         eyebrow="Zones desservies"
         title="Un service de proximité sur tout l’Ouest parisien"
         description="Au départ de Chatou, nous desservons les communes voisines et l’ensemble de l’Île-de-France."
+        image="/images/vehicule/taxi-chatou-skoda-enyaq-arriere-rue.webp"
+        imageAlt="Taxi Škoda Enyaq Coupé RS dans une rue de l’Ouest parisien"
         crumbs={[
           { name: 'Accueil', path: '/' },
           { name: 'Zones desservies', path: '/zones' },
