@@ -1,11 +1,12 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { MapPin, Phone, Mail, Landmark } from 'lucide-react';
+import { MapPin, Phone, Mail, Landmark, Star } from 'lucide-react';
 import { Container } from '@/components/ui/Container';
 import { WhatsAppIcon, whatsappUrl } from '@/components/ui/WhatsAppIcon';
 import { PaymentMethods } from '@/components/ui/PaymentMethods';
 import { footerNav } from '@/config/navigation';
 import { siteConfig, hasRealContact } from '@/config/site';
+import { googleBusiness } from '@/data/reviews';
 
 export function SiteFooter() {
   const year = new Date().getFullYear();
@@ -80,6 +81,19 @@ export function SiteFooter() {
                 </li>
               )}
             </ul>
+
+            {/* Invitation à laisser un avis Google (lien direct vers le formulaire). */}
+            {googleBusiness.reviewUrl && (
+              <a
+                href={googleBusiness.reviewUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-6 inline-flex items-center gap-2.5 rounded-[var(--radius)] border border-champagne/30 bg-champagne/[0.08] px-3.5 py-2.5 text-xs font-medium leading-snug text-cream transition-colors hover:border-champagne/60"
+              >
+                <Star className="h-4 w-4 shrink-0 fill-champagne text-champagne" aria-hidden strokeWidth={1.5} />
+                <span>Laissez-nous un avis sur Google</span>
+              </a>
+            )}
 
             {/* Référencement officiel vérifiable (signal de confiance) — affiché si une fiche existe. */}
             {siteConfig.officialListing.mairieChambourcyUrl && (

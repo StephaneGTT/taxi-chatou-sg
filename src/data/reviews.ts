@@ -33,8 +33,10 @@ export const googleBusiness = {
   rating: 5.0,
   /** Nombre total d'avis sur Google */
   reviewCount: 9,
-  /** Lien vers la fiche (voir / laisser un avis) */
+  /** Lien vers la fiche (voir les avis) */
   url: 'https://share.google/OAPT9kTkgDXhCUTOu',
+  /** Lien direct « écrire un avis » (ouvre le formulaire Google). Vide = masqué. */
+  reviewUrl: 'https://g.page/r/CUjPVGyWuB9QEBM/review',
   /** URL d'intégration Google Maps (iframe, sans clé d'API) */
   mapsEmbedUrl:
     'https://www.google.com/maps?q=Taxi+St%C3%A9phane+G%C3%A9atti,+15+Avenue+Ossart,+92500+Rueil-Malmaison&output=embed',
