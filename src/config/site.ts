@@ -12,7 +12,7 @@ function normalizeUrl(value: string): string {
   return withProtocol.replace(/\/$/, '');
 }
 
-const siteUrl = normalizeUrl(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://taxi-chatou.com');
+const siteUrl = normalizeUrl(process.env.NEXT_PUBLIC_SITE_URL ?? 'https://taxi-chatou-sg.com');
 
 export const siteConfig = {
   /** Nom commercial affiché */
