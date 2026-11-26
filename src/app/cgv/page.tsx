@@ -149,9 +149,16 @@ export default function CgvPage() {
 
               <h2>8. Transport médical</h2>
               <p>
-                Le Transporteur ne réalise pas de transport conventionné par l’Assurance Maladie. Il
-                peut néanmoins assurer vos trajets vers vos rendez-vous médicaux ; la course est alors
-                facturée au tarif réglementé, sans prise en charge CPAM.
+                Le Transporteur est taxi conventionné par l’Assurance Maladie. Il peut assurer vos
+                trajets de soins sur prescription médicale, avec prise en charge par l’Assurance
+                Maladie dans les conditions prévues par la réglementation. Le client présente sa
+                prescription médicale de transport ; la part éventuellement à sa charge (ticket
+                modérateur, franchise) reste due selon sa situation.
+              </p>
+              <p>
+                En l’absence de prescription ou lorsque les conditions de prise en charge ne sont pas
+                réunies, le trajet vers un rendez-vous médical est assuré au tarif réglementé, sans
+                prise en charge CPAM.
               </p>
 
               <h2>9. Droit de rétractation</h2>
@@ -168,7 +175,7 @@ export default function CgvPage() {
                 police d’assurance professionnelle. Il ne peut être tenu responsable des retards dus à
                 des événements extérieurs, ni de la perte ou de la détérioration d’objets que le
                 client laisse dans le véhicule, sauf faute prouvée de sa part. Les objets oubliés sont
-                conservés <Value value="" placeholder="durée à préciser" /> et restitués sur demande.
+                conservés et restitués sur demande.
               </p>
               <p>
                 Les bagages restent sous la surveillance du client, sauf disposition contraire. Le

@@ -93,7 +93,7 @@ export const siteConfig = {
     mediatorAddress: '49 rue de Ponthieu, 75008 Paris',
     mediatorPhone: '01 89 47 00 14',
     mediatorUrl: 'https://www.cm2c.net',
-    lastUpdated: '18 novembre 2026', // Dernière mise à jour des mentions légales
+    lastUpdated: '26 novembre 2026', // Dernière mise à jour des mentions légales / CGV
   },
 
   /**
