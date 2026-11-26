@@ -340,7 +340,7 @@ export function HomeGuide() {
                   Réserver mon taxi
                 </Button>
                 {hasRealContact && (
-                  <Button href={phoneHref} variant="outline" size="lg">
+                  <Button href={phoneHref} variant="dark" size="lg">
                     <Phone className="h-4 w-4" aria-hidden strokeWidth={1.75} />
                     {phone}
                   </Button>
